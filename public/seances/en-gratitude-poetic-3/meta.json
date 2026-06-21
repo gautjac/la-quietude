@@ -1,0 +1,114 @@
+{
+  "id": "en-gratitude-poetic-3",
+  "title": "What Is Already Here",
+  "intention": "To warm the heart on the small, real things already present in this moment.",
+  "theme": "gratitude",
+  "register": "poetic",
+  "length": 3,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-EmmaMultilingualNeural",
+  "rate": "-10%",
+  "lines": [
+    {
+      "text": "Welcome. Let yourself arrive, just as you are.",
+      "pauseAfterMs": 5406,
+      "clip": "001.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Feel the ground holding you. It has been there the whole time.",
+      "pauseAfterMs": 8108,
+      "clip": "002.mp3",
+      "durationMs": 4176
+    },
+    {
+      "text": "Let your breath come in. And let it go.",
+      "pauseAfterMs": 10811,
+      "clip": "003.mp3",
+      "durationMs": 3144
+    },
+    {
+      "text": "Notice the air, freely given, asking nothing in return.",
+      "pauseAfterMs": 7207,
+      "clip": "004.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Somewhere in you, a heart is keeping time without being told.",
+      "pauseAfterMs": 6307,
+      "clip": "005.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Rest your attention there a moment.",
+      "pauseAfterMs": 9009,
+      "clip": "006.mp3",
+      "durationMs": 2472
+    },
+    {
+      "text": "Think of one small thing that was good today.",
+      "pauseAfterMs": 9910,
+      "clip": "007.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "A warm cup. A kind word. The light on a wall.",
+      "pauseAfterMs": 7207,
+      "clip": "008.mp3",
+      "durationMs": 4488
+    },
+    {
+      "text": "Let it be small. Small is enough.",
+      "pauseAfterMs": 5406,
+      "clip": "009.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "Feel where that warmth settles in your body.",
+      "pauseAfterMs": 8108,
+      "clip": "010.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "Maybe the chest softens. Maybe the shoulders come down.",
+      "pauseAfterMs": 6307,
+      "clip": "011.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Breathe into that warm place, and let it widen.",
+      "pauseAfterMs": 9009,
+      "clip": "012.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "There is so much already here, quietly holding you up.",
+      "pauseAfterMs": 6307,
+      "clip": "013.mp3",
+      "durationMs": 3840
+    },
+    {
+      "text": "You did not have to earn the next breath. It comes anyway.",
+      "pauseAfterMs": 8108,
+      "clip": "014.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Let a quiet thank you move through you, no words needed.",
+      "pauseAfterMs": 7207,
+      "clip": "015.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Stay with this warmth. It is yours. And it is already here.",
+      "pauseAfterMs": 4505,
+      "clip": "016.mp3",
+      "durationMs": 5088
+    }
+  ],
+  "spokenMs": 61152,
+  "silenceMs": 118922,
+  "totalMs": 180074,
+  "createdAt": 1782062219405
+}

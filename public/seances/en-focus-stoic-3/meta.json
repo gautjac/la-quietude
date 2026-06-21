@@ -1,0 +1,114 @@
+{
+  "id": "en-focus-stoic-3",
+  "title": "Gathering the Mind Before Work",
+  "intention": "To gather scattered attention into calm, available alertness before a stretch of work.",
+  "theme": "focus",
+  "register": "stoic",
+  "length": 3,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "-8%",
+  "lines": [
+    {
+      "text": "Welcome. Sit down, and let yourself simply be here.",
+      "pauseAfterMs": 6106,
+      "clip": "001.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "Set both feet on the floor. Feel the ground meet you, steady and indifferent.",
+      "pauseAfterMs": 8142,
+      "clip": "002.mp3",
+      "durationMs": 5688
+    },
+    {
+      "text": "Let the breath come in, and let it go.",
+      "pauseAfterMs": 9159,
+      "clip": "003.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Notice where the mind has scattered. Some of it is reaching toward what hasn't happened yet.",
+      "pauseAfterMs": 4071,
+      "clip": "004.mp3",
+      "durationMs": 6048
+    },
+    {
+      "text": "Some things ahead are up to you. Many are not.",
+      "pauseAfterMs": 6106,
+      "clip": "005.mp3",
+      "durationMs": 3456
+    },
+    {
+      "text": "Set down what is not yours to carry. You will meet it when it comes, and not before.",
+      "pauseAfterMs": 8142,
+      "clip": "006.mp3",
+      "durationMs": 5928
+    },
+    {
+      "text": "What remains in your hands is this: your attention, your effort, your judgment.",
+      "pauseAfterMs": 5088,
+      "clip": "007.mp3",
+      "durationMs": 5928
+    },
+    {
+      "text": "These are enough. They are all that was ever asked of you.",
+      "pauseAfterMs": 7124,
+      "clip": "008.mp3",
+      "durationMs": 3432
+    },
+    {
+      "text": "Take a slower breath now, and gather the scattered pieces inward.",
+      "pauseAfterMs": 9159,
+      "clip": "009.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Let the next breath be ordinary. Just follow it, without improving it.",
+      "pauseAfterMs": 8142,
+      "clip": "010.mp3",
+      "durationMs": 5184
+    },
+    {
+      "text": "Feel the body grow quiet, but not heavy. Awake, and willing.",
+      "pauseAfterMs": 6106,
+      "clip": "011.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "The task ahead is one thing, done with care. That is the whole of it.",
+      "pauseAfterMs": 5088,
+      "clip": "012.mp3",
+      "durationMs": 5136
+    },
+    {
+      "text": "Bring your eyes to a single point, or let them rest closed and clear.",
+      "pauseAfterMs": 5088,
+      "clip": "013.mp3",
+      "durationMs": 5400
+    },
+    {
+      "text": "You are present. You are unhurried. You are ready.",
+      "pauseAfterMs": 6106,
+      "clip": "014.mp3",
+      "durationMs": 3576
+    },
+    {
+      "text": "Take one full breath, and let alertness fill the body like light.",
+      "pauseAfterMs": 5088,
+      "clip": "015.mp3",
+      "durationMs": 5376
+    },
+    {
+      "text": "Now begin, and meet what is in front of you.",
+      "pauseAfterMs": 3053,
+      "clip": "016.mp3",
+      "durationMs": 2928
+    }
+  ],
+  "spokenMs": 74904,
+  "silenceMs": 101768,
+  "totalMs": 176672,
+  "createdAt": 1782062025703
+}

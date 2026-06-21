@@ -1,0 +1,150 @@
+{
+  "id": "en-walking-plain-5",
+  "title": "Walking, Step by Step",
+  "intention": "To walk slowly and stay awake to each step, the ground, and the air on the skin.",
+  "theme": "walking",
+  "register": "plain",
+  "length": 5,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-6%",
+  "lines": [
+    {
+      "text": "Welcome. Let's walk together, slowly, with our eyes open.",
+      "pauseAfterMs": 5947,
+      "clip": "001.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Come to a stop for a moment. Stand still and let your weight settle down through your feet.",
+      "pauseAfterMs": 9911,
+      "clip": "002.mp3",
+      "durationMs": 5976
+    },
+    {
+      "text": "Let your eyes stay soft and open. You don't need to stare at anything. Just let the world be there.",
+      "pauseAfterMs": 8920,
+      "clip": "003.mp3",
+      "durationMs": 6744
+    },
+    {
+      "text": "Take one easy breath. Feel the ground holding you up.",
+      "pauseAfterMs": 11893,
+      "clip": "004.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Now begin to walk, slower than usual. There's no place to get to.",
+      "pauseAfterMs": 7929,
+      "clip": "005.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Feel one foot lift, swing forward, and meet the ground.",
+      "pauseAfterMs": 8920,
+      "clip": "006.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Notice the heel touching first, then the whole sole, then the toes.",
+      "pauseAfterMs": 9911,
+      "clip": "007.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "Let the other foot do the same. Lift. Forward. Down.",
+      "pauseAfterMs": 9911,
+      "clip": "008.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Keep your attention right where the foot meets the ground.",
+      "pauseAfterMs": 8920,
+      "clip": "009.mp3",
+      "durationMs": 3240
+    },
+    {
+      "text": "When the mind drifts, bring it back to the next step.",
+      "pauseAfterMs": 7929,
+      "clip": "010.mp3",
+      "durationMs": 3456
+    },
+    {
+      "text": "Feel the simple rhythm. One foot, then the other.",
+      "pauseAfterMs": 10902,
+      "clip": "011.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "Now notice the air on your skin. On your face and your hands.",
+      "pauseAfterMs": 8920,
+      "clip": "012.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "Maybe it's warm, maybe cool. Just feel it as you move through it.",
+      "pauseAfterMs": 9911,
+      "clip": "013.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Let your breath move on its own. You don't have to steer it.",
+      "pauseAfterMs": 10902,
+      "clip": "014.mp3",
+      "durationMs": 3696
+    },
+    {
+      "text": "Step. Breath. Air on the skin. All of it happening together.",
+      "pauseAfterMs": 11893,
+      "clip": "015.mp3",
+      "durationMs": 5328
+    },
+    {
+      "text": "If a sound reaches you, let it come and go. Keep walking.",
+      "pauseAfterMs": 8920,
+      "clip": "016.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Feel how steady the ground is, meeting each foot in turn.",
+      "pauseAfterMs": 9911,
+      "clip": "017.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "Stay with a few more steps, slow and plain.",
+      "pauseAfterMs": 11893,
+      "clip": "018.mp3",
+      "durationMs": 3432
+    },
+    {
+      "text": "Now let your pace return to something natural and easy.",
+      "pauseAfterMs": 7929,
+      "clip": "019.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "Keep a little of this attention with you. The feet, the ground, the air.",
+      "pauseAfterMs": 6938,
+      "clip": "020.mp3",
+      "durationMs": 5184
+    },
+    {
+      "text": "Wherever you go next, you can walk like this. One step at a time.",
+      "pauseAfterMs": 5947,
+      "clip": "021.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Carry on now, awake and easy on your feet.",
+      "pauseAfterMs": 2973,
+      "clip": "022.mp3",
+      "durationMs": 3720
+    }
+  ],
+  "spokenMs": 98544,
+  "silenceMs": 197230,
+  "totalMs": 295774,
+  "createdAt": 1782062189943
+}

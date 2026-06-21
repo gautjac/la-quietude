@@ -1,0 +1,150 @@
+{
+  "id": "fr-grief-stoic-5",
+  "title": "Tenir compagnie à la peine",
+  "intention": "Faire de la place à la peine du deuil avec tendresse, en distinguant ce qui dépend de nous de ce qui n'en dépend pas.",
+  "theme": "grief",
+  "register": "stoic",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-AntoineNeural",
+  "rate": "-14%",
+  "lines": [
+    {
+      "text": "Bienvenue. Tu peux t'installer ici, comme tu es ce soir.",
+      "pauseAfterMs": 5528,
+      "clip": "001.mp3",
+      "durationMs": 6000
+    },
+    {
+      "text": "Pas besoin de te redresser, pas besoin d'être autrement. Laisse ton corps trouver sa place.",
+      "pauseAfterMs": 6910,
+      "clip": "002.mp3",
+      "durationMs": 7272
+    },
+    {
+      "text": "Sens le poids de ton corps qui se dépose. Le sol te tient. La chaise te tient.",
+      "pauseAfterMs": 8292,
+      "clip": "003.mp3",
+      "durationMs": 7848
+    },
+    {
+      "text": "Prends un souffle, sans le forcer. Laisse-le venir, laisse-le partir.",
+      "pauseAfterMs": 9674,
+      "clip": "004.mp3",
+      "durationMs": 6576
+    },
+    {
+      "text": "Il y a une peine qui t'accompagne. Tu n'as pas à la régler ce soir.",
+      "pauseAfterMs": 6219,
+      "clip": "005.mp3",
+      "durationMs": 5928
+    },
+    {
+      "text": "On ne va pas essayer de la corriger. On va simplement lui tenir compagnie.",
+      "pauseAfterMs": 6910,
+      "clip": "006.mp3",
+      "durationMs": 6264
+    },
+    {
+      "text": "Marc Aurèle se le disait à lui-même: certaines choses dépendent de nous, d'autres pas.",
+      "pauseAfterMs": 4837,
+      "clip": "007.mp3",
+      "durationMs": 6312
+    },
+    {
+      "text": "Ce qui est arrivé n'en dépendait pas. L'absence est là, et elle est réelle.",
+      "pauseAfterMs": 7601,
+      "clip": "008.mp3",
+      "durationMs": 6624
+    },
+    {
+      "text": "Vouloir que ce soit autrement, c'est se battre contre ce qui est. Tu peux poser ce combat un instant.",
+      "pauseAfterMs": 8292,
+      "clip": "009.mp3",
+      "durationMs": 7920
+    },
+    {
+      "text": "Ce qui dépend de toi, c'est l'accueil. La manière dont tu te tiens auprès de ta propre peine.",
+      "pauseAfterMs": 6219,
+      "clip": "010.mp3",
+      "durationMs": 7536
+    },
+    {
+      "text": "Alors regarde où elle habite dans ton corps. Peut-être la gorge. Peut-être la poitrine.",
+      "pauseAfterMs": 8983,
+      "clip": "011.mp3",
+      "durationMs": 8496
+    },
+    {
+      "text": "Pose une main, doucement, à cet endroit. Sans rien attendre d'elle.",
+      "pauseAfterMs": 8292,
+      "clip": "012.mp3",
+      "durationMs": 6528
+    },
+    {
+      "text": "Respire vers là. Tu n'ouvres pas pour faire partir la peine, tu ouvres pour lui faire de la place.",
+      "pauseAfterMs": 9674,
+      "clip": "013.mp3",
+      "durationMs": 7728
+    },
+    {
+      "text": "Si des larmes montent, laisse-les. Si rien ne vient, c'est correct aussi.",
+      "pauseAfterMs": 6910,
+      "clip": "014.mp3",
+      "durationMs": 6744
+    },
+    {
+      "text": "La peine, c'est la trace d'un lien. Elle dit qu'il y a eu quelque chose de précieux.",
+      "pauseAfterMs": 7601,
+      "clip": "015.mp3",
+      "durationMs": 6720
+    },
+    {
+      "text": "Tu n'as pas à t'en débarrasser pour aller mieux. Tu peux la porter, comme on porte ce qu'on aime.",
+      "pauseAfterMs": 8292,
+      "clip": "016.mp3",
+      "durationMs": 7224
+    },
+    {
+      "text": "Épictète le rappelait: on ne maîtrise pas les vagues, seulement la façon de naviguer.",
+      "pauseAfterMs": 5528,
+      "clip": "017.mp3",
+      "durationMs": 6096
+    },
+    {
+      "text": "Alors quand la vague monte, ne la repousse pas. Laisse-la passer à travers toi, puis redescendre.",
+      "pauseAfterMs": 8983,
+      "clip": "018.mp3",
+      "durationMs": 6336
+    },
+    {
+      "text": "Reviens au souffle. Il est toujours là, fidèle, sans rien te demander.",
+      "pauseAfterMs": 8292,
+      "clip": "019.mp3",
+      "durationMs": 6864
+    },
+    {
+      "text": "Tu n'as rien à réparer ce soir. Tu as seulement à rester un peu, tendrement, avec toi-même.",
+      "pauseAfterMs": 7601,
+      "clip": "020.mp3",
+      "durationMs": 7992
+    },
+    {
+      "text": "Quand tu seras prêt, laisse ta main redescendre. Garde cette douceur quelque part en dedans.",
+      "pauseAfterMs": 6219,
+      "clip": "021.mp3",
+      "durationMs": 7320
+    },
+    {
+      "text": "Tu as tenu compagnie à ta peine. C'est déjà beaucoup. Repose-toi maintenant.",
+      "pauseAfterMs": 4146,
+      "clip": "022.mp3",
+      "durationMs": 7536
+    }
+  ],
+  "spokenMs": 153864,
+  "silenceMs": 161003,
+  "totalMs": 314867,
+  "createdAt": 1782061842738
+}

@@ -1,0 +1,150 @@
+{
+  "id": "fr-walking-poetic-5",
+  "title": "La marche tranquille",
+  "intention": "Accorder l'attention au mouvement de la marche, au pas, au contact du pied et à l'air sur la peau.",
+  "theme": "walking",
+  "register": "poetic",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-6%",
+  "lines": [
+    {
+      "text": "Bienvenue. On va marcher ensemble, tout doucement.",
+      "pauseAfterMs": 5710,
+      "clip": "001.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Tiens-toi debout un instant, les yeux ouverts, sans rien chercher du regard.",
+      "pauseAfterMs": 8564,
+      "clip": "002.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Laisse tes épaules redescendre, comme la neige qui se pose.",
+      "pauseAfterMs": 9516,
+      "clip": "003.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Sens tes deux pieds sur le sol. Le poids du corps qui s'installe.",
+      "pauseAfterMs": 11419,
+      "clip": "004.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "Prends une respiration lente. Laisse-la sortir sans la pousser.",
+      "pauseAfterMs": 10468,
+      "clip": "005.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Quand tu es prêt, fais un premier pas. Sans presser.",
+      "pauseAfterMs": 7613,
+      "clip": "006.mp3",
+      "durationMs": 3408
+    },
+    {
+      "text": "Sens le talon qui touche, puis le pied qui se déroule, doux comme une vague.",
+      "pauseAfterMs": 8564,
+      "clip": "007.mp3",
+      "durationMs": 4536
+    },
+    {
+      "text": "Un pas, puis l'autre. Rien d'autre à faire que ça.",
+      "pauseAfterMs": 9516,
+      "clip": "008.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Laisse ton attention descendre dans tes pieds, à chaque contact.",
+      "pauseAfterMs": 11419,
+      "clip": "009.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "Le sol te porte. Tu n'as qu'à le laisser faire.",
+      "pauseAfterMs": 8564,
+      "clip": "010.mp3",
+      "durationMs": 3264
+    },
+    {
+      "text": "Sens l'air sur ta peau. Sur tes mains, sur ton visage.",
+      "pauseAfterMs": 10468,
+      "clip": "011.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Peut-être un peu de fraîcheur. Peut-être une lumière qui passe.",
+      "pauseAfterMs": 9516,
+      "clip": "012.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Accorde ton souffle à tes pas, sans forcer la mesure.",
+      "pauseAfterMs": 11419,
+      "clip": "013.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Si l'esprit s'en va ailleurs, ramène-le doucement au pied qui se pose.",
+      "pauseAfterMs": 9516,
+      "clip": "014.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Chaque pas est neuf. Chaque pas commence et finit.",
+      "pauseAfterMs": 8564,
+      "clip": "015.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "Laisse le corps trouver son propre rythme, lent et tranquille.",
+      "pauseAfterMs": 11419,
+      "clip": "016.mp3",
+      "durationMs": 3456
+    },
+    {
+      "text": "Tu marches, et c'est suffisant.",
+      "pauseAfterMs": 9516,
+      "clip": "017.mp3",
+      "durationMs": 2136
+    },
+    {
+      "text": "Sens encore l'air, le sol, le balancement léger de tes bras.",
+      "pauseAfterMs": 10468,
+      "clip": "018.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Tout est là, autour de toi, sans que tu aies à le saisir.",
+      "pauseAfterMs": 9516,
+      "clip": "019.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Doucement, laisse tes pas ralentir.",
+      "pauseAfterMs": 8564,
+      "clip": "020.mp3",
+      "durationMs": 2496
+    },
+    {
+      "text": "Arrête-toi quand tu veux. Reste debout, calme, éveillé.",
+      "pauseAfterMs": 7613,
+      "clip": "021.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Tu peux repartir maintenant, en gardant un peu de cette lenteur avec toi.",
+      "pauseAfterMs": 4758,
+      "clip": "022.mp3",
+      "durationMs": 3768
+    }
+  ],
+  "spokenMs": 79920,
+  "silenceMs": 202690,
+  "totalMs": 282610,
+  "createdAt": 1782061868340
+}

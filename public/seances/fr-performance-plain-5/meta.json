@@ -1,0 +1,150 @@
+{
+  "id": "fr-performance-plain-5",
+  "title": "Avant-scène",
+  "intention": "Apprivoiser le trac d'avant-scène, transformer l'adrénaline en présence, s'ancrer, puis se libérer.",
+  "theme": "performance",
+  "register": "plain",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-7%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends ta place, ici, maintenant.",
+      "pauseAfterMs": 7725,
+      "clip": "001.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Tu n'as rien à régler. Juste à arriver.",
+      "pauseAfterMs": 10301,
+      "clip": "002.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Plante tes deux pieds dans le sol. Sens le plancher qui te porte.",
+      "pauseAfterMs": 12876,
+      "clip": "003.mp3",
+      "durationMs": 5448
+    },
+    {
+      "text": "Laisse tes épaules redescendre. Relâche la mâchoire.",
+      "pauseAfterMs": 11588,
+      "clip": "004.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "Prends une grande inspiration par le nez.",
+      "pauseAfterMs": 6438,
+      "clip": "005.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "Et souffle lentement par la bouche.",
+      "pauseAfterMs": 14163,
+      "clip": "006.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "Encore une fois. Inspire.",
+      "pauseAfterMs": 6438,
+      "clip": "007.mp3",
+      "durationMs": 3840
+    },
+    {
+      "text": "Expire, plus long que l'inspiration.",
+      "pauseAfterMs": 15451,
+      "clip": "008.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Le coeur bat vite. C'est correct.",
+      "pauseAfterMs": 9013,
+      "clip": "009.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Ce n'est pas de la peur. C'est de l'énergie qui se prépare.",
+      "pauseAfterMs": 11588,
+      "clip": "010.mp3",
+      "durationMs": 5280
+    },
+    {
+      "text": "Cette adrénaline, c'est ton carburant. Tu n'as pas à t'en débarrasser.",
+      "pauseAfterMs": 12876,
+      "clip": "011.mp3",
+      "durationMs": 5976
+    },
+    {
+      "text": "Remarque-la dans ta poitrine, dans tes mains. Laisse-la être là.",
+      "pauseAfterMs": 14163,
+      "clip": "012.mp3",
+      "durationMs": 5712
+    },
+    {
+      "text": "Maintenant, ramène ton attention au sol sous tes pieds.",
+      "pauseAfterMs": 10301,
+      "clip": "013.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "Solide. Stable. Tu es ancré.",
+      "pauseAfterMs": 11588,
+      "clip": "014.mp3",
+      "durationMs": 5304
+    },
+    {
+      "text": "Sens la longueur de ton dos, le sommet de ta tête vers le haut.",
+      "pauseAfterMs": 10301,
+      "clip": "015.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "Tu prends ta place pleinement. Sans excuse.",
+      "pauseAfterMs": 11588,
+      "clip": "016.mp3",
+      "durationMs": 4464
+    },
+    {
+      "text": "Une dernière respiration profonde. Inspire la présence.",
+      "pauseAfterMs": 6438,
+      "clip": "017.mp3",
+      "durationMs": 5592
+    },
+    {
+      "text": "Expire ce qui est en trop.",
+      "pauseAfterMs": 12876,
+      "clip": "018.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Garde l'énergie. Laisse partir le doute.",
+      "pauseAfterMs": 10301,
+      "clip": "019.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Tu es prêt. Tu n'as pas besoin d'être parfait, juste présent.",
+      "pauseAfterMs": 7725,
+      "clip": "020.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "Ouvre les yeux quand tu es prêt. Sens-toi vif, éveillé, ancré.",
+      "pauseAfterMs": 5150,
+      "clip": "021.mp3",
+      "durationMs": 6168
+    },
+    {
+      "text": "La scène t'attend. Vas-y.",
+      "pauseAfterMs": 2575,
+      "clip": "022.mp3",
+      "durationMs": 3624
+    }
+  ],
+  "spokenMs": 100728,
+  "silenceMs": 221463,
+  "totalMs": 322191,
+  "createdAt": 1782061917747
+}

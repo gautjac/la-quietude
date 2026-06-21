@@ -1,0 +1,150 @@
+{
+  "id": "en-performance-plain-5",
+  "title": "Steady Before the Stage",
+  "intention": "To turn pre-performance nerves into grounded, present energy and walk out ready.",
+  "theme": "performance",
+  "register": "plain",
+  "length": 5,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-7%",
+  "lines": [
+    {
+      "text": "Welcome. Take a moment here before you go on.",
+      "pauseAfterMs": 8273,
+      "clip": "001.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "You don't have to calm down completely. You just have to get steady.",
+      "pauseAfterMs": 9652,
+      "clip": "002.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Plant your feet flat on the floor.",
+      "pauseAfterMs": 6894,
+      "clip": "003.mp3",
+      "durationMs": 2304
+    },
+    {
+      "text": "Feel the ground holding all your weight.",
+      "pauseAfterMs": 12410,
+      "clip": "004.mp3",
+      "durationMs": 2688
+    },
+    {
+      "text": "Now notice the buzz in your body. The fast pulse, the energy in your chest.",
+      "pauseAfterMs": 11031,
+      "clip": "005.mp3",
+      "durationMs": 5520
+    },
+    {
+      "text": "That's not fear. That's fuel.",
+      "pauseAfterMs": 9652,
+      "clip": "006.mp3",
+      "durationMs": 2688
+    },
+    {
+      "text": "Take a slow breath in through your nose.",
+      "pauseAfterMs": 8273,
+      "clip": "007.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "And let it out, longer than you took it in.",
+      "pauseAfterMs": 12410,
+      "clip": "008.mp3",
+      "durationMs": 2688
+    },
+    {
+      "text": "Again. Breathe in, steady.",
+      "pauseAfterMs": 8273,
+      "clip": "009.mp3",
+      "durationMs": 2808
+    },
+    {
+      "text": "Breathe out, and drop your shoulders.",
+      "pauseAfterMs": 13789,
+      "clip": "010.mp3",
+      "durationMs": 2664
+    },
+    {
+      "text": "One more. Fill low, into your belly.",
+      "pauseAfterMs": 8273,
+      "clip": "011.mp3",
+      "durationMs": 3408
+    },
+    {
+      "text": "Release, and let your jaw soften.",
+      "pauseAfterMs": 15168,
+      "clip": "012.mp3",
+      "durationMs": 2712
+    },
+    {
+      "text": "Let the energy stay. You're just giving it somewhere to go.",
+      "pauseAfterMs": 11031,
+      "clip": "013.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Feel it move down through your legs and into the floor.",
+      "pauseAfterMs": 12410,
+      "clip": "014.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Now bring your attention to one simple thing. The first note. The first line. The first step.",
+      "pauseAfterMs": 11031,
+      "clip": "015.mp3",
+      "durationMs": 7176
+    },
+    {
+      "text": "You don't need the whole thing yet. Just the start.",
+      "pauseAfterMs": 9652,
+      "clip": "016.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Picture yourself beginning, calm and clear.",
+      "pauseAfterMs": 13789,
+      "clip": "017.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Your hands know what to do. Your voice knows. Let them.",
+      "pauseAfterMs": 11031,
+      "clip": "018.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "Take one more full breath, and let it sharpen you.",
+      "pauseAfterMs": 11031,
+      "clip": "019.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Lift your eyes. Lengthen your spine.",
+      "pauseAfterMs": 8273,
+      "clip": "020.mp3",
+      "durationMs": 3096
+    },
+    {
+      "text": "You are ready. The energy is yours now.",
+      "pauseAfterMs": 6894,
+      "clip": "021.mp3",
+      "durationMs": 3288
+    },
+    {
+      "text": "Go on. Step out, and begin.",
+      "pauseAfterMs": 2758,
+      "clip": "022.mp3",
+      "durationMs": 2880
+    }
+  ],
+  "spokenMs": 76632,
+  "silenceMs": 221998,
+  "totalMs": 298630,
+  "createdAt": 1782062278091
+}

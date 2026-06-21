@@ -1,0 +1,150 @@
+{
+  "id": "fr-gratitude-plain-5",
+  "title": "Ce qui est déjà là",
+  "intention": "Réchauffer le cœur en reconnaissant les petites choses concrètes qui sont déjà présentes dans nos vies.",
+  "theme": "gratitude",
+  "register": "plain",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-10%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends place, installe-toi comme tu es.",
+      "pauseAfterMs": 5289,
+      "clip": "001.mp3",
+      "durationMs": 5208
+    },
+    {
+      "text": "Ferme les yeux si ça te convient. Sinon, laisse ton regard descendre.",
+      "pauseAfterMs": 7052,
+      "clip": "002.mp3",
+      "durationMs": 6288
+    },
+    {
+      "text": "Sens le poids de ton corps qui s'appuie. Le siège te tient.",
+      "pauseAfterMs": 8816,
+      "clip": "003.mp3",
+      "durationMs": 5328
+    },
+    {
+      "text": "Prends une respiration tranquille. Sans la forcer.",
+      "pauseAfterMs": 10579,
+      "clip": "004.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Encore une. Laisse l'air sortir au complet.",
+      "pauseAfterMs": 12342,
+      "clip": "005.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "On va simplement remarquer ce qui est déjà là.",
+      "pauseAfterMs": 5289,
+      "clip": "006.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Commence par l'air qui entre. Il est là, gratuit, à chaque respiration.",
+      "pauseAfterMs": 8816,
+      "clip": "007.mp3",
+      "durationMs": 6624
+    },
+    {
+      "text": "Sens-le un instant. Cet air te garde en vie sans que tu y penses.",
+      "pauseAfterMs": 10579,
+      "clip": "008.mp3",
+      "durationMs": 5832
+    },
+    {
+      "text": "Maintenant, remarque la chaleur de ton corps. Tes mains, peut-être.",
+      "pauseAfterMs": 7934,
+      "clip": "009.mp3",
+      "durationMs": 6264
+    },
+    {
+      "text": "Frotte-les doucement si tu veux. Sens qu'elles te portent toute la journée.",
+      "pauseAfterMs": 8816,
+      "clip": "010.mp3",
+      "durationMs": 5760
+    },
+    {
+      "text": "Pense à une petite chose concrète d'aujourd'hui. Un café chaud. Une porte qu'on t'a tenue.",
+      "pauseAfterMs": 10579,
+      "clip": "011.mp3",
+      "durationMs": 7680
+    },
+    {
+      "text": "Reste avec, juste un moment.",
+      "pauseAfterMs": 12342,
+      "clip": "012.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "Tu n'as rien à forcer. Tu remarques, c'est tout.",
+      "pauseAfterMs": 6171,
+      "clip": "013.mp3",
+      "durationMs": 4896
+    },
+    {
+      "text": "Pense à une personne qui t'a rendu la vie plus simple. Même brièvement.",
+      "pauseAfterMs": 10579,
+      "clip": "014.mp3",
+      "durationMs": 5928
+    },
+    {
+      "text": "Laisse leur visage venir. Et laisse ça te réchauffer un peu.",
+      "pauseAfterMs": 11460,
+      "clip": "015.mp3",
+      "durationMs": 5400
+    },
+    {
+      "text": "Remarque ton souffle qui continue pendant ce temps-là. Fidèle.",
+      "pauseAfterMs": 8816,
+      "clip": "016.mp3",
+      "durationMs": 5736
+    },
+    {
+      "text": "Pense à ton corps qui t'a amené jusqu'ici. Tes jambes, ton dos.",
+      "pauseAfterMs": 9697,
+      "clip": "017.mp3",
+      "durationMs": 5832
+    },
+    {
+      "text": "Ils font leur travail sans applaudissements. Reconnais-le simplement.",
+      "pauseAfterMs": 10579,
+      "clip": "018.mp3",
+      "durationMs": 5688
+    },
+    {
+      "text": "Rien de tout ça n'est dû. Et pourtant, c'est là.",
+      "pauseAfterMs": 12342,
+      "clip": "019.mp3",
+      "durationMs": 4920
+    },
+    {
+      "text": "Prends une dernière respiration tranquille. Garde cette chaleur dans la poitrine.",
+      "pauseAfterMs": 10579,
+      "clip": "020.mp3",
+      "durationMs": 6528
+    },
+    {
+      "text": "Quand tu seras prêt, laisse tes yeux s'ouvrir.",
+      "pauseAfterMs": 7052,
+      "clip": "021.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Tu repars avec ce qui était déjà là. C'est assez.",
+      "pauseAfterMs": 3526,
+      "clip": "022.mp3",
+      "durationMs": 5112
+    }
+  ],
+  "spokenMs": 119016,
+  "silenceMs": 199234,
+  "totalMs": 318250,
+  "createdAt": 1782061939588
+}

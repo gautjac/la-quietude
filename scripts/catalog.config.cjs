@@ -29,6 +29,22 @@ const CATALOG = [
   { id: 'fr-gratitude-poetic-3', theme: 'gratitude', register: 'poetic', length: 3, lang: 'fr' },
   { id: 'fr-bodyscan-buddhist-10', theme: 'bodyscan', register: 'buddhist', length: 10, lang: 'fr' },
 
+  // ── French — widening (more registers, lengths, deep sittings) ──────────────
+  { id: 'fr-focus-buddhist-10', theme: 'focus', register: 'buddhist', length: 10, lang: 'fr' },
+  { id: 'fr-focus-poetic-5', theme: 'focus', register: 'poetic', length: 5, lang: 'fr' },
+  { id: 'fr-sleep-plain-10', theme: 'sleep', register: 'plain', length: 10, lang: 'fr' },
+  { id: 'fr-sleep-buddhist-20', theme: 'sleep', register: 'buddhist', length: 20, lang: 'fr' },
+  { id: 'fr-stress-poetic-5', theme: 'stress', register: 'poetic', length: 5, lang: 'fr' },
+  { id: 'fr-stress-acadian-3', theme: 'stress', register: 'acadian', length: 3, lang: 'fr' },
+  { id: 'fr-grief-acadian-10', theme: 'grief', register: 'acadian', length: 10, lang: 'fr' },
+  { id: 'fr-grief-stoic-5', theme: 'grief', register: 'stoic', length: 5, lang: 'fr' },
+  { id: 'fr-walking-poetic-5', theme: 'walking', register: 'poetic', length: 5, lang: 'fr' },
+  { id: 'fr-walking-acadian-10', theme: 'walking', register: 'acadian', length: 10, lang: 'fr' },
+  { id: 'fr-performance-plain-5', theme: 'performance', register: 'plain', length: 5, lang: 'fr' },
+  { id: 'fr-gratitude-plain-5', theme: 'gratitude', register: 'plain', length: 5, lang: 'fr' },
+  { id: 'fr-bodyscan-poetic-20', theme: 'bodyscan', register: 'poetic', length: 20, lang: 'fr' },
+  { id: 'fr-bodyscan-plain-5', theme: 'bodyscan', register: 'plain', length: 5, lang: 'fr' },
+
   // ── English ───────────────────────────────────────────────────────────────
   { id: 'en-focus-plain-5', theme: 'focus', register: 'plain', length: 5, lang: 'en' },
   { id: 'en-sleep-poetic-10', theme: 'sleep', register: 'poetic', length: 10, lang: 'en' },
@@ -36,6 +52,16 @@ const CATALOG = [
   { id: 'en-performance-stoic-3', theme: 'performance', register: 'stoic', length: 3, lang: 'en' },
   { id: 'en-gratitude-plain-5', theme: 'gratitude', register: 'plain', length: 5, lang: 'en' },
   { id: 'en-bodyscan-buddhist-10', theme: 'bodyscan', register: 'buddhist', length: 10, lang: 'en' },
+
+  // ── English — widening (full theme coverage + a deep sitting) ───────────────
+  { id: 'en-focus-stoic-3', theme: 'focus', register: 'stoic', length: 3, lang: 'en' },
+  { id: 'en-sleep-acadian-20', theme: 'sleep', register: 'acadian', length: 20, lang: 'en' },
+  { id: 'en-stress-buddhist-10', theme: 'stress', register: 'buddhist', length: 10, lang: 'en' },
+  { id: 'en-grief-poetic-10', theme: 'grief', register: 'poetic', length: 10, lang: 'en' },
+  { id: 'en-walking-plain-5', theme: 'walking', register: 'plain', length: 5, lang: 'en' },
+  { id: 'en-gratitude-poetic-3', theme: 'gratitude', register: 'poetic', length: 3, lang: 'en' },
+  { id: 'en-bodyscan-poetic-10', theme: 'bodyscan', register: 'poetic', length: 10, lang: 'en' },
+  { id: 'en-performance-plain-5', theme: 'performance', register: 'plain', length: 5, lang: 'en' },
 ];
 
 module.exports = { CATALOG };

@@ -1,0 +1,348 @@
+{
+  "id": "fr-sleep-buddhist-20",
+  "title": "Glisser vers le sommeil",
+  "intention": "Cette nuit, on laisse le corps s'alourdir et l'esprit se défaire jusqu'à ce que le sommeil vienne tout seul.",
+  "theme": "sleep",
+  "register": "buddhist",
+  "length": 20,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-DeniseNeural",
+  "rate": "-16%",
+  "lines": [
+    {
+      "text": "Bienvenue. Tu n'as plus rien à faire ce soir.",
+      "pauseAfterMs": 8148,
+      "clip": "001.mp3",
+      "durationMs": 5040
+    },
+    {
+      "text": "Installe-toi comme tu es bien. Laisse ton corps trouver sa place.",
+      "pauseAfterMs": 12222,
+      "clip": "002.mp3",
+      "durationMs": 6072
+    },
+    {
+      "text": "Tu peux fermer les yeux quand tu veux.",
+      "pauseAfterMs": 10864,
+      "clip": "003.mp3",
+      "durationMs": 3144
+    },
+    {
+      "text": "Il n'y a rien à réussir ici. Juste se déposer.",
+      "pauseAfterMs": 13580,
+      "clip": "004.mp3",
+      "durationMs": 5736
+    },
+    {
+      "text": "Écoute un instant les sons autour de toi.",
+      "pauseAfterMs": 12222,
+      "clip": "005.mp3",
+      "durationMs": 3576
+    },
+    {
+      "text": "Laisse-les être là, sans les suivre. Ils flottent, puis ils s'éloignent.",
+      "pauseAfterMs": 16296,
+      "clip": "006.mp3",
+      "durationMs": 6768
+    },
+    {
+      "text": "Sens le poids de ton corps sur le matelas.",
+      "pauseAfterMs": 12222,
+      "clip": "007.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Le lit te porte. Tu n'as pas besoin de te tenir.",
+      "pauseAfterMs": 16296,
+      "clip": "008.mp3",
+      "durationMs": 5160
+    },
+    {
+      "text": "Prends une respiration un peu plus longue.",
+      "pauseAfterMs": 9506,
+      "clip": "009.mp3",
+      "durationMs": 3624
+    },
+    {
+      "text": "Et laisse-la repartir toute seule, sans la pousser.",
+      "pauseAfterMs": 14938,
+      "clip": "010.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Encore une. On inspire doucement.",
+      "pauseAfterMs": 9506,
+      "clip": "011.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Et on relâche tout en expirant.",
+      "pauseAfterMs": 17654,
+      "clip": "012.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "À partir d'ici, le souffle peut redevenir naturel.",
+      "pauseAfterMs": 13580,
+      "clip": "013.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Tu n'as plus à t'en occuper. Il respire pour toi.",
+      "pauseAfterMs": 19012,
+      "clip": "014.mp3",
+      "durationMs": 5352
+    },
+    {
+      "text": "Porte ton attention sur ton front.",
+      "pauseAfterMs": 9506,
+      "clip": "015.mp3",
+      "durationMs": 3288
+    },
+    {
+      "text": "Laisse-le se détendre. Laisse-le devenir lisse.",
+      "pauseAfterMs": 14938,
+      "clip": "016.mp3",
+      "durationMs": 5112
+    },
+    {
+      "text": "Relâche les sourcils, les paupières, le tour des yeux.",
+      "pauseAfterMs": 16296,
+      "clip": "017.mp3",
+      "durationMs": 4896
+    },
+    {
+      "text": "Laisse la mâchoire s'ouvrir un peu en dedans.",
+      "pauseAfterMs": 14938,
+      "clip": "018.mp3",
+      "durationMs": 3744
+    },
+    {
+      "text": "La langue se pose. Le visage au complet s'adoucit.",
+      "pauseAfterMs": 17654,
+      "clip": "019.mp3",
+      "durationMs": 5544
+    },
+    {
+      "text": "Descends dans les épaules.",
+      "pauseAfterMs": 9506,
+      "clip": "020.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Laisse-les couler vers le bas, loin des oreilles.",
+      "pauseAfterMs": 17654,
+      "clip": "021.mp3",
+      "durationMs": 4248
+    },
+    {
+      "text": "Sens tes bras lourds. Tes mains qui s'ouvrent.",
+      "pauseAfterMs": 19012,
+      "clip": "022.mp3",
+      "durationMs": 4800
+    },
+    {
+      "text": "Si une pensée passe, c'est correct.",
+      "pauseAfterMs": 10864,
+      "clip": "023.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "Tu la remarques, puis tu reviens au corps qui se dépose.",
+      "pauseAfterMs": 17654,
+      "clip": "024.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "Laisse ton dos s'enfoncer un peu plus creux.",
+      "pauseAfterMs": 16296,
+      "clip": "025.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "Le ventre se relâche à chaque expiration.",
+      "pauseAfterMs": 17654,
+      "clip": "026.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Sens les hanches qui lâchent prise.",
+      "pauseAfterMs": 16296,
+      "clip": "027.mp3",
+      "durationMs": 3216
+    },
+    {
+      "text": "Les jambes deviennent pesantes, comme remplies de sable.",
+      "pauseAfterMs": 19012,
+      "clip": "028.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "Jusqu'aux pieds, qui se déposent enfin.",
+      "pauseAfterMs": 20370,
+      "clip": "029.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "Tout le corps est lourd maintenant. Lourd et chaud.",
+      "pauseAfterMs": 21728,
+      "clip": "030.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "Il n'y a plus rien à tenir.",
+      "pauseAfterMs": 23086,
+      "clip": "031.mp3",
+      "durationMs": 2952
+    },
+    {
+      "text": "Reviens tranquillement au va-et-vient du souffle.",
+      "pauseAfterMs": 16296,
+      "clip": "032.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "L'air qui entre. L'air qui sort.",
+      "pauseAfterMs": 19012,
+      "clip": "033.mp3",
+      "durationMs": 4536
+    },
+    {
+      "text": "Tu peux le suivre, sans effort, comme une vague.",
+      "pauseAfterMs": 21728,
+      "clip": "034.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "Chaque expiration te dépose un peu plus creux.",
+      "pauseAfterMs": 21728,
+      "clip": "035.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Imagine que tu flottes sur une eau calme et tiède.",
+      "pauseAfterMs": 16296,
+      "clip": "036.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "Portée, bercée, sans avoir à nager.",
+      "pauseAfterMs": 21728,
+      "clip": "037.mp3",
+      "durationMs": 4248
+    },
+    {
+      "text": "Les contours de l'eau commencent à se défaire.",
+      "pauseAfterMs": 20370,
+      "clip": "038.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Tu n'as plus besoin de garder l'image. Laisse-la fondre.",
+      "pauseAfterMs": 21728,
+      "clip": "039.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "Si l'esprit s'égare, ce n'est pas grave.",
+      "pauseAfterMs": 12222,
+      "clip": "040.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "On note, on laisse passer, on revient au souffle.",
+      "pauseAfterMs": 20370,
+      "clip": "041.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Les pensées ralentissent. Elles deviennent plus floues.",
+      "pauseAfterMs": 21728,
+      "clip": "042.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Comme des nuages qui se diluent dans le noir.",
+      "pauseAfterMs": 23086,
+      "clip": "043.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "Tu n'as plus à comprendre, plus à suivre.",
+      "pauseAfterMs": 21728,
+      "clip": "044.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Laisse les mots se dissoudre les uns après les autres.",
+      "pauseAfterMs": 24444,
+      "clip": "045.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Le silence peut prendre toute la place.",
+      "pauseAfterMs": 24444,
+      "clip": "046.mp3",
+      "durationMs": 3456
+    },
+    {
+      "text": "Le souffle se fait plus petit, plus tranquille.",
+      "pauseAfterMs": 23086,
+      "clip": "047.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "Tu n'as plus rien à attendre.",
+      "pauseAfterMs": 24444,
+      "clip": "048.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "Laisse le sommeil venir à son rythme.",
+      "pauseAfterMs": 24444,
+      "clip": "049.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "Il sait le chemin. Tu n'as qu'à le laisser monter.",
+      "pauseAfterMs": 25802,
+      "clip": "050.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Encore plus lourd. Encore plus doux.",
+      "pauseAfterMs": 27160,
+      "clip": "051.mp3",
+      "durationMs": 4464
+    },
+    {
+      "text": "Tout est correct. Tout peut s'éteindre tranquillement.",
+      "pauseAfterMs": 27160,
+      "clip": "052.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "Je vais me taire maintenant. Reste avec cette douceur.",
+      "pauseAfterMs": 29875,
+      "clip": "053.mp3",
+      "durationMs": 5304
+    },
+    {
+      "text": "Laisse-toi descendre.",
+      "pauseAfterMs": 29875,
+      "clip": "054.mp3",
+      "durationMs": 2568
+    },
+    {
+      "text": "Bonne nuit.",
+      "pauseAfterMs": 27160,
+      "clip": "055.mp3",
+      "durationMs": 1992
+    }
+  ],
+  "spokenMs": 231672,
+  "silenceMs": 1014424,
+  "totalMs": 1246096,
+  "createdAt": 1782061741705
+}

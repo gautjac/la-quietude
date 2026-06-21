@@ -1,0 +1,222 @@
+{
+  "id": "fr-focus-buddhist-10",
+  "title": "Rassembler l'attention",
+  "intention": "Recueillir une attention dispersée pour entrer dans le travail avec une vigilance calme et disponible.",
+  "theme": "focus",
+  "register": "buddhist",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-DeniseNeural",
+  "rate": "-8%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends le temps de t'installer.",
+      "pauseAfterMs": 7440,
+      "clip": "001.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Trouve une position assise qui te garde éveillé. Le dos droit, mais sans raideur.",
+      "pauseAfterMs": 11159,
+      "clip": "002.mp3",
+      "durationMs": 6744
+    },
+    {
+      "text": "Laisse tes mains se poser quelque part, simplement.",
+      "pauseAfterMs": 8680,
+      "clip": "003.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Tu peux fermer les yeux, ou garder le regard bas et flou.",
+      "pauseAfterMs": 9920,
+      "clip": "004.mp3",
+      "durationMs": 4296
+    },
+    {
+      "text": "Pour l'instant, il n'y a rien à régler. Juste arriver ici.",
+      "pauseAfterMs": 14879,
+      "clip": "005.mp3",
+      "durationMs": 5808
+    },
+    {
+      "text": "Remarque les sons autour de toi.",
+      "pauseAfterMs": 11159,
+      "clip": "006.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "Tu n'as pas à les chasser. Tu les laisses être là.",
+      "pauseAfterMs": 13639,
+      "clip": "007.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "Et maintenant, viens sentir le poids de ton corps sur le siège.",
+      "pauseAfterMs": 12399,
+      "clip": "008.mp3",
+      "durationMs": 4512
+    },
+    {
+      "text": "Les points d'appui. Les pieds, les jambes, le bassin.",
+      "pauseAfterMs": 14879,
+      "clip": "009.mp3",
+      "durationMs": 5544
+    },
+    {
+      "text": "Laisse une expiration plus longue relâcher les épaules.",
+      "pauseAfterMs": 16119,
+      "clip": "010.mp3",
+      "durationMs": 3888
+    },
+    {
+      "text": "Bon. L'esprit est peut-être encore éparpillé. C'est correct.",
+      "pauseAfterMs": 9920,
+      "clip": "011.mp3",
+      "durationMs": 6480
+    },
+    {
+      "text": "On ne le force pas. On lui donne juste un endroit où se poser.",
+      "pauseAfterMs": 11159,
+      "clip": "012.mp3",
+      "durationMs": 5208
+    },
+    {
+      "text": "Cet endroit, ça va être le souffle.",
+      "pauseAfterMs": 8680,
+      "clip": "013.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "Trouve l'endroit où tu le sens le plus clairement. Le nez, la poitrine, ou le ventre.",
+      "pauseAfterMs": 14879,
+      "clip": "014.mp3",
+      "durationMs": 6936
+    },
+    {
+      "text": "Sans changer ton souffle, observe-le tel qu'il est.",
+      "pauseAfterMs": 18599,
+      "clip": "015.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Une inspiration. Une expiration.",
+      "pauseAfterMs": 17359,
+      "clip": "016.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Suis quelques respirations, du début à la fin.",
+      "pauseAfterMs": 22319,
+      "clip": "017.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Si ça t'aide, compte. Un en inspirant, deux en expirant.",
+      "pauseAfterMs": 12399,
+      "clip": "018.mp3",
+      "durationMs": 6000
+    },
+    {
+      "text": "Continue doucement jusqu'à dix, puis recommence.",
+      "pauseAfterMs": 24799,
+      "clip": "019.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "À un moment, tu vas remarquer que l'esprit est parti ailleurs.",
+      "pauseAfterMs": 9920,
+      "clip": "020.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "Une pensée, une tâche, une inquiétude. C'est normal. C'est ce qu'il fait.",
+      "pauseAfterMs": 11159,
+      "clip": "021.mp3",
+      "durationMs": 7656
+    },
+    {
+      "text": "Quand tu t'en rends compte, note simplement: pensée.",
+      "pauseAfterMs": 9920,
+      "clip": "022.mp3",
+      "durationMs": 4320
+    },
+    {
+      "text": "Et sans te juger, tu reviens au souffle.",
+      "pauseAfterMs": 14879,
+      "clip": "023.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "Ce retour, c'est ça l'entraînement. Pas de rester immobile.",
+      "pauseAfterMs": 11159,
+      "clip": "024.mp3",
+      "durationMs": 5640
+    },
+    {
+      "text": "Chaque fois que tu reviens, tu rassembles un peu plus ton attention.",
+      "pauseAfterMs": 17359,
+      "clip": "025.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "Reprends le compte. Laisse l'esprit s'unifier autour du souffle.",
+      "pauseAfterMs": 24799,
+      "clip": "026.mp3",
+      "durationMs": 5664
+    },
+    {
+      "text": "Sens comme l'attention devient plus stable. Plus posée.",
+      "pauseAfterMs": 18599,
+      "clip": "027.mp3",
+      "durationMs": 5136
+    },
+    {
+      "text": "Une vigilance calme, mais bien réveillée.",
+      "pauseAfterMs": 16119,
+      "clip": "028.mp3",
+      "durationMs": 3624
+    },
+    {
+      "text": "Maintenant, laisse tomber le compte.",
+      "pauseAfterMs": 7440,
+      "clip": "029.mp3",
+      "durationMs": 3288
+    },
+    {
+      "text": "Garde juste cette présence claire, ouverte, disponible.",
+      "pauseAfterMs": 17359,
+      "clip": "030.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Pense à la tâche qui t'attend. Vois-la une seconde, sans t'y perdre.",
+      "pauseAfterMs": 11159,
+      "clip": "031.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Tu y apportes cette même attention rassemblée. Une chose à la fois.",
+      "pauseAfterMs": 12399,
+      "clip": "032.mp3",
+      "durationMs": 5712
+    },
+    {
+      "text": "Quand tu seras prêt, laisse tes yeux s'ouvrir, doucement.",
+      "pauseAfterMs": 9920,
+      "clip": "033.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "L'esprit est clair. Tu peux commencer.",
+      "pauseAfterMs": 4960,
+      "clip": "034.mp3",
+      "durationMs": 4296
+    }
+  ],
+  "spokenMs": 163392,
+  "silenceMs": 457536,
+  "totalMs": 620928,
+  "createdAt": 1782061637093
+}

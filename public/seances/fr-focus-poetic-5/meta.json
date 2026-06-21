@@ -1,0 +1,150 @@
+{
+  "id": "fr-focus-poetic-5",
+  "title": "Rassembler la lumière",
+  "intention": "Rassembler une attention dispersée pour entrer dans le travail avec une vigilance calme et disponible.",
+  "theme": "focus",
+  "register": "poetic",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-8%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends place, tranquillement.",
+      "pauseAfterMs": 5737,
+      "clip": "001.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "Laisse tes épaules redescendre, comme une voile qui se repose.",
+      "pauseAfterMs": 7650,
+      "clip": "002.mp3",
+      "durationMs": 3648
+    },
+    {
+      "text": "Tu n'as rien à régler tout de suite. Juste arriver ici.",
+      "pauseAfterMs": 9562,
+      "clip": "003.mp3",
+      "durationMs": 3648
+    },
+    {
+      "text": "Sens le poids de ton corps que la chaise porte pour toi.",
+      "pauseAfterMs": 8606,
+      "clip": "004.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "Et laisse un premier souffle entrer, sans le presser.",
+      "pauseAfterMs": 11474,
+      "clip": "005.mp3",
+      "durationMs": 3192
+    },
+    {
+      "text": "Ton attention, en ce moment, est peut-être un peu éparpillée. Des petites lumières un peu partout.",
+      "pauseAfterMs": 7650,
+      "clip": "006.mp3",
+      "durationMs": 5808
+    },
+    {
+      "text": "On va les rassembler, doucement, comme on ramène des braises vers le centre du foyer.",
+      "pauseAfterMs": 8606,
+      "clip": "007.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Pose ton regard intérieur sur le va-et-vient de ta respiration.",
+      "pauseAfterMs": 9562,
+      "clip": "008.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "L'air frais qui entre. L'air plus doux qui repart.",
+      "pauseAfterMs": 11474,
+      "clip": "009.mp3",
+      "durationMs": 3432
+    },
+    {
+      "text": "Quand une pensée passe, ce n'est pas une faute. C'est juste une fenêtre qui s'ouvre.",
+      "pauseAfterMs": 6693,
+      "clip": "010.mp3",
+      "durationMs": 5040
+    },
+    {
+      "text": "Tu la remarques, et tu reviens au souffle. Sans te juger.",
+      "pauseAfterMs": 10518,
+      "clip": "011.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "Imagine une petite flamme calme, posée juste derrière ton sternum.",
+      "pauseAfterMs": 7650,
+      "clip": "012.mp3",
+      "durationMs": 4248
+    },
+    {
+      "text": "À chaque expiration, elle se tient un peu plus droite. Un peu plus claire.",
+      "pauseAfterMs": 11474,
+      "clip": "013.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "C'est ça, ton attention rassemblée. Tranquille, mais bien vivante.",
+      "pauseAfterMs": 8606,
+      "clip": "014.mp3",
+      "durationMs": 4896
+    },
+    {
+      "text": "Reste avec cette flamme encore quelques souffles.",
+      "pauseAfterMs": 13387,
+      "clip": "015.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Elle n'a pas besoin de forcer pour éclairer. Elle est simplement là.",
+      "pauseAfterMs": 10518,
+      "clip": "016.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Maintenant, élargis un peu. Sens tes mains, sens l'espace autour de toi.",
+      "pauseAfterMs": 7650,
+      "clip": "017.mp3",
+      "durationMs": 5256
+    },
+    {
+      "text": "La même clarté, mais ouverte. Disponible.",
+      "pauseAfterMs": 8606,
+      "clip": "018.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Tu n'es pas endormi. Tu es posé, et éveillé.",
+      "pauseAfterMs": 6693,
+      "clip": "019.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Pense à la première chose, une seule, que tu vas faire en sortant d'ici.",
+      "pauseAfterMs": 9562,
+      "clip": "020.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Garde-la devant toi, éclairée par ta petite flamme.",
+      "pauseAfterMs": 7650,
+      "clip": "021.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Et quand tu seras prêt, ouvre les yeux, et avance vers ton travail, calme et clair.",
+      "pauseAfterMs": 3825,
+      "clip": "022.mp3",
+      "durationMs": 5040
+    }
+  ],
+  "spokenMs": 89232,
+  "silenceMs": 193153,
+  "totalMs": 282385,
+  "createdAt": 1782061664412
+}

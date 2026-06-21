@@ -1,0 +1,150 @@
+{
+  "id": "fr-bodyscan-plain-5",
+  "title": "Balayage du corps",
+  "intention": "Visiter le corps région par région, de la tête aux pieds, en relâchant à chaque palier.",
+  "theme": "bodyscan",
+  "register": "plain",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Installe-toi confortablement.",
+      "pauseAfterMs": 6760,
+      "clip": "001.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "Laisse ton corps prendre toute la place qu'il lui faut.",
+      "pauseAfterMs": 9014,
+      "clip": "002.mp3",
+      "durationMs": 3888
+    },
+    {
+      "text": "Ferme les yeux si ça te convient.",
+      "pauseAfterMs": 5634,
+      "clip": "003.mp3",
+      "durationMs": 2976
+    },
+    {
+      "text": "Prends une grande inspiration. Puis relâche tout l'air lentement.",
+      "pauseAfterMs": 13521,
+      "clip": "004.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "On va visiter le corps, une région à la fois.",
+      "pauseAfterMs": 4507,
+      "clip": "005.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Commence par le dessus de la tête. Remarque ce qui s'y passe.",
+      "pauseAfterMs": 10141,
+      "clip": "006.mp3",
+      "durationMs": 5952
+    },
+    {
+      "text": "Descends vers le front. Laisse-le se déplisser.",
+      "pauseAfterMs": 9014,
+      "clip": "007.mp3",
+      "durationMs": 4800
+    },
+    {
+      "text": "Relâche les yeux, les joues, la mâchoire.",
+      "pauseAfterMs": 11267,
+      "clip": "008.mp3",
+      "durationMs": 4128
+    },
+    {
+      "text": "Porte ton attention au cou et à la gorge.",
+      "pauseAfterMs": 9014,
+      "clip": "009.mp3",
+      "durationMs": 3576
+    },
+    {
+      "text": "Laisse les épaules descendre. Tu n'as rien à tenir.",
+      "pauseAfterMs": 12394,
+      "clip": "010.mp3",
+      "durationMs": 5304
+    },
+    {
+      "text": "Suis tes bras jusqu'au bout des doigts.",
+      "pauseAfterMs": 10141,
+      "clip": "011.mp3",
+      "durationMs": 3048
+    },
+    {
+      "text": "Reviens à la poitrine. Sens-la se soulever à chaque souffle.",
+      "pauseAfterMs": 12394,
+      "clip": "012.mp3",
+      "durationMs": 5712
+    },
+    {
+      "text": "Détends le ventre. Laisse-le bouger librement.",
+      "pauseAfterMs": 10141,
+      "clip": "013.mp3",
+      "durationMs": 4800
+    },
+    {
+      "text": "Pose ton attention sur le dos, du haut jusqu'en bas.",
+      "pauseAfterMs": 11267,
+      "clip": "014.mp3",
+      "durationMs": 4296
+    },
+    {
+      "text": "Relâche les hanches et le bassin.",
+      "pauseAfterMs": 9014,
+      "clip": "015.mp3",
+      "durationMs": 2808
+    },
+    {
+      "text": "Descends dans les cuisses. Laisse-les devenir lourdes.",
+      "pauseAfterMs": 10141,
+      "clip": "016.mp3",
+      "durationMs": 5064
+    },
+    {
+      "text": "Relâche les genoux, puis les mollets.",
+      "pauseAfterMs": 9014,
+      "clip": "017.mp3",
+      "durationMs": 3336
+    },
+    {
+      "text": "Suis jusqu'aux chevilles, aux pieds, aux orteils.",
+      "pauseAfterMs": 12394,
+      "clip": "018.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Maintenant, sens le corps en entier, d'un seul morceau.",
+      "pauseAfterMs": 13521,
+      "clip": "019.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "Reste un moment dans ce calme. Rien à faire.",
+      "pauseAfterMs": 15774,
+      "clip": "020.mp3",
+      "durationMs": 4920
+    },
+    {
+      "text": "Prends une respiration tranquille pour revenir tout doucement.",
+      "pauseAfterMs": 9014,
+      "clip": "021.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Quand tu es prêt, ouvre les yeux. Garde cette détente avec toi.",
+      "pauseAfterMs": 3380,
+      "clip": "022.mp3",
+      "durationMs": 5832
+    }
+  ],
+  "spokenMs": 97872,
+  "silenceMs": 217461,
+  "totalMs": 315333,
+  "createdAt": 1782062007087
+}

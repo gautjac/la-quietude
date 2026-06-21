@@ -1,0 +1,222 @@
+{
+  "id": "fr-grief-acadian-10",
+  "title": "Tenir compagnie à la peine",
+  "intention": "Faire de la place à la peine du deuil, la tenir avec tendresse, sans chercher à la corriger.",
+  "theme": "grief",
+  "register": "acadian",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-14%",
+  "lines": [
+    {
+      "text": "Bonjour, toi. Viens t'asseoir un moment, t'es ben correct icitte.",
+      "pauseAfterMs": 7818,
+      "clip": "001.mp3",
+      "durationMs": 6648
+    },
+    {
+      "text": "Pas besoin de te dépêcher. On a tout notre temps, juste toi pis moi.",
+      "pauseAfterMs": 9120,
+      "clip": "002.mp3",
+      "durationMs": 6360
+    },
+    {
+      "text": "Installe-toi comme t'es bien. Sur une chaise, étendu, peu importe.",
+      "pauseAfterMs": 7818,
+      "clip": "003.mp3",
+      "durationMs": 6720
+    },
+    {
+      "text": "Si ça te tente, ferme les yeux tout doucement.",
+      "pauseAfterMs": 10423,
+      "clip": "004.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Pis là, sens le poids de ton corps qui se dépose.",
+      "pauseAfterMs": 11726,
+      "clip": "005.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Y'a rien à régler à soir. Rien à réparer.",
+      "pauseAfterMs": 10423,
+      "clip": "006.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "T'as le droit d'arriver icitte exactement comme t'es.",
+      "pauseAfterMs": 11726,
+      "clip": "007.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Prends une bonne respiration, sans la forcer.",
+      "pauseAfterMs": 9120,
+      "clip": "008.mp3",
+      "durationMs": 3936
+    },
+    {
+      "text": "Pis laisse-la repartir, tranquille, comme la marée.",
+      "pauseAfterMs": 14332,
+      "clip": "009.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "Encore une fois. Tu respires, c'est en masse.",
+      "pauseAfterMs": 15635,
+      "clip": "010.mp3",
+      "durationMs": 5376
+    },
+    {
+      "text": "Quelque part dans ton corps, y'a une peine qui demeure.",
+      "pauseAfterMs": 11726,
+      "clip": "011.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "On va pas la chasser. On va juste s'asseoir à côté d'elle.",
+      "pauseAfterMs": 13029,
+      "clip": "012.mp3",
+      "durationMs": 5688
+    },
+    {
+      "text": "Regarde où elle se tient. Peut-être dans la poitrine.",
+      "pauseAfterMs": 11726,
+      "clip": "013.mp3",
+      "durationMs": 5352
+    },
+    {
+      "text": "Peut-être dans la gorge, ou ben creux dans le ventre.",
+      "pauseAfterMs": 13029,
+      "clip": "014.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "Tu la trouves? C'est correct. Tu lui dis juste un p'tit bonjour.",
+      "pauseAfterMs": 15635,
+      "clip": "015.mp3",
+      "durationMs": 7104
+    },
+    {
+      "text": "Pas besoin qu'elle change. Pas besoin qu'elle parte.",
+      "pauseAfterMs": 13029,
+      "clip": "016.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Elle a le droit d'être là. C'est de l'amour qui a perdu sa place.",
+      "pauseAfterMs": 16938,
+      "clip": "017.mp3",
+      "durationMs": 6192
+    },
+    {
+      "text": "Respire vers cet endroit-là, tout doux.",
+      "pauseAfterMs": 14332,
+      "clip": "018.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Comme si tu posais une main chaude dessus.",
+      "pauseAfterMs": 15635,
+      "clip": "019.mp3",
+      "durationMs": 3264
+    },
+    {
+      "text": "Si des larmes montent, laisse-les venir. C'est ben correct.",
+      "pauseAfterMs": 16938,
+      "clip": "020.mp3",
+      "durationMs": 6000
+    },
+    {
+      "text": "Si rien vient, c'est correct itou. T'as pas à prouver ta peine.",
+      "pauseAfterMs": 15635,
+      "clip": "021.mp3",
+      "durationMs": 6072
+    },
+    {
+      "text": "On reste là, ensemble, sans rien forcer.",
+      "pauseAfterMs": 18241,
+      "clip": "022.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Tu penses peut-être à quelqu'un. À un visage, à une voix.",
+      "pauseAfterMs": 14332,
+      "clip": "023.mp3",
+      "durationMs": 5520
+    },
+    {
+      "text": "Laisse-le venir, doucement, comme on accueille un proche.",
+      "pauseAfterMs": 18241,
+      "clip": "024.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Tu peux lui dire en dedans ce que t'as sur le coeur.",
+      "pauseAfterMs": 20847,
+      "clip": "025.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Ou ben juste rester en silence avec, c'est en masse assez.",
+      "pauseAfterMs": 23453,
+      "clip": "026.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "Ce qui te manque, c'est la trace de ce que t'as aimé fort.",
+      "pauseAfterMs": 16938,
+      "clip": "027.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Pis cet amour-là, y s'en va nulle part.",
+      "pauseAfterMs": 18241,
+      "clip": "028.mp3",
+      "durationMs": 3768
+    },
+    {
+      "text": "Respire encore une fois, tranquille.",
+      "pauseAfterMs": 13029,
+      "clip": "029.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Sens que t'es pas tout seul à porter ça à soir.",
+      "pauseAfterMs": 15635,
+      "clip": "030.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Doucement, ramène ton attention dans la pièce.",
+      "pauseAfterMs": 10423,
+      "clip": "031.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Sens ton corps, le sol en dessous de toi, qui te tient.",
+      "pauseAfterMs": 11726,
+      "clip": "032.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Quand t'es prêt, sans presse, ouvre les yeux.",
+      "pauseAfterMs": 9120,
+      "clip": "033.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Sois ben doux avec toi le reste de la journée. Je reste avec toi.",
+      "pauseAfterMs": 6515,
+      "clip": "034.mp3",
+      "durationMs": 6144
+    }
+  ],
+  "spokenMs": 166272,
+  "silenceMs": 462534,
+  "totalMs": 628806,
+  "createdAt": 1782061816224
+}

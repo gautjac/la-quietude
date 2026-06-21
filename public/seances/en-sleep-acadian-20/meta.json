@@ -1,0 +1,342 @@
+{
+  "id": "en-sleep-acadian-20",
+  "title": "Down Easy Into Sleep",
+  "intention": "To let go of the day and drift gently into sleep without ever needing to wake.",
+  "theme": "sleep",
+  "register": "acadian",
+  "length": 20,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-16%",
+  "lines": [
+    {
+      "text": "Well now. There you are.",
+      "pauseAfterMs": 7595,
+      "clip": "001.mp3",
+      "durationMs": 2832
+    },
+    {
+      "text": "You've come a long way today, cher. You can set it all down now.",
+      "pauseAfterMs": 10126,
+      "clip": "002.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "Let your head be heavy on the pillow. Let it sink right in.",
+      "pauseAfterMs": 11392,
+      "clip": "003.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "No need to do a thing from here on. Just lay there and let me do the talking.",
+      "pauseAfterMs": 12658,
+      "clip": "004.mp3",
+      "durationMs": 5544
+    },
+    {
+      "text": "Take one slow breath in through the nose.",
+      "pauseAfterMs": 6329,
+      "clip": "005.mp3",
+      "durationMs": 3384
+    },
+    {
+      "text": "And let it go, easy, out through the mouth.",
+      "pauseAfterMs": 11392,
+      "clip": "006.mp3",
+      "durationMs": 3264
+    },
+    {
+      "text": "There. That's it.",
+      "pauseAfterMs": 8860,
+      "clip": "007.mp3",
+      "durationMs": 2208
+    },
+    {
+      "text": "Another one, nice and slow. In.",
+      "pauseAfterMs": 6329,
+      "clip": "008.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "And out, like a long sigh at the end of a long day.",
+      "pauseAfterMs": 13923,
+      "clip": "009.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "You don't have to make the breath do anything. Just let it come and go on its own.",
+      "pauseAfterMs": 17721,
+      "clip": "010.mp3",
+      "durationMs": 6000
+    },
+    {
+      "text": "I'm gonna slow right down now. And you can come along with me.",
+      "pauseAfterMs": 11392,
+      "clip": "011.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Feel the weight of your shoulders letting go of your ears.",
+      "pauseAfterMs": 13923,
+      "clip": "012.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Feel your back resting heavy on the bed beneath you.",
+      "pauseAfterMs": 15189,
+      "clip": "013.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "The mattress holds you. You don't have to hold yourself up no more.",
+      "pauseAfterMs": 17721,
+      "clip": "014.mp3",
+      "durationMs": 4920
+    },
+    {
+      "text": "Let your jaw go soft. Let your tongue rest easy in your mouth.",
+      "pauseAfterMs": 13923,
+      "clip": "015.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Let that little space between your eyebrows smooth right out.",
+      "pauseAfterMs": 16455,
+      "clip": "016.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Your face is soft now. Like still water out on the bay before dawn.",
+      "pauseAfterMs": 18986,
+      "clip": "017.mp3",
+      "durationMs": 5400
+    },
+    {
+      "text": "Let your arms get heavy. Heavy as wet sand.",
+      "pauseAfterMs": 15189,
+      "clip": "018.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Your hands, your fingers. All of it letting go.",
+      "pauseAfterMs": 16455,
+      "clip": "019.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "And down through your hips, your legs, your feet.",
+      "pauseAfterMs": 10126,
+      "clip": "020.mp3",
+      "durationMs": 3576
+    },
+    {
+      "text": "Heavy. Warm. Sinking down.",
+      "pauseAfterMs": 20252,
+      "clip": "021.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "Picture an old wharf at the end of the evening.",
+      "pauseAfterMs": 11392,
+      "clip": "022.mp3",
+      "durationMs": 3528
+    },
+    {
+      "text": "The tide is high and slow. The boats just rocking, easy.",
+      "pauseAfterMs": 16455,
+      "clip": "023.mp3",
+      "durationMs": 5352
+    },
+    {
+      "text": "You can hear the water moving under the boards. Soft and steady.",
+      "pauseAfterMs": 18986,
+      "clip": "024.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "There's a light way out on the water. Just a small one.",
+      "pauseAfterMs": 15189,
+      "clip": "025.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "And it's already going dim. You don't need to keep your eye on it.",
+      "pauseAfterMs": 17721,
+      "clip": "026.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "Let it blur. Let it slip out of focus.",
+      "pauseAfterMs": 20252,
+      "clip": "027.mp3",
+      "durationMs": 3456
+    },
+    {
+      "text": "The wharf is fading now too. The edges getting soft.",
+      "pauseAfterMs": 17721,
+      "clip": "028.mp3",
+      "durationMs": 4488
+    },
+    {
+      "text": "You can't quite tell where the water ends and the dark begins.",
+      "pauseAfterMs": 21518,
+      "clip": "029.mp3",
+      "durationMs": 5040
+    },
+    {
+      "text": "And that's just fine. Let it all come undone.",
+      "pauseAfterMs": 20252,
+      "clip": "030.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "Breathe in, slow.",
+      "pauseAfterMs": 7595,
+      "clip": "031.mp3",
+      "durationMs": 1872
+    },
+    {
+      "text": "And out, slower still.",
+      "pauseAfterMs": 16455,
+      "clip": "032.mp3",
+      "durationMs": 2520
+    },
+    {
+      "text": "Each breath out, you sink a little deeper into the bed.",
+      "pauseAfterMs": 18986,
+      "clip": "033.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "A little heavier. A little further away.",
+      "pauseAfterMs": 20252,
+      "clip": "034.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "There's nowhere you've got to be. Nothing left to tend to tonight.",
+      "pauseAfterMs": 21518,
+      "clip": "035.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "The day is behind you now, like a road in the dark you can barely make out.",
+      "pauseAfterMs": 22784,
+      "clip": "036.mp3",
+      "durationMs": 6408
+    },
+    {
+      "text": "And you don't have to look back at it.",
+      "pauseAfterMs": 18986,
+      "clip": "037.mp3",
+      "durationMs": 2304
+    },
+    {
+      "text": "Let your thoughts get slow and far apart.",
+      "pauseAfterMs": 17721,
+      "clip": "038.mp3",
+      "durationMs": 3528
+    },
+    {
+      "text": "Like fog coming in off the water. Soft. Quiet.",
+      "pauseAfterMs": 21518,
+      "clip": "039.mp3",
+      "durationMs": 4920
+    },
+    {
+      "text": "If a thought drifts by, just let it drift on past.",
+      "pauseAfterMs": 20252,
+      "clip": "040.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "No need to follow it. No need to finish it.",
+      "pauseAfterMs": 22784,
+      "clip": "041.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "I'm gonna talk less now. And the quiet's gonna get bigger.",
+      "pauseAfterMs": 16455,
+      "clip": "042.mp3",
+      "durationMs": 4656
+    },
+    {
+      "text": "Just rest. Just lay there and rest.",
+      "pauseAfterMs": 24050,
+      "clip": "043.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Heavy and warm. Held by the bed.",
+      "pauseAfterMs": 25315,
+      "clip": "044.mp3",
+      "durationMs": 3408
+    },
+    {
+      "text": "Every breath a little quieter than the one before.",
+      "pauseAfterMs": 26581,
+      "clip": "045.mp3",
+      "durationMs": 3576
+    },
+    {
+      "text": "The fog is all around you now. Soft and grey and kind.",
+      "pauseAfterMs": 25315,
+      "clip": "046.mp3",
+      "durationMs": 6168
+    },
+    {
+      "text": "You can let the pictures go. You don't need them no more.",
+      "pauseAfterMs": 27847,
+      "clip": "047.mp3",
+      "durationMs": 4176
+    },
+    {
+      "text": "Just the dark. Just the breath. Just resting.",
+      "pauseAfterMs": 29113,
+      "clip": "048.mp3",
+      "durationMs": 4536
+    },
+    {
+      "text": "Sinking down, slow, like a stone settling on the soft bottom.",
+      "pauseAfterMs": 27847,
+      "clip": "049.mp3",
+      "durationMs": 6120
+    },
+    {
+      "text": "Nothing to hold. Nothing to keep.",
+      "pauseAfterMs": 30378,
+      "clip": "050.mp3",
+      "durationMs": 3432
+    },
+    {
+      "text": "Let go a little more.",
+      "pauseAfterMs": 31644,
+      "clip": "051.mp3",
+      "durationMs": 1632
+    },
+    {
+      "text": "There you go, cher. Down easy.",
+      "pauseAfterMs": 30378,
+      "clip": "052.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Rest now.",
+      "pauseAfterMs": 31644,
+      "clip": "053.mp3",
+      "durationMs": 1392
+    },
+    {
+      "text": "All is well. Sleep.",
+      "pauseAfterMs": 31644,
+      "clip": "054.mp3",
+      "durationMs": 2760
+    }
+  ],
+  "spokenMs": 218760,
+  "silenceMs": 1002484,
+  "totalMs": 1221244,
+  "createdAt": 1782062087356
+}

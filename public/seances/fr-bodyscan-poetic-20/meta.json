@@ -1,0 +1,348 @@
+{
+  "id": "fr-bodyscan-poetic-20",
+  "title": "Le balayage du corps",
+  "intention": "Visiter le corps de la tête aux pieds et relâcher à chaque palier, comme une lumière douce qui descend.",
+  "theme": "bodyscan",
+  "register": "poetic",
+  "length": 20,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends ton temps pour t'installer.",
+      "pauseAfterMs": 9790,
+      "clip": "001.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Tu n'as rien à faire de spécial ici. Juste être là.",
+      "pauseAfterMs": 11422,
+      "clip": "002.mp3",
+      "durationMs": 3648
+    },
+    {
+      "text": "Laisse ton corps trouver sa place, où que tu sois.",
+      "pauseAfterMs": 13054,
+      "clip": "003.mp3",
+      "durationMs": 2952
+    },
+    {
+      "text": "Si tu le souhaites, ferme doucement les yeux.",
+      "pauseAfterMs": 14685,
+      "clip": "004.mp3",
+      "durationMs": 3024
+    },
+    {
+      "text": "Et prends une longue respiration. Tranquille.",
+      "pauseAfterMs": 19580,
+      "clip": "005.mp3",
+      "durationMs": 3336
+    },
+    {
+      "text": "Laisse l'air ressortir tout seul, sans le pousser.",
+      "pauseAfterMs": 19580,
+      "clip": "006.mp3",
+      "durationMs": 3216
+    },
+    {
+      "text": "Encore une fois. On inspire la lumière du matin.",
+      "pauseAfterMs": 21212,
+      "clip": "007.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Et on expire la fatigue de la journée.",
+      "pauseAfterMs": 22844,
+      "clip": "008.mp3",
+      "durationMs": 2400
+    },
+    {
+      "text": "Imagine une lumière douce, posée au-dessus de ta tête.",
+      "pauseAfterMs": 13054,
+      "clip": "009.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "Chaude comme un rayon qui passe par la fenêtre.",
+      "pauseAfterMs": 13054,
+      "clip": "010.mp3",
+      "durationMs": 2904
+    },
+    {
+      "text": "Elle va descendre lentement, région par région.",
+      "pauseAfterMs": 14685,
+      "clip": "011.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "On commence par le sommet du crâne.",
+      "pauseAfterMs": 11422,
+      "clip": "012.mp3",
+      "durationMs": 2400
+    },
+    {
+      "text": "Sens-le se desserrer, comme une main qui s'ouvre.",
+      "pauseAfterMs": 19580,
+      "clip": "013.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "La lumière glisse sur le front.",
+      "pauseAfterMs": 9790,
+      "clip": "014.mp3",
+      "durationMs": 2088
+    },
+    {
+      "text": "Laisse fondre la petite ride entre les sourcils.",
+      "pauseAfterMs": 17949,
+      "clip": "015.mp3",
+      "durationMs": 2880
+    },
+    {
+      "text": "Les yeux se reposent au fond de leur orbite.",
+      "pauseAfterMs": 19580,
+      "clip": "016.mp3",
+      "durationMs": 2712
+    },
+    {
+      "text": "Les joues s'allègent. La mâchoire se dénoue.",
+      "pauseAfterMs": 19580,
+      "clip": "017.mp3",
+      "durationMs": 3432
+    },
+    {
+      "text": "Laisse la langue retomber au fond de la bouche.",
+      "pauseAfterMs": 21212,
+      "clip": "018.mp3",
+      "durationMs": 2664
+    },
+    {
+      "text": "La lumière descend maintenant dans le cou.",
+      "pauseAfterMs": 13054,
+      "clip": "019.mp3",
+      "durationMs": 2400
+    },
+    {
+      "text": "Cette colonne qui porte ta tête tout le jour.",
+      "pauseAfterMs": 13054,
+      "clip": "020.mp3",
+      "durationMs": 2832
+    },
+    {
+      "text": "Laisse-la se relâcher, juste un peu.",
+      "pauseAfterMs": 19580,
+      "clip": "021.mp3",
+      "durationMs": 2592
+    },
+    {
+      "text": "Elle s'ouvre sur les épaules.",
+      "pauseAfterMs": 9790,
+      "clip": "022.mp3",
+      "durationMs": 2064
+    },
+    {
+      "text": "Laisse-les descendre loin des oreilles.",
+      "pauseAfterMs": 21212,
+      "clip": "023.mp3",
+      "durationMs": 2520
+    },
+    {
+      "text": "Sens le poids des épaules se rendre vers le sol.",
+      "pauseAfterMs": 22844,
+      "clip": "024.mp3",
+      "durationMs": 2976
+    },
+    {
+      "text": "La lumière coule le long des bras.",
+      "pauseAfterMs": 13054,
+      "clip": "025.mp3",
+      "durationMs": 2160
+    },
+    {
+      "text": "Les coudes, les avant-bras, comme une eau tiède.",
+      "pauseAfterMs": 16317,
+      "clip": "026.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Jusque dans les mains. Jusqu'au bout des doigts.",
+      "pauseAfterMs": 22844,
+      "clip": "027.mp3",
+      "durationMs": 3024
+    },
+    {
+      "text": "Laisse les doigts être lourds. Rien à tenir.",
+      "pauseAfterMs": 21212,
+      "clip": "028.mp3",
+      "durationMs": 3264
+    },
+    {
+      "text": "Reviens au centre, à la poitrine.",
+      "pauseAfterMs": 13054,
+      "clip": "029.mp3",
+      "durationMs": 2664
+    },
+    {
+      "text": "Sens-la se soulever doucement quand tu respires.",
+      "pauseAfterMs": 21212,
+      "clip": "030.mp3",
+      "durationMs": 2904
+    },
+    {
+      "text": "Et redescendre, comme une vague lente.",
+      "pauseAfterMs": 24476,
+      "clip": "031.mp3",
+      "durationMs": 2808
+    },
+    {
+      "text": "La lumière se pose sur le ventre.",
+      "pauseAfterMs": 13054,
+      "clip": "032.mp3",
+      "durationMs": 2352
+    },
+    {
+      "text": "Laisse-le s'arrondir librement à chaque souffle.",
+      "pauseAfterMs": 22844,
+      "clip": "033.mp3",
+      "durationMs": 2952
+    },
+    {
+      "text": "Sans rentrer le ventre. Sans le tenir.",
+      "pauseAfterMs": 21212,
+      "clip": "034.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "Elle descend maintenant dans le dos.",
+      "pauseAfterMs": 13054,
+      "clip": "035.mp3",
+      "durationMs": 2016
+    },
+    {
+      "text": "Le long de la colonne, vertèbre par vertèbre.",
+      "pauseAfterMs": 17949,
+      "clip": "036.mp3",
+      "durationMs": 3432
+    },
+    {
+      "text": "Le bas du dos s'appuie, se laisse porter.",
+      "pauseAfterMs": 22844,
+      "clip": "037.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "La lumière arrive aux hanches, au bassin.",
+      "pauseAfterMs": 14685,
+      "clip": "038.mp3",
+      "durationMs": 2760
+    },
+    {
+      "text": "Toute cette base, lourde et calme.",
+      "pauseAfterMs": 21212,
+      "clip": "039.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Laisse le poids du corps se rendre, ici.",
+      "pauseAfterMs": 24476,
+      "clip": "040.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Elle descend dans les cuisses.",
+      "pauseAfterMs": 13054,
+      "clip": "041.mp3",
+      "durationMs": 1872
+    },
+    {
+      "text": "Ces grands muscles qui travaillent fort.",
+      "pauseAfterMs": 14685,
+      "clip": "042.mp3",
+      "durationMs": 2376
+    },
+    {
+      "text": "Laisse-les se ramollir, comme la cire au soleil.",
+      "pauseAfterMs": 22844,
+      "clip": "043.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "La lumière passe les genoux. Sans rien forcer.",
+      "pauseAfterMs": 19580,
+      "clip": "044.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Elle coule dans les mollets.",
+      "pauseAfterMs": 17949,
+      "clip": "045.mp3",
+      "durationMs": 1632
+    },
+    {
+      "text": "Jusqu'aux chevilles, qui se desserrent enfin.",
+      "pauseAfterMs": 21212,
+      "clip": "046.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "Et elle arrive dans les pieds.",
+      "pauseAfterMs": 13054,
+      "clip": "047.mp3",
+      "durationMs": 1704
+    },
+    {
+      "text": "La plante, le dessus, chaque orteil.",
+      "pauseAfterMs": 19580,
+      "clip": "048.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "Tout le corps est visité, de la tête aux pieds.",
+      "pauseAfterMs": 16317,
+      "clip": "049.mp3",
+      "durationMs": 3048
+    },
+    {
+      "text": "Sens-le maintenant en entier, posé, complet.",
+      "pauseAfterMs": 26107,
+      "clip": "050.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Une seule chose, douce et tranquille.",
+      "pauseAfterMs": 29371,
+      "clip": "051.mp3",
+      "durationMs": 2688
+    },
+    {
+      "text": "La lumière reste là, partout à la fois.",
+      "pauseAfterMs": 32634,
+      "clip": "052.mp3",
+      "durationMs": 2952
+    },
+    {
+      "text": "Reste encore un moment dans ce calme.",
+      "pauseAfterMs": 35897,
+      "clip": "053.mp3",
+      "durationMs": 2256
+    },
+    {
+      "text": "Rien à faire. Juste respirer.",
+      "pauseAfterMs": 32634,
+      "clip": "054.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Quand tu seras prêt, laisse cette douceur rester avec toi.",
+      "pauseAfterMs": 13054,
+      "clip": "055.mp3",
+      "durationMs": 3480
+    }
+  ],
+  "spokenMs": 156936,
+  "silenceMs": 1023078,
+  "totalMs": 1180014,
+  "createdAt": 1782061988789
+}

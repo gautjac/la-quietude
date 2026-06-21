@@ -1,0 +1,222 @@
+{
+  "id": "en-bodyscan-poetic-10",
+  "title": "The Slow Descent",
+  "intention": "To travel gently through the body from head to feet, releasing what each region has been holding.",
+  "theme": "bodyscan",
+  "register": "poetic",
+  "length": 10,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-EmmaMultilingualNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Welcome. Let yourself arrive here, just as you are.",
+      "pauseAfterMs": 6825,
+      "clip": "001.mp3",
+      "durationMs": 4512
+    },
+    {
+      "text": "Settle into whatever holds you, and let it take your weight.",
+      "pauseAfterMs": 10238,
+      "clip": "002.mp3",
+      "durationMs": 4488
+    },
+    {
+      "text": "Close your eyes, or let them rest half-lit, soft as dusk.",
+      "pauseAfterMs": 9100,
+      "clip": "003.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Breathe in slowly. And let the breath leave without being pushed.",
+      "pauseAfterMs": 13651,
+      "clip": "004.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "We will travel down through you, like light moving over a hillside at evening.",
+      "pauseAfterMs": 11376,
+      "clip": "005.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "Begin at the crown of your head. Feel the quiet weight of it.",
+      "pauseAfterMs": 10238,
+      "clip": "006.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Let the scalp loosen, every small tension melting like frost in morning sun.",
+      "pauseAfterMs": 13651,
+      "clip": "007.mp3",
+      "durationMs": 5808
+    },
+    {
+      "text": "Soften the forehead. Let it become wide and smooth.",
+      "pauseAfterMs": 9100,
+      "clip": "008.mp3",
+      "durationMs": 4176
+    },
+    {
+      "text": "Unclench the jaw. Let the teeth part, the tongue grow heavy and still.",
+      "pauseAfterMs": 12513,
+      "clip": "009.mp3",
+      "durationMs": 5376
+    },
+    {
+      "text": "Around the eyes, let everything go dark and kind.",
+      "pauseAfterMs": 13651,
+      "clip": "010.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Now the neck. Feel it lengthen, a slow stem easing toward the earth.",
+      "pauseAfterMs": 11376,
+      "clip": "011.mp3",
+      "durationMs": 5568
+    },
+    {
+      "text": "Let the shoulders fall. Let them give up the day they have been carrying.",
+      "pauseAfterMs": 14788,
+      "clip": "012.mp3",
+      "durationMs": 4920
+    },
+    {
+      "text": "Breathe into them once more, and on the out-breath, let them drop a little further.",
+      "pauseAfterMs": 15926,
+      "clip": "013.mp3",
+      "durationMs": 5424
+    },
+    {
+      "text": "Travel down the arms now. The upper arms, the elbows, soft.",
+      "pauseAfterMs": 10238,
+      "clip": "014.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Down through the forearms, into the wrists.",
+      "pauseAfterMs": 9100,
+      "clip": "015.mp3",
+      "durationMs": 3024
+    },
+    {
+      "text": "And into the hands, where the fingers open like petals at rest.",
+      "pauseAfterMs": 14788,
+      "clip": "016.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "Come back to the chest. Feel it rise and fall, unhurried.",
+      "pauseAfterMs": 12513,
+      "clip": "017.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Let the heart beat in its own quiet weather, asking nothing of you.",
+      "pauseAfterMs": 15926,
+      "clip": "018.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Soften the belly. Let it round and release with each breath.",
+      "pauseAfterMs": 13651,
+      "clip": "019.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "Let the back sink, vertebra by vertebra, into the ground beneath you.",
+      "pauseAfterMs": 15926,
+      "clip": "020.mp3",
+      "durationMs": 5352
+    },
+    {
+      "text": "Breathe here a while. Let the whole middle of you grow warm and slow.",
+      "pauseAfterMs": 18201,
+      "clip": "021.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "Now the hips. Let them widen, let them rest like stones settling in a riverbed.",
+      "pauseAfterMs": 13651,
+      "clip": "022.mp3",
+      "durationMs": 6264
+    },
+    {
+      "text": "Down through the thighs. Feel the long muscles unwind.",
+      "pauseAfterMs": 12513,
+      "clip": "023.mp3",
+      "durationMs": 4296
+    },
+    {
+      "text": "Let the knees release, and the weight pool low.",
+      "pauseAfterMs": 11376,
+      "clip": "024.mp3",
+      "durationMs": 3264
+    },
+    {
+      "text": "Into the calves now, soft as wet sand.",
+      "pauseAfterMs": 10238,
+      "clip": "025.mp3",
+      "durationMs": 3168
+    },
+    {
+      "text": "Down to the ankles, and into the feet.",
+      "pauseAfterMs": 9100,
+      "clip": "026.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "Let the soles open, let the toes loosen and spread.",
+      "pauseAfterMs": 13651,
+      "clip": "027.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "And now, for a moment, the whole of you at once.",
+      "pauseAfterMs": 11376,
+      "clip": "028.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "From crown to feet, one quiet country, breathing.",
+      "pauseAfterMs": 18201,
+      "clip": "029.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Nothing to hold. Nothing to fix. Only this gentle weight.",
+      "pauseAfterMs": 17063,
+      "clip": "030.mp3",
+      "durationMs": 5352
+    },
+    {
+      "text": "Rest here, where the light has settled all the way down.",
+      "pauseAfterMs": 20476,
+      "clip": "031.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Let each breath rock you a little deeper into stillness.",
+      "pauseAfterMs": 18201,
+      "clip": "032.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "When you are ready, there is nowhere to go. Simply stay.",
+      "pauseAfterMs": 15926,
+      "clip": "033.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "Soften once more, and let the quiet keep you.",
+      "pauseAfterMs": 11376,
+      "clip": "034.mp3",
+      "durationMs": 3600
+    }
+  ],
+  "spokenMs": 154080,
+  "silenceMs": 445924,
+  "totalMs": 600004,
+  "createdAt": 1782062255381
+}

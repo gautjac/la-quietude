@@ -1,0 +1,150 @@
+{
+  "id": "fr-stress-poetic-5",
+  "title": "Le souffle qui se dénoue",
+  "intention": "Relâcher la tension du corps et laisser le souffle se dénouer, soupir après soupir.",
+  "theme": "stress",
+  "register": "poetic",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends ta place ici, tranquillement.",
+      "pauseAfterMs": 6420,
+      "clip": "001.mp3",
+      "durationMs": 3744
+    },
+    {
+      "text": "Laisse tes yeux se fermer, si le cœur t'en dit.",
+      "pauseAfterMs": 7490,
+      "clip": "002.mp3",
+      "durationMs": 3096
+    },
+    {
+      "text": "Tu n'as plus rien à régler pour les prochaines minutes. Juste être là.",
+      "pauseAfterMs": 9630,
+      "clip": "003.mp3",
+      "durationMs": 4128
+    },
+    {
+      "text": "Sens le sol, ou la chaise, qui te tient sans que tu aies à forcer.",
+      "pauseAfterMs": 10700,
+      "clip": "004.mp3",
+      "durationMs": 4176
+    },
+    {
+      "text": "Prends une grande inspiration par le nez.",
+      "pauseAfterMs": 4280,
+      "clip": "005.mp3",
+      "durationMs": 2280
+    },
+    {
+      "text": "Et laisse-la repartir par la bouche, comme un long soupir.",
+      "pauseAfterMs": 8560,
+      "clip": "006.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Encore une fois. On inspire la journée au complet.",
+      "pauseAfterMs": 4280,
+      "clip": "007.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Puis on la dépose, doucement, sur l'expiration.",
+      "pauseAfterMs": 9630,
+      "clip": "008.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "Remarque tes épaules. Souvent, elles montent sans qu'on s'en aperçoive.",
+      "pauseAfterMs": 6420,
+      "clip": "009.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Laisse-les redescendre, comme la neige qui se pose sur un toit, sans bruit.",
+      "pauseAfterMs": 10700,
+      "clip": "010.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "Desserre la mâchoire. Laisse un petit espace entre tes dents.",
+      "pauseAfterMs": 7490,
+      "clip": "011.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Le front se défait. Le tour des yeux s'adoucit.",
+      "pauseAfterMs": 9630,
+      "clip": "012.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Descends l'attention dans ta poitrine, dans ton ventre.",
+      "pauseAfterMs": 6420,
+      "clip": "013.mp3",
+      "durationMs": 3336
+    },
+    {
+      "text": "Là où le souffle se promène, lentement, sans que tu aies à le pousser.",
+      "pauseAfterMs": 12840,
+      "clip": "014.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "S'il reste un nœud quelque part, donne-lui un soupir. Juste un.",
+      "pauseAfterMs": 11770,
+      "clip": "015.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "Sens comme l'air entre un peu plus loin, maintenant. Comme une fenêtre qu'on ouvre.",
+      "pauseAfterMs": 12840,
+      "clip": "016.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Tes mains peuvent s'ouvrir. Tes doigts se déposent.",
+      "pauseAfterMs": 8560,
+      "clip": "017.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Rien à tenir. Rien à porter.",
+      "pauseAfterMs": 11770,
+      "clip": "018.mp3",
+      "durationMs": 2976
+    },
+    {
+      "text": "Le corps devient un peu plus lourd, un peu plus doux, à chaque expiration.",
+      "pauseAfterMs": 13910,
+      "clip": "019.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Reste encore un moment dans cette lumière tranquille.",
+      "pauseAfterMs": 14980,
+      "clip": "020.mp3",
+      "durationMs": 2904
+    },
+    {
+      "text": "Quand tu seras prêt, laisse ton souffle reprendre son rythme à lui.",
+      "pauseAfterMs": 8560,
+      "clip": "021.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Et tu emportes ce calme avec toi. Il est à toi.",
+      "pauseAfterMs": 5350,
+      "clip": "022.mp3",
+      "durationMs": 3504
+    }
+  ],
+  "spokenMs": 84120,
+  "silenceMs": 202230,
+  "totalMs": 286350,
+  "createdAt": 1782061768187
+}

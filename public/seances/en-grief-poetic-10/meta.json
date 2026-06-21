@@ -1,0 +1,222 @@
+{
+  "id": "en-grief-poetic-10",
+  "title": "Keeping Company With Sorrow",
+  "intention": "To sit beside grief with tenderness, letting it be felt without being fixed.",
+  "theme": "grief",
+  "register": "poetic",
+  "length": 10,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-EmmaMultilingualNeural",
+  "rate": "-14%",
+  "lines": [
+    {
+      "text": "Welcome. You don't have to be anywhere but here.",
+      "pauseAfterMs": 7033,
+      "clip": "001.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Let your body settle into whatever is holding you.",
+      "pauseAfterMs": 10549,
+      "clip": "002.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "There is nothing to mend in this hour. Only company to keep.",
+      "pauseAfterMs": 11721,
+      "clip": "003.mp3",
+      "durationMs": 4824
+    },
+    {
+      "text": "Let your eyes close, or rest them low and soft on the floor.",
+      "pauseAfterMs": 9377,
+      "clip": "004.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Feel the weight of you arriving, like dusk arrives. Slowly. Without asking.",
+      "pauseAfterMs": 14065,
+      "clip": "005.mp3",
+      "durationMs": 6792
+    },
+    {
+      "text": "Take one breath that belongs only to you.",
+      "pauseAfterMs": 12893,
+      "clip": "006.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "And let it leave you without being chased.",
+      "pauseAfterMs": 14065,
+      "clip": "007.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "Notice the air at the edge of your nose, cool coming in.",
+      "pauseAfterMs": 10549,
+      "clip": "008.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Warmer going out, carrying a little of you with it.",
+      "pauseAfterMs": 15237,
+      "clip": "009.mp3",
+      "durationMs": 3528
+    },
+    {
+      "text": "Somewhere in you there is a sorrow. You already know its name.",
+      "pauseAfterMs": 14065,
+      "clip": "010.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "You don't have to speak it. You don't have to move it.",
+      "pauseAfterMs": 11721,
+      "clip": "011.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Just let yourself know where it lives in the body.",
+      "pauseAfterMs": 15237,
+      "clip": "012.mp3",
+      "durationMs": 3384
+    },
+    {
+      "text": "Maybe the throat. Maybe the chest, that low quiet room.",
+      "pauseAfterMs": 14065,
+      "clip": "013.mp3",
+      "durationMs": 4776
+    },
+    {
+      "text": "Maybe the belly, or the hollow behind the eyes.",
+      "pauseAfterMs": 12893,
+      "clip": "014.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "Wherever it is, let your breath go and stand near it.",
+      "pauseAfterMs": 15237,
+      "clip": "015.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Not to push. Not to lift it away.",
+      "pauseAfterMs": 10549,
+      "clip": "016.mp3",
+      "durationMs": 3384
+    },
+    {
+      "text": "Only to say, quietly, I see you. You may stay.",
+      "pauseAfterMs": 16409,
+      "clip": "017.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Grief is not a problem the breath has come to solve.",
+      "pauseAfterMs": 11721,
+      "clip": "018.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "It is love that has nowhere left to go, so it stays close.",
+      "pauseAfterMs": 16409,
+      "clip": "019.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "Let it be heavy if it is heavy. You are strong enough to be tired.",
+      "pauseAfterMs": 15237,
+      "clip": "020.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Breathe toward the ache, the way you'd carry a candle into a dim room.",
+      "pauseAfterMs": 14065,
+      "clip": "021.mp3",
+      "durationMs": 4896
+    },
+    {
+      "text": "Not to chase the dark out. Only so the dark has company.",
+      "pauseAfterMs": 16409,
+      "clip": "022.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "If tears come, let them come. They are not a failure of calm.",
+      "pauseAfterMs": 14065,
+      "clip": "023.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "If nothing comes, that is welcome too.",
+      "pauseAfterMs": 12893,
+      "clip": "024.mp3",
+      "durationMs": 3240
+    },
+    {
+      "text": "You are allowed to feel exactly as much as you feel.",
+      "pauseAfterMs": 15237,
+      "clip": "025.mp3",
+      "durationMs": 3696
+    },
+    {
+      "text": "No more, to be brave. No less, to be spared.",
+      "pauseAfterMs": 14065,
+      "clip": "026.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Let one hand rest where the sorrow lives, if that feels kind.",
+      "pauseAfterMs": 12893,
+      "clip": "027.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Warmth against it. The simple weight of being held.",
+      "pauseAfterMs": 16409,
+      "clip": "028.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "Breathe here a while. I'll stay with you.",
+      "pauseAfterMs": 18754,
+      "clip": "029.mp3",
+      "durationMs": 3216
+    },
+    {
+      "text": "Nothing is being fixed. Nothing needs to be.",
+      "pauseAfterMs": 15237,
+      "clip": "030.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "You are simply a person, sitting beside their own tenderness.",
+      "pauseAfterMs": 15237,
+      "clip": "031.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "When you're ready, let your breath grow a little fuller.",
+      "pauseAfterMs": 12893,
+      "clip": "032.mp3",
+      "durationMs": 3696
+    },
+    {
+      "text": "Carry this gentleness with you, like a small light cupped in the hand.",
+      "pauseAfterMs": 11721,
+      "clip": "033.mp3",
+      "durationMs": 5160
+    },
+    {
+      "text": "Whatever you feel as you go, you are not alone in it. Rest now.",
+      "pauseAfterMs": 10549,
+      "clip": "034.mp3",
+      "durationMs": 5256
+    }
+  ],
+  "spokenMs": 143568,
+  "silenceMs": 459459,
+  "totalMs": 603027,
+  "createdAt": 1782062160774
+}
