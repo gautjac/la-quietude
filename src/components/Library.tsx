@@ -1,0 +1,191 @@
+import { useLang } from "../i18n";
+import { themeName, registerName } from "../catalog";
+import type { Preset, HistoryEntry, Favourite } from "../types";
+import { computeStreak } from "../db";
+
+export function Library({
+  presets,
+  history,
+  favourites,
+  onLoadPreset,
+  onDeletePreset,
+  onPlayFavourite,
+  onDeleteFavourite,
+}: {
+  presets: Preset[];
+  history: HistoryEntry[];
+  favourites: Favourite[];
+  onLoadPreset: (p: Preset) => void;
+  onDeletePreset: (id: string) => void;
+  onPlayFavourite: (f: Favourite) => void;
+  onDeleteFavourite: (id: string) => void;
+}) {
+  const { t, lang } = useLang();
+
+  const days = new Set(history.map((h) => h.date));
+  const streak = computeStreak(days);
+  const totalMin = Math.round(history.reduce((s, h) => s + h.completedMs, 0) / 60000);
+  const sits = history.length;
+
+  return (
+    <div className="space-y-10">
+      {/* gentle streak */}
+      <section className="rounded-3xl bg-gradient-to-br from-dawn/15 to-sage/12 p-6 shadow-soft">
+        <div className="grid grid-cols-3 gap-3 text-center">
+          <Stat value={String(streak)} label={t("jours de suite", "days in a row")} />
+          <Stat value={String(sits)} label={t("séances", "sittings")} />
+          <Stat value={String(totalMin)} label={t("minutes", "minutes")} />
+        </div>
+        <p className="mt-4 text-center text-[13px] italic leading-snug text-bark-soft">
+          {streak > 0
+            ? t(
+                "Une présence régulière, à votre rythme. Un jour manqué n'efface rien.",
+                "A steady presence, at your pace. A missed day erases nothing.",
+              )
+            : t(
+                "Asseyez-vous quand vous le pouvez. Rien ne se perd ici.",
+                "Sit when you can. Nothing is lost here.",
+              )}
+        </p>
+      </section>
+
+      {/* favourites */}
+      <Section title={t("Favoris", "Favourites")}>
+        {favourites.length === 0 ? (
+          <Empty>
+            {t(
+              "Gardez une séance qui vous a touché — vous la rejouerez à l'identique.",
+              "Keep a session that moved you — you'll replay it exactly.",
+            )}
+          </Empty>
+        ) : (
+          <div className="space-y-2.5">
+            {favourites.map((f) => (
+              <div
+                key={f.id}
+                className="group flex items-center gap-3 rounded-2xl border border-bark/10 bg-linen-light/70 p-4"
+              >
+                <button
+                  onClick={() => onPlayFavourite(f)}
+                  className="tap flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-dawn/20 text-clay transition hover:bg-dawn/30 active:scale-90"
+                  aria-label={t("Jouer", "Play")}
+                >
+                  ▶
+                </button>
+                <div className="min-w-0 flex-1">
+                  <div className="truncate font-display text-lg text-bark">{f.title}</div>
+                  <div className="text-[12px] text-bark-faint">
+                    {themeName(f.dials.theme, lang)} · {f.dials.length} min ·{" "}
+                    {registerName(f.dials.register, lang)}
+                  </div>
+                </div>
+                <button
+                  onClick={() => onDeleteFavourite(f.id)}
+                  className="tap text-bark-faint opacity-0 transition group-hover:opacity-100 hover:text-clay"
+                  aria-label={t("Retirer", "Remove")}
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </Section>
+
+      {/* presets */}
+      <Section title={t("Réglages gardés", "Saved presets")}>
+        {presets.length === 0 ? (
+          <Empty>
+            {t(
+              "Enregistrez vos cadrans préférés pour les retrouver d'un geste.",
+              "Save your favourite dial settings to recall them in one tap.",
+            )}
+          </Empty>
+        ) : (
+          <div className="space-y-2.5">
+            {presets.map((p) => (
+              <div
+                key={p.id}
+                className="group flex items-center gap-3 rounded-2xl border border-bark/10 bg-linen-light/70 p-4"
+              >
+                <button
+                  onClick={() => onLoadPreset(p)}
+                  className="tap min-w-0 flex-1 text-left"
+                >
+                  <div className="truncate font-display text-lg text-bark">{p.name}</div>
+                  <div className="text-[12px] text-bark-faint">
+                    {themeName(p.dials.theme, lang)} · {p.dials.length} min ·{" "}
+                    {registerName(p.dials.register, lang)}
+                  </div>
+                </button>
+                <button
+                  onClick={() => onDeletePreset(p.id)}
+                  className="tap text-bark-faint opacity-0 transition group-hover:opacity-100 hover:text-clay"
+                  aria-label={t("Supprimer", "Delete")}
+                >
+                  ×
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </Section>
+
+      {/* history */}
+      <Section title={t("Historique", "History")}>
+        {history.length === 0 ? (
+          <Empty>{t("Vos séances passées apparaîtront ici.", "Your past sittings will appear here.")}</Empty>
+        ) : (
+          <div className="space-y-1.5">
+            {history.slice(0, 30).map((h) => (
+              <div
+                key={h.id}
+                className="flex items-center justify-between rounded-xl px-3.5 py-2.5 text-sm odd:bg-linen-light/50"
+              >
+                <span className="text-bark-soft">
+                  {themeName(h.theme, lang)}
+                  <span className="text-bark-faint"> · {h.length} min</span>
+                </span>
+                <span className="flex items-center gap-2 text-[12px] text-bark-faint">
+                  {h.completed && <span className="text-sage-deep">✓</span>}
+                  {new Date(h.at).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", {
+                    month: "short",
+                    day: "numeric",
+                  })}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+      </Section>
+    </div>
+  );
+}
+
+function Stat({ value, label }: { value: string; label: string }) {
+  return (
+    <div>
+      <div className="font-display text-4xl leading-none text-bark">{value}</div>
+      <div className="mt-1.5 text-[11px] uppercase tracking-wide text-bark-faint">{label}</div>
+    </div>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <section>
+      <h3 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-bark-faint">
+        {title}
+      </h3>
+      {children}
+    </section>
+  );
+}
+
+function Empty({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="rounded-2xl border border-dashed border-bark/15 px-4 py-5 text-center text-[13px] leading-snug text-bark-faint">
+      {children}
+    </p>
+  );
+}
