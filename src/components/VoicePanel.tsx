@@ -7,19 +7,26 @@ export function VoicePanel({
   voiceURI,
   rate,
   pitch,
+  voiceVolume,
   onVoice,
   onRate,
   onPitch,
+  onVoiceVolume,
   onPreview,
+  showDeviceControls = true,
 }: {
   voices: Voice[];
   voiceURI: string | null;
   rate: number;
   pitch: number;
+  voiceVolume: number;
   onVoice: (uri: string) => void;
   onRate: (v: number) => void;
   onPitch: (v: number) => void;
+  onVoiceVolume: (v: number) => void;
   onPreview: () => void;
+  /** Whether to show the device-voice (speechSynthesis) controls. */
+  showDeviceControls?: boolean;
 }) {
   const { t, lang } = useLang();
   const [filterLang, setFilterLang] = useState(true);
@@ -35,9 +42,30 @@ export function VoicePanel({
 
   return (
     <div>
+      {/* Voice volume — applies to the recorded studio voice (séances). */}
+      <div className="mb-5">
+        <Slider
+          label={t("Volume de la voix", "Voice volume")}
+          value={voiceVolume}
+          min={0}
+          max={1}
+          step={0.05}
+          format={(v) => `${Math.round(v * 100)}%`}
+          onChange={onVoiceVolume}
+        />
+        <p className="mt-1.5 text-[12px] leading-snug text-bark-faint">
+          {t(
+            "S'applique à la voix enregistrée des séances, à balancer avec le fond sonore.",
+            "Applies to the recorded séance voice, to balance against the sound bed.",
+          )}
+        </p>
+      </div>
+
+      {!showDeviceControls ? null : (
+      <div className="border-t border-bark/10 pt-5">
       <div className="mb-4 flex items-center justify-between">
         <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-bark-faint">
-          {t("La voix", "The voice")}
+          {t("Voix de l'appareil (mode libre)", "Device voice (free mode)")}
         </h3>
         {!noVoices && (
           <label className="flex cursor-pointer items-center gap-1.5 text-[11px] text-bark-faint">
@@ -112,6 +140,8 @@ export function VoicePanel({
           </p>
         </>
       )}
+      </div>
+      )}
     </div>
   );
 }
@@ -123,6 +153,7 @@ function Slider({
   max,
   step,
   onChange,
+  format,
 }: {
   label: string;
   value: number;
@@ -130,12 +161,15 @@ function Slider({
   max: number;
   step: number;
   onChange: (v: number) => void;
+  format?: (v: number) => string;
 }) {
   return (
     <div>
       <div className="mb-1 flex items-center justify-between">
         <span className="text-sm font-medium text-bark">{label}</span>
-        <span className="text-[11px] tabular-nums text-bark-faint">{value.toFixed(2)}×</span>
+        <span className="text-[11px] tabular-nums text-bark-faint">
+          {format ? format(value) : `${value.toFixed(2)}×`}
+        </span>
       </div>
       <input
         type="range"

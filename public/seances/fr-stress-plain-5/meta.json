@@ -1,0 +1,150 @@
+{
+  "id": "fr-stress-plain-5",
+  "title": "Relâcher la tension",
+  "intention": "Relâcher la tension du corps et dénouer le souffle.",
+  "theme": "stress",
+  "register": "plain",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends ta place, on va y aller doucement.",
+      "pauseAfterMs": 7273,
+      "clip": "001.mp3",
+      "durationMs": 5256
+    },
+    {
+      "text": "Installe-toi de manière à être stable et confortable.",
+      "pauseAfterMs": 9697,
+      "clip": "002.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Laisse tes yeux se fermer, ou pose ton regard par terre devant toi.",
+      "pauseAfterMs": 8485,
+      "clip": "003.mp3",
+      "durationMs": 5064
+    },
+    {
+      "text": "Prends une grande inspiration par le nez.",
+      "pauseAfterMs": 4849,
+      "clip": "004.mp3",
+      "durationMs": 3288
+    },
+    {
+      "text": "Et relâche tout par la bouche, dans un grand soupir.",
+      "pauseAfterMs": 10910,
+      "clip": "005.mp3",
+      "durationMs": 4512
+    },
+    {
+      "text": "Encore une fois. Inspire.",
+      "pauseAfterMs": 4849,
+      "clip": "006.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "Et soupire. Laisse le souffle sortir au complet.",
+      "pauseAfterMs": 12122,
+      "clip": "007.mp3",
+      "durationMs": 5112
+    },
+    {
+      "text": "Bon. Maintenant, sens le poids de ton corps qui s'appuie.",
+      "pauseAfterMs": 12122,
+      "clip": "008.mp3",
+      "durationMs": 5568
+    },
+    {
+      "text": "Porte ton attention sur tes épaules.",
+      "pauseAfterMs": 6061,
+      "clip": "009.mp3",
+      "durationMs": 3384
+    },
+    {
+      "text": "Laisse-les descendre. Loin des oreilles.",
+      "pauseAfterMs": 10910,
+      "clip": "010.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "Desserre ta mâchoire. Décolle ta langue du palais.",
+      "pauseAfterMs": 10910,
+      "clip": "011.mp3",
+      "durationMs": 5136
+    },
+    {
+      "text": "Détends le front, et le tour des yeux.",
+      "pauseAfterMs": 9697,
+      "clip": "012.mp3",
+      "durationMs": 3408
+    },
+    {
+      "text": "Descends dans tes mains. Ouvre-les, sans forcer.",
+      "pauseAfterMs": 9697,
+      "clip": "013.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "À la prochaine expiration, relâche le ventre.",
+      "pauseAfterMs": 10910,
+      "clip": "014.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "Laisse le souffle se faire tout seul.",
+      "pauseAfterMs": 14546,
+      "clip": "015.mp3",
+      "durationMs": 3240
+    },
+    {
+      "text": "Inspire tranquillement.",
+      "pauseAfterMs": 4849,
+      "clip": "016.mp3",
+      "durationMs": 2448
+    },
+    {
+      "text": "Et sur l'expiration, un petit soupir. Les épaules tombent encore un peu.",
+      "pauseAfterMs": 13334,
+      "clip": "017.mp3",
+      "durationMs": 6864
+    },
+    {
+      "text": "Il n'y a rien à régler. Rien à tenir.",
+      "pauseAfterMs": 12122,
+      "clip": "018.mp3",
+      "durationMs": 4824
+    },
+    {
+      "text": "Chaque expiration, c'est un peu de tension qui s'en va.",
+      "pauseAfterMs": 14546,
+      "clip": "019.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Reste là, dans ce calme, encore quelques souffles.",
+      "pauseAfterMs": 16970,
+      "clip": "020.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Le corps est plus lourd. Le souffle est plus libre.",
+      "pauseAfterMs": 9697,
+      "clip": "021.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Garde cette détente avec toi. Et reviens, à ton rythme.",
+      "pauseAfterMs": 6061,
+      "clip": "022.mp3",
+      "durationMs": 5712
+    }
+  ],
+  "spokenMs": 99840,
+  "silenceMs": 220617,
+  "totalMs": 320457,
+  "createdAt": 1782059421306
+}

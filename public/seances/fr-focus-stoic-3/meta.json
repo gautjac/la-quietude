@@ -1,0 +1,114 @@
+{
+  "id": "fr-focus-stoic-3",
+  "title": "Rassembler l'attention",
+  "intention": "Rassembler une attention dispersée avant le travail, dans le calme vigilant des stoïciens.",
+  "theme": "focus",
+  "register": "stoic",
+  "length": 3,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-AntoineNeural",
+  "rate": "-8%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends place, juste comme il faut.",
+      "pauseAfterMs": 4832,
+      "clip": "001.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "On n'est pas ici pour dormir. On est ici pour devenir clair.",
+      "pauseAfterMs": 6040,
+      "clip": "002.mp3",
+      "durationMs": 5472
+    },
+    {
+      "text": "Laisse tes épaules redescendre. Laisse le siège te porter.",
+      "pauseAfterMs": 9664,
+      "clip": "003.mp3",
+      "durationMs": 5136
+    },
+    {
+      "text": "Prends une grande respiration, sans la forcer.",
+      "pauseAfterMs": 10872,
+      "clip": "004.mp3",
+      "durationMs": 3648
+    },
+    {
+      "text": "Ton esprit est peut-être parti dans dix directions. C'est correct.",
+      "pauseAfterMs": 4832,
+      "clip": "005.mp3",
+      "durationMs": 5544
+    },
+    {
+      "text": "Marc Aurèle dirait: ramène-toi à toi-même. Reviens ici, tout simplement.",
+      "pauseAfterMs": 7248,
+      "clip": "006.mp3",
+      "durationMs": 6720
+    },
+    {
+      "text": "Sens l'air qui entre, frais. Sens l'air qui sort, plus tranquille.",
+      "pauseAfterMs": 10872,
+      "clip": "007.mp3",
+      "durationMs": 6264
+    },
+    {
+      "text": "Il y a ce qui dépend de toi, et ce qui n'en dépend pas.",
+      "pauseAfterMs": 4832,
+      "clip": "008.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "Le passé est passé. Ce qui viendra n'est pas encore là.",
+      "pauseAfterMs": 4832,
+      "clip": "009.mp3",
+      "durationMs": 5064
+    },
+    {
+      "text": "Ce qui dépend de toi, c'est cette attention, maintenant.",
+      "pauseAfterMs": 8456,
+      "clip": "010.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Dépose ce que tu ne peux pas changer. Tu n'as pas à le porter pour travailler.",
+      "pauseAfterMs": 7248,
+      "clip": "011.mp3",
+      "durationMs": 5952
+    },
+    {
+      "text": "Reste avec une seule respiration. Juste celle-là.",
+      "pauseAfterMs": 9664,
+      "clip": "012.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Accueille le réel tel qu'il est. La tâche devant toi est simplement la tâche devant toi.",
+      "pauseAfterMs": 6040,
+      "clip": "013.mp3",
+      "durationMs": 6768
+    },
+    {
+      "text": "Sens maintenant une vigilance calme qui monte. Présente, disponible.",
+      "pauseAfterMs": 4832,
+      "clip": "014.mp3",
+      "durationMs": 6264
+    },
+    {
+      "text": "Tes yeux peuvent s'ouvrir quand tu veux. L'esprit est rassemblé.",
+      "pauseAfterMs": 3624,
+      "clip": "015.mp3",
+      "durationMs": 5376
+    },
+    {
+      "text": "Tu es prêt. Va, et fais ta part.",
+      "pauseAfterMs": 2416,
+      "clip": "016.mp3",
+      "durationMs": 4272
+    }
+  ],
+  "spokenMs": 84072,
+  "silenceMs": 106304,
+  "totalMs": 190376,
+  "createdAt": 1782059310671
+}

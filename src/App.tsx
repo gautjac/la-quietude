@@ -3,22 +3,26 @@ import { useLiveQuery } from "dexie-react-hooks";
 import { useLang } from "./i18n";
 import { db, cacheKey, uid, localDay } from "./db";
 import { generateSeance } from "./api";
+import { loadCatalogue, loadSeanceMeta, clipUrl } from "./seances";
 import { loadVoices, pickDefaultVoice, hasSpeech, type Voice } from "./speech";
 import { BedMixer } from "./audio";
 import type {
   Dials,
   BedLevels,
   BedId,
+  Lang,
   Seance,
   Preset,
   Favourite,
+  SeanceIndexEntry,
 } from "./types";
 import { Onboarding } from "./components/Onboarding";
 import { Tuner } from "./components/Tuner";
 import { BedPanel } from "./components/BedPanel";
 import { VoicePanel } from "./components/VoicePanel";
-import { Player } from "./components/Player";
+import { Player, type ClipSource } from "./components/Player";
 import { Library } from "./components/Library";
+import { Catalogue } from "./components/Catalogue";
 
 const ONBOARDED = "quietude:onboarded";
 const SETTINGS = "quietude:settings";
@@ -40,6 +44,7 @@ interface Persisted {
   voiceURI: string | null;
   rate: number;
   pitch: number;
+  voiceVolume: number;
 }
 
 function loadSettings(): Partial<Persisted> {
@@ -51,14 +56,14 @@ function loadSettings(): Partial<Persisted> {
   }
 }
 
-type Tab = "tune" | "library";
+type Tab = "seances" | "tune" | "library";
 
 export default function App() {
   const { t, lang, setLang } = useLang();
 
   const saved = useMemo(loadSettings, []);
   const [onboard, setOnboard] = useState(false);
-  const [tab, setTab] = useState<Tab>("tune");
+  const [tab, setTab] = useState<Tab>("seances");
   const [drawer, setDrawer] = useState<"sound" | "voice" | null>(null);
 
   const [dials, setDials] = useState<Dials>(saved.dials ?? DEFAULT_DIALS);
@@ -69,11 +74,20 @@ export default function App() {
   const [voiceURI, setVoiceURI] = useState<string | null>(saved.voiceURI ?? null);
   const [rate, setRate] = useState<number>(saved.rate ?? 0.92);
   const [pitch, setPitch] = useState<number>(saved.pitch ?? 1.0);
+  const [voiceVolume, setVoiceVolume] = useState<number>(saved.voiceVolume ?? 0.9);
 
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [active, setActive] = useState<Seance | null>(null);
+  const [activeClip, setActiveClip] = useState<ClipSource | null>(null);
+  const [activeLang, setActiveLang] = useState<Lang>(lang);
+  const [activeSeanceId, setActiveSeanceId] = useState<string | null>(null);
   const [activeFavId, setActiveFavId] = useState<string | null>(null);
+
+  // pre-rendered catalogue
+  const [catalogue, setCatalogue] = useState<SeanceIndexEntry[]>([]);
+  const [catLoading, setCatLoading] = useState(true);
+  const [busyId, setBusyId] = useState<string | null>(null);
 
   // a live preview mixer for the tuning screen (so beds are audible while you mix)
   const [previewMixer, setPreviewMixer] = useState<BedMixer | null>(null);
@@ -96,7 +110,20 @@ export default function App() {
     }
   };
 
-  // ── voices ───────────────────────────────────────────────────────────────────
+  // ── catalogue ───────────────────────────────────────────────────────────────
+  useEffect(() => {
+    let cancelled = false;
+    loadCatalogue().then((c) => {
+      if (cancelled) return;
+      setCatalogue(c);
+      setCatLoading(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  // ── voices (device voice / live mode) ────────────────────────────────────────
   useEffect(() => {
     let cancelled = false;
     loadVoices().then((vs) => {
@@ -124,13 +151,13 @@ export default function App() {
 
   // ── persist settings ─────────────────────────────────────────────────────────
   useEffect(() => {
-    const p: Persisted = { dials, beds, master, voiceURI, rate, pitch };
+    const p: Persisted = { dials, beds, master, voiceURI, rate, pitch, voiceVolume };
     try {
       localStorage.setItem(SETTINGS, JSON.stringify(p));
     } catch {
       /* noop */
     }
-  }, [dials, beds, master, voiceURI, rate, pitch]);
+  }, [dials, beds, master, voiceURI, rate, pitch, voiceVolume]);
 
   // ── live bed preview while on the sound drawer ────────────────────────────────
   useEffect(() => {
@@ -141,7 +168,6 @@ export default function App() {
         void m.ensure();
       }
     }
-    // tear down preview when leaving the drawer or starting a session
     if ((drawer !== "sound" || active) && previewMixer) {
       void previewMixer.dispose();
       setPreviewMixer(null);
@@ -186,20 +212,62 @@ export default function App() {
   const favourites =
     useLiveQuery(() => db.favourites.orderBy("createdAt").reverse().toArray(), []) ?? [];
 
-  // ── generation ────────────────────────────────────────────────────────────────
-  const begin = async (regenerate = false) => {
-    setError(null);
-    setGenerating(true);
-    // stop preview audio cleanly before the player takes over
+  const stopPreview = async () => {
     if (previewMixer) {
       await previewMixer.dispose();
       setPreviewMixer(null);
     }
+  };
+
+  // ── play a pre-rendered catalogue séance (real recorded voice) ────────────────
+  const playFromCatalogue = async (id: string) => {
+    setError(null);
+    setBusyId(id);
+    await stopPreview();
+    try {
+      const meta = await loadSeanceMeta(id);
+      const urls = meta.lines.map((l) => clipUrl(id, l.clip));
+      const durationsMs = meta.lines.map((l) => l.durationMs);
+      setDials({
+        length: meta.length,
+        theme: meta.theme,
+        register: meta.register,
+        pacing: meta.pacing,
+      });
+      setActiveLang(meta.lang);
+      setActiveSeanceId(meta.id);
+      const fav = favourites.find((f) => f.seanceId === meta.id);
+      setActiveFavId(fav?.id ?? null);
+      setActive({
+        title: meta.title,
+        intention: meta.intention,
+        lines: meta.lines.map((l) => ({ text: l.text, pauseAfterMs: l.pauseAfterMs })),
+      });
+      setActiveClip({ urls, durationsMs, voiceVolume });
+    } catch (e) {
+      setError(
+        e instanceof Error
+          ? e.message
+          : t("Cette séance est introuvable.", "This séance could not be found."),
+      );
+    } finally {
+      setBusyId(null);
+    }
+  };
+
+  // ── generate + play a live séance (device voice) ──────────────────────────────
+  const begin = async (regenerate = false) => {
+    setError(null);
+    setGenerating(true);
+    await stopPreview();
     try {
       const key = cacheKey(dials, lang, 0);
       if (!regenerate) {
         const cached = (await db.cache.get(key)) ?? null;
         if (cached) {
+          setActiveClip(null);
+          setActiveSeanceId(null);
+          setActiveLang(lang);
           setActiveFavId(null);
           setActive(cached.seance);
           setGenerating(false);
@@ -208,7 +276,6 @@ export default function App() {
       }
       const variant = regenerate ? Math.floor(Math.random() * 1000) + 1 : 0;
       const seance = await generateSeance({ dials, lang, variant });
-      // cache the canonical (variant 0) version for instant repeat
       await db.cache.put({
         key,
         theme: dials.theme,
@@ -219,6 +286,9 @@ export default function App() {
         seance,
         createdAt: Date.now(),
       });
+      setActiveClip(null);
+      setActiveSeanceId(null);
+      setActiveLang(lang);
       setActiveFavId(null);
       setActive(seance);
     } catch (e) {
@@ -229,10 +299,16 @@ export default function App() {
   };
 
   const playFavourite = (f: Favourite) => {
+    if (f.seanceId) {
+      void playFromCatalogue(f.seanceId);
+      return;
+    }
+    setActiveClip(null);
+    setActiveSeanceId(null);
+    setActiveLang(f.lang);
     setDials(f.dials);
     setActiveFavId(f.id);
     setActive({ title: f.title, intention: f.intention, lines: f.lines });
-    setTab("tune");
   };
 
   const closePlayer = async (completedMs: number, plannedMs: number, completed: boolean) => {
@@ -244,13 +320,15 @@ export default function App() {
         theme: dials.theme,
         register: dials.register,
         length: dials.length,
-        lang,
+        lang: activeLang,
         completedMs,
         plannedMs,
         completed,
       });
     }
     setActive(null);
+    setActiveClip(null);
+    setActiveSeanceId(null);
     setActiveFavId(null);
   };
 
@@ -268,7 +346,8 @@ export default function App() {
       intention: active.intention,
       dials,
       lines: active.lines,
-      lang,
+      lang: activeLang,
+      seanceId: activeSeanceId ?? undefined,
       createdAt: Date.now(),
     });
     setActiveFavId(id);
@@ -319,6 +398,7 @@ export default function App() {
           pitch={pitch}
           beds={beds}
           master={master}
+          clipSource={activeClip ?? undefined}
           onClose={closePlayer}
           onToggleFavourite={toggleFavourite}
           isFavourite={!!activeFavId}
@@ -331,7 +411,7 @@ export default function App() {
           <div>
             <h1 className="font-display text-4xl leading-none text-bark">La Quiétude</h1>
             <p className="mt-1.5 text-[13px] text-bark-faint">
-              {t("méditation guidée, accordée à vous", "guided meditation, tuned to you")}
+              {t("méditation guidée, à voix réelle", "guided meditation, in a real voice")}
             </p>
           </div>
           <button
@@ -344,6 +424,9 @@ export default function App() {
 
         {/* tabs */}
         <div className="mb-7 flex gap-1 rounded-full bg-bark/5 p-1">
+          <TabBtn on={tab === "seances"} onClick={() => setTab("seances")}>
+            {t("Séances", "Séances")}
+          </TabBtn>
           <TabBtn on={tab === "tune"} onClick={() => setTab("tune")}>
             {t("Accorder", "Tune")}
           </TabBtn>
@@ -352,11 +435,42 @@ export default function App() {
           </TabBtn>
         </div>
 
-        {tab === "tune" ? (
-          <>
-            <Tuner dials={dials} setDials={setDials} />
+        {tab === "seances" && (
+          <Catalogue
+            entries={catalogue}
+            loading={catLoading}
+            busyId={busyId}
+            onPlay={playFromCatalogue}
+          />
+        )}
 
-            {/* sound + voice openers */}
+        {tab === "tune" && (
+          <>
+            <div className="mb-6 rounded-2xl border border-bark/10 bg-linen-light/50 px-4 py-3 text-[13px] leading-snug text-bark-soft">
+              {t(
+                "Mode libre : composez n'importe quelle séance et faites-la dire par la voix de votre appareil. Pour la voix studio, voyez l'onglet Séances.",
+                "Free mode: compose any séance and have it spoken by your device's voice. For the studio voice, see the Séances tab.",
+              )}
+            </div>
+            <Tuner dials={dials} setDials={setDials} />
+          </>
+        )}
+
+        {tab === "library" && (
+          <Library
+            presets={presets}
+            history={history}
+            favourites={favourites}
+            onLoadPreset={loadPreset}
+            onDeletePreset={(id) => db.presets.delete(id)}
+            onPlayFavourite={playFavourite}
+            onDeleteFavourite={(id) => db.favourites.delete(id)}
+          />
+        )}
+
+        {/* shared sound + voice controls (séances + tune) */}
+        {tab !== "library" && (
+          <>
             <div className="mt-8 grid grid-cols-2 gap-2.5">
               <OpenerBtn onClick={() => setDrawer(drawer === "sound" ? null : "sound")} on={drawer === "sound"}>
                 ≈ {t("Fond sonore", "Sound bed")}
@@ -378,43 +492,37 @@ export default function App() {
                   voiceURI={voiceURI}
                   rate={rate}
                   pitch={pitch}
+                  voiceVolume={voiceVolume}
                   onVoice={setVoiceURI}
                   onRate={setRate}
                   onPitch={setPitch}
+                  onVoiceVolume={setVoiceVolume}
                   onPreview={previewVoice}
+                  showDeviceControls={tab === "tune"}
                 />
               </div>
             )}
-
-            {error && (
-              <div className="mt-6 rounded-2xl bg-clay/12 px-4 py-3 text-sm text-bark-soft">
-                <span className="font-medium">{t("Un pépin", "A snag")} — </span>
-                {error}
-              </div>
-            )}
-
-            {/* save preset */}
-            <button
-              onClick={savePreset}
-              className="tap mt-7 w-full rounded-full border border-bark/12 py-2.5 text-sm font-medium text-bark-soft transition hover:bg-linen-dim active:scale-[0.99]"
-            >
-              ✶ {t("Garder ce réglage", "Save this setting")}
-            </button>
           </>
-        ) : (
-          <Library
-            presets={presets}
-            history={history}
-            favourites={favourites}
-            onLoadPreset={loadPreset}
-            onDeletePreset={(id) => db.presets.delete(id)}
-            onPlayFavourite={playFavourite}
-            onDeleteFavourite={(id) => db.favourites.delete(id)}
-          />
+        )}
+
+        {error && (
+          <div className="mt-6 rounded-2xl bg-clay/12 px-4 py-3 text-sm text-bark-soft">
+            <span className="font-medium">{t("Un pépin", "A snag")} — </span>
+            {error}
+          </div>
+        )}
+
+        {tab === "tune" && (
+          <button
+            onClick={savePreset}
+            className="tap mt-7 w-full rounded-full border border-bark/12 py-2.5 text-sm font-medium text-bark-soft transition hover:bg-linen-dim active:scale-[0.99]"
+          >
+            ✶ {t("Garder ce réglage", "Save this setting")}
+          </button>
         )}
       </div>
 
-      {/* sticky begin bar (only on tune tab) */}
+      {/* sticky begin bar (only on the live tune tab) */}
       {tab === "tune" && !active && (
         <div className="fixed inset-x-0 bottom-0 z-20 border-t border-bark/10 bg-linen-light/85 px-5 pb-[calc(env(safe-area-inset-bottom)+0.9rem)] pt-3 backdrop-blur">
           <div className="mx-auto flex max-w-2xl items-center gap-3">
@@ -425,7 +533,7 @@ export default function App() {
             >
               {generating
                 ? t("On prépare la séance…", "Preparing the session…")
-                : t("Commencer la séance", "Begin the session")}
+                : t("Commencer (voix de l'appareil)", "Begin (device voice)")}
             </button>
             <button
               onClick={() => begin(true)}

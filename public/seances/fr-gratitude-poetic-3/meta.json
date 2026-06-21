@@ -1,0 +1,114 @@
+{
+  "id": "fr-gratitude-poetic-3",
+  "title": "Le cœur déjà plein",
+  "intention": "Réchauffer le cœur en accueillant les petites choses réelles qui sont déjà là.",
+  "theme": "gratitude",
+  "register": "poetic",
+  "length": 3,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-10%",
+  "lines": [
+    {
+      "text": "Bienvenue. Installe-toi tranquillement, comme on revient chez soi.",
+      "pauseAfterMs": 5337,
+      "clip": "001.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Laisse tes épaules redescendre, sans les forcer. Juste un peu plus bas.",
+      "pauseAfterMs": 7116,
+      "clip": "002.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Prends une grande respiration, et relâche tout l'air d'un coup.",
+      "pauseAfterMs": 8006,
+      "clip": "003.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Sens le sol sous toi. Il te porte, sans que tu aies à demander.",
+      "pauseAfterMs": 6227,
+      "clip": "004.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Respire à ton rythme. Inspire le calme, expire la journée.",
+      "pauseAfterMs": 10675,
+      "clip": "005.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "Pense à une chose toute simple qui était là ce matin.",
+      "pauseAfterMs": 3558,
+      "clip": "006.mp3",
+      "durationMs": 3888
+    },
+    {
+      "text": "La chaleur d'une tasse dans tes mains. La lumière qui entrait par la fenêtre.",
+      "pauseAfterMs": 8006,
+      "clip": "007.mp3",
+      "durationMs": 4488
+    },
+    {
+      "text": "Laisse cette image se poser au creux de ta poitrine.",
+      "pauseAfterMs": 5337,
+      "clip": "008.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Tu n'as rien à chercher de grand. Le petit suffit.",
+      "pauseAfterMs": 4448,
+      "clip": "009.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Sens ton cœur qui bat. Il fait ce travail-là depuis toujours, sans bruit.",
+      "pauseAfterMs": 7116,
+      "clip": "010.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Merci à ce souffle. Merci à ce corps qui te porte encore.",
+      "pauseAfterMs": 6227,
+      "clip": "011.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Pense à un visage qui te fait du bien. Garde-le un instant près de toi.",
+      "pauseAfterMs": 8895,
+      "clip": "012.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Une chaleur douce monte, comme un soleil bas en fin d'après-midi.",
+      "pauseAfterMs": 5337,
+      "clip": "013.mp3",
+      "durationMs": 3840
+    },
+    {
+      "text": "Tu as déjà beaucoup. C'est là, dans le silence.",
+      "pauseAfterMs": 6227,
+      "clip": "014.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Reste encore un moment dans cette chaleur tranquille.",
+      "pauseAfterMs": 8006,
+      "clip": "015.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Quand tu seras prêt, ouvre doucement les yeux. Et garde ça avec toi.",
+      "pauseAfterMs": 3558,
+      "clip": "016.mp3",
+      "durationMs": 4608
+    }
+  ],
+  "spokenMs": 68640,
+  "silenceMs": 104076,
+  "totalMs": 172716,
+  "createdAt": 1782059557189
+}

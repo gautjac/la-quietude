@@ -1,0 +1,114 @@
+{
+  "id": "en-performance-stoic-3",
+  "title": "Composure Before the Stage",
+  "intention": "To meet pre-performance nerves with Stoic clarity, grounding what is mine and releasing what is not, so adrenaline becomes steady presence.",
+  "theme": "performance",
+  "register": "stoic",
+  "length": 3,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AndrewMultilingualNeural",
+  "rate": "-7%",
+  "lines": [
+    {
+      "text": "Welcome. Take this moment, before the moment, and make it your own.",
+      "pauseAfterMs": 5347,
+      "clip": "001.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Feel your feet on the ground, and the ground holding you up.",
+      "pauseAfterMs": 8020,
+      "clip": "002.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Let your breath come in. Let it go without effort.",
+      "pauseAfterMs": 10694,
+      "clip": "003.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Notice the energy in your chest, your hands, your pulse. This is not fear. This is power arriving.",
+      "pauseAfterMs": 6238,
+      "clip": "004.mp3",
+      "durationMs": 7488
+    },
+    {
+      "text": "The body cannot tell excitement from dread. So name it well. Call it readiness.",
+      "pauseAfterMs": 5347,
+      "clip": "005.mp3",
+      "durationMs": 5568
+    },
+    {
+      "text": "Now, a clear line. Some things are up to you, and some are not.",
+      "pauseAfterMs": 4456,
+      "clip": "006.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "The outcome, the verdict, the faces in the crowd. These are not in your hands. Set them down.",
+      "pauseAfterMs": 7129,
+      "clip": "007.mp3",
+      "durationMs": 6456
+    },
+    {
+      "text": "What remains is yours alone. Your attention. Your effort. The next breath, the next note, the next word.",
+      "pauseAfterMs": 4456,
+      "clip": "008.mp3",
+      "durationMs": 7800
+    },
+    {
+      "text": "Breathe in, and gather only what is yours.",
+      "pauseAfterMs": 6238,
+      "clip": "009.mp3",
+      "durationMs": 3264
+    },
+    {
+      "text": "Breathe out, and release what was never yours to carry.",
+      "pauseAfterMs": 8020,
+      "clip": "010.mp3",
+      "durationMs": 6720
+    },
+    {
+      "text": "You have prepared. The work is done. All that is asked of you now is to be here.",
+      "pauseAfterMs": 5347,
+      "clip": "011.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "Whatever comes, you will meet it as it is, not as you fear it.",
+      "pauseAfterMs": 4456,
+      "clip": "012.mp3",
+      "durationMs": 5064
+    },
+    {
+      "text": "Let the shoulders drop. Let the jaw soften. The strength you need is quiet.",
+      "pauseAfterMs": 7129,
+      "clip": "013.mp3",
+      "durationMs": 5400
+    },
+    {
+      "text": "Feel the steadiness settle low in your body, like a stone that will not be moved.",
+      "pauseAfterMs": 6238,
+      "clip": "014.mp3",
+      "durationMs": 6072
+    },
+    {
+      "text": "When you are ready, lift your eyes. The energy is yours to use.",
+      "pauseAfterMs": 3565,
+      "clip": "015.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Step forward, grounded and awake. Begin.",
+      "pauseAfterMs": 1782,
+      "clip": "016.mp3",
+      "durationMs": 3744
+    }
+  ],
+  "spokenMs": 84768,
+  "silenceMs": 94462,
+  "totalMs": 179230,
+  "createdAt": 1782059689850
+}

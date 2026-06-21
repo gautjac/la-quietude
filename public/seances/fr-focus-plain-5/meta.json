@@ -1,0 +1,150 @@
+{
+  "id": "fr-focus-plain-5",
+  "title": "Rassembler son attention",
+  "intention": "Rassembler une attention dispersée pour entrer dans le travail avec une vigilance calme et disponible.",
+  "theme": "focus",
+  "register": "plain",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-8%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends quelques secondes juste pour t'asseoir comme il faut.",
+      "pauseAfterMs": 7459,
+      "clip": "001.mp3",
+      "durationMs": 5520
+    },
+    {
+      "text": "Pose les deux pieds à plat sur le sol. Sens le contact.",
+      "pauseAfterMs": 9945,
+      "clip": "002.mp3",
+      "durationMs": 5280
+    },
+    {
+      "text": "Redresse le dos sans te raidir. La tête bien posée sur les épaules.",
+      "pauseAfterMs": 8702,
+      "clip": "003.mp3",
+      "durationMs": 6168
+    },
+    {
+      "text": "Les mains déposées sur les cuisses. Rien à tenir.",
+      "pauseAfterMs": 11188,
+      "clip": "004.mp3",
+      "durationMs": 5112
+    },
+    {
+      "text": "Ferme les yeux, ou laisse ton regard tomber doucement vers le sol.",
+      "pauseAfterMs": 12431,
+      "clip": "005.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "Prends une bonne respiration par le nez.",
+      "pauseAfterMs": 6215,
+      "clip": "006.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "Et laisse-la repartir tranquillement par la bouche.",
+      "pauseAfterMs": 12431,
+      "clip": "007.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Là, ton attention est probablement éparpillée. C'est normal.",
+      "pauseAfterMs": 7459,
+      "clip": "008.mp3",
+      "durationMs": 5880
+    },
+    {
+      "text": "On va simplement la ramener au même endroit, un morceau à la fois.",
+      "pauseAfterMs": 8702,
+      "clip": "009.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "Porte ton attention sur l'air qui entre par tes narines.",
+      "pauseAfterMs": 11188,
+      "clip": "010.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Suis ce souffle jusqu'au fond, sans le forcer.",
+      "pauseAfterMs": 13674,
+      "clip": "011.mp3",
+      "durationMs": 3768
+    },
+    {
+      "text": "Reste avec trois respirations complètes. Je compte avec toi.",
+      "pauseAfterMs": 4972,
+      "clip": "012.mp3",
+      "durationMs": 5688
+    },
+    {
+      "text": "Une.",
+      "pauseAfterMs": 9945,
+      "clip": "013.mp3",
+      "durationMs": 1560
+    },
+    {
+      "text": "Deux.",
+      "pauseAfterMs": 9945,
+      "clip": "014.mp3",
+      "durationMs": 1512
+    },
+    {
+      "text": "Trois.",
+      "pauseAfterMs": 11188,
+      "clip": "015.mp3",
+      "durationMs": 1608
+    },
+    {
+      "text": "Si une pensée part ailleurs, c'est correct. Tu la remarques, et tu reviens au souffle.",
+      "pauseAfterMs": 14917,
+      "clip": "016.mp3",
+      "durationMs": 6816
+    },
+    {
+      "text": "Sens maintenant tout ton corps assis, présent, en un seul morceau.",
+      "pauseAfterMs": 11188,
+      "clip": "017.mp3",
+      "durationMs": 4824
+    },
+    {
+      "text": "Ton attention est revenue. Elle est rassemblée, ici, disponible.",
+      "pauseAfterMs": 8702,
+      "clip": "018.mp3",
+      "durationMs": 6240
+    },
+    {
+      "text": "Pense à la première chose que tu vas faire en ouvrant les yeux.",
+      "pauseAfterMs": 9945,
+      "clip": "019.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Une seule chose. Claire. C'est par là que tu commences.",
+      "pauseAfterMs": 8702,
+      "clip": "020.mp3",
+      "durationMs": 6384
+    },
+    {
+      "text": "Prends une dernière respiration nette, et redresse-toi un peu.",
+      "pauseAfterMs": 6215,
+      "clip": "021.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Ouvre les yeux quand tu es prêt. Calme, éveillé, prêt à travailler.",
+      "pauseAfterMs": 3729,
+      "clip": "022.mp3",
+      "durationMs": 6192
+    }
+  ],
+  "spokenMs": 101136,
+  "silenceMs": 208842,
+  "totalMs": 309978,
+  "createdAt": 1782059293298
+}

@@ -1,0 +1,150 @@
+{
+  "id": "en-stress-plain-5",
+  "title": "Letting the Tension Go",
+  "intention": "To release bodily tension and loosen the breath through sighing exhales and softened shoulders.",
+  "theme": "stress",
+  "register": "plain",
+  "length": 5,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Welcome. Take this time to settle.",
+      "pauseAfterMs": 7910,
+      "clip": "001.mp3",
+      "durationMs": 3096
+    },
+    {
+      "text": "Find a position where you can rest without effort.",
+      "pauseAfterMs": 10546,
+      "clip": "002.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Let your eyes close, or let your gaze go soft and low.",
+      "pauseAfterMs": 11865,
+      "clip": "003.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Notice that you are here. There is nothing to fix right now.",
+      "pauseAfterMs": 13183,
+      "clip": "004.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Take a normal breath in through your nose.",
+      "pauseAfterMs": 3955,
+      "clip": "005.mp3",
+      "durationMs": 3024
+    },
+    {
+      "text": "Now let it out through your mouth with a soft sigh.",
+      "pauseAfterMs": 11865,
+      "clip": "006.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Again. Breathe in.",
+      "pauseAfterMs": 3955,
+      "clip": "007.mp3",
+      "durationMs": 2256
+    },
+    {
+      "text": "And sigh it all the way out.",
+      "pauseAfterMs": 14501,
+      "clip": "008.mp3",
+      "durationMs": 2088
+    },
+    {
+      "text": "Let the breath stay loose. You don't need to control it.",
+      "pauseAfterMs": 15820,
+      "clip": "009.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Bring your attention to your shoulders.",
+      "pauseAfterMs": 6592,
+      "clip": "010.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Notice if they are lifted, even a little.",
+      "pauseAfterMs": 7910,
+      "clip": "011.mp3",
+      "durationMs": 2712
+    },
+    {
+      "text": "On your next exhale, let them drop.",
+      "pauseAfterMs": 11865,
+      "clip": "012.mp3",
+      "durationMs": 3120
+    },
+    {
+      "text": "Feel the weight of your arms hanging down.",
+      "pauseAfterMs": 10546,
+      "clip": "013.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Now soften your jaw. Let your teeth part slightly.",
+      "pauseAfterMs": 10546,
+      "clip": "014.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "Let your forehead smooth out.",
+      "pauseAfterMs": 9228,
+      "clip": "015.mp3",
+      "durationMs": 2376
+    },
+    {
+      "text": "Take another slow breath in.",
+      "pauseAfterMs": 3955,
+      "clip": "016.mp3",
+      "durationMs": 2424
+    },
+    {
+      "text": "And release it with a sigh.",
+      "pauseAfterMs": 13183,
+      "clip": "017.mp3",
+      "durationMs": 4248
+    },
+    {
+      "text": "Scan down through your chest and belly. Let them loosen.",
+      "pauseAfterMs": 14501,
+      "clip": "018.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "With each breath out, sink a little heavier.",
+      "pauseAfterMs": 15820,
+      "clip": "019.mp3",
+      "durationMs": 3696
+    },
+    {
+      "text": "Your body knows how to let go. Let it.",
+      "pauseAfterMs": 13183,
+      "clip": "020.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Rest here, looser than before, breathing easily.",
+      "pauseAfterMs": 11865,
+      "clip": "021.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "When you're ready, carry this softness with you.",
+      "pauseAfterMs": 6592,
+      "clip": "022.mp3",
+      "durationMs": 5544
+    }
+  ],
+  "spokenMs": 78768,
+  "silenceMs": 229386,
+  "totalMs": 308154,
+  "createdAt": 1782059668770
+}

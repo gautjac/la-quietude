@@ -1,0 +1,150 @@
+{
+  "id": "en-focus-plain-5",
+  "title": "Gathering Your Focus",
+  "intention": "To gather scattered attention into a calm, ready alertness before a stretch of work.",
+  "theme": "focus",
+  "register": "plain",
+  "length": 5,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-8%",
+  "lines": [
+    {
+      "text": "Welcome. Take a moment to arrive here.",
+      "pauseAfterMs": 7747,
+      "clip": "001.mp3",
+      "durationMs": 3192
+    },
+    {
+      "text": "Sit upright, with your feet flat on the floor.",
+      "pauseAfterMs": 6456,
+      "clip": "002.mp3",
+      "durationMs": 3216
+    },
+    {
+      "text": "Let your hands rest where they are comfortable.",
+      "pauseAfterMs": 5165,
+      "clip": "003.mp3",
+      "durationMs": 3048
+    },
+    {
+      "text": "Keep your eyes soft, or close them. Whichever helps you settle.",
+      "pauseAfterMs": 10330,
+      "clip": "004.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Notice that you have stopped. There is nowhere else to be right now.",
+      "pauseAfterMs": 11621,
+      "clip": "005.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Take one slow breath in. And let it out fully.",
+      "pauseAfterMs": 12912,
+      "clip": "006.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "Again. Breathe in. And release.",
+      "pauseAfterMs": 14203,
+      "clip": "007.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Your attention may feel scattered. That is fine. We will gather it now.",
+      "pauseAfterMs": 9038,
+      "clip": "008.mp3",
+      "durationMs": 5472
+    },
+    {
+      "text": "Feel the weight of your body in the chair.",
+      "pauseAfterMs": 10330,
+      "clip": "009.mp3",
+      "durationMs": 2592
+    },
+    {
+      "text": "Feel your feet pressing down into the floor.",
+      "pauseAfterMs": 11621,
+      "clip": "010.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Bring your awareness to the breath at your nose.",
+      "pauseAfterMs": 7747,
+      "clip": "011.mp3",
+      "durationMs": 3048
+    },
+    {
+      "text": "Notice the cool air coming in. The warm air going out.",
+      "pauseAfterMs": 15495,
+      "clip": "012.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "When your mind wanders, simply notice, and come back to the breath.",
+      "pauseAfterMs": 16786,
+      "clip": "013.mp3",
+      "durationMs": 5328
+    },
+    {
+      "text": "There is nothing to chase. Just this breath, then the next.",
+      "pauseAfterMs": 14203,
+      "clip": "014.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Now picture the work in front of you. See it clearly.",
+      "pauseAfterMs": 10330,
+      "clip": "015.mp3",
+      "durationMs": 3840
+    },
+    {
+      "text": "Choose the one thing you will begin with.",
+      "pauseAfterMs": 11621,
+      "clip": "016.mp3",
+      "durationMs": 2520
+    },
+    {
+      "text": "Let everything else move into the background for now.",
+      "pauseAfterMs": 10330,
+      "clip": "017.mp3",
+      "durationMs": 2760
+    },
+    {
+      "text": "Take a fuller breath in, and feel your energy lift slightly.",
+      "pauseAfterMs": 9038,
+      "clip": "018.mp3",
+      "durationMs": 4512
+    },
+    {
+      "text": "Your mind is clearer now. Steady, and awake.",
+      "pauseAfterMs": 7747,
+      "clip": "019.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Let your eyes open, if they were closed.",
+      "pauseAfterMs": 6456,
+      "clip": "020.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Carry this calm focus with you.",
+      "pauseAfterMs": 5165,
+      "clip": "021.mp3",
+      "durationMs": 2328
+    },
+    {
+      "text": "You are ready. Begin when you are.",
+      "pauseAfterMs": 2582,
+      "clip": "022.mp3",
+      "durationMs": 2784
+    }
+  ],
+  "spokenMs": 80808,
+  "silenceMs": 216923,
+  "totalMs": 297731,
+  "createdAt": 1782059611587
+}

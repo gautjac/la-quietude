@@ -1,0 +1,222 @@
+{
+  "id": "fr-grief-poetic-10",
+  "title": "Tenir compagnie à la peine",
+  "intention": "Faire de la place à la peine du deuil avec tendresse, sans rien corriger ni presser.",
+  "theme": "grief",
+  "register": "poetic",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-14%",
+  "lines": [
+    {
+      "text": "Bienvenue. Tu peux poser tes affaires icitte, le temps de cette pause.",
+      "pauseAfterMs": 6946,
+      "clip": "001.mp3",
+      "durationMs": 4656
+    },
+    {
+      "text": "Installe-toi comme t'es bien. Assis, couché, peu importe.",
+      "pauseAfterMs": 9261,
+      "clip": "002.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Laisse tes yeux se fermer, si ça te tente.",
+      "pauseAfterMs": 6946,
+      "clip": "003.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Pas besoin d'arranger quoi que ce soit. T'as juste à être là.",
+      "pauseAfterMs": 11576,
+      "clip": "004.mp3",
+      "durationMs": 3840
+    },
+    {
+      "text": "Prends une première respiration, sans la forcer.",
+      "pauseAfterMs": 10419,
+      "clip": "005.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Sens le souffle entrer, doucement. Et le sens repartir.",
+      "pauseAfterMs": 13892,
+      "clip": "006.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "On respire pas pour aller mieux. On respire juste pour rester avec toi.",
+      "pauseAfterMs": 12734,
+      "clip": "007.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "Quelque part en dedans, il y a une peine. Tu le sais déjà.",
+      "pauseAfterMs": 13892,
+      "clip": "008.mp3",
+      "durationMs": 4152
+    },
+    {
+      "text": "On va pas la pousser dehors. On va s'asseoir à côté d'elle.",
+      "pauseAfterMs": 15049,
+      "clip": "009.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Vois si tu peux la sentir dans ton corps. La gorge, la poitrine, le ventre.",
+      "pauseAfterMs": 16207,
+      "clip": "010.mp3",
+      "durationMs": 5760
+    },
+    {
+      "text": "Peut-être que c'est lourd. Peut-être que c'est juste un creux.",
+      "pauseAfterMs": 13892,
+      "clip": "011.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "Quoi que ce soit, c'est correct. Ça a le droit d'être là.",
+      "pauseAfterMs": 15049,
+      "clip": "012.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Pose une main sur l'endroit où ça se tient, si tu veux.",
+      "pauseAfterMs": 11576,
+      "clip": "013.mp3",
+      "durationMs": 3312
+    },
+    {
+      "text": "Comme on pose la main sur l'épaule de quelqu'un qu'on aime.",
+      "pauseAfterMs": 15049,
+      "clip": "014.mp3",
+      "durationMs": 3144
+    },
+    {
+      "text": "Tu lui demandes pas de partir. Tu lui dis juste: je suis là.",
+      "pauseAfterMs": 16207,
+      "clip": "015.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Respire avec elle. Le souffle qui entre. Le souffle qui sort.",
+      "pauseAfterMs": 17364,
+      "clip": "016.mp3",
+      "durationMs": 5328
+    },
+    {
+      "text": "La peine, c'est de l'amour qui a plus d'endroit où aller.",
+      "pauseAfterMs": 15049,
+      "clip": "017.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Alors c'est pas une erreur. C'est une tendresse qui cherche son chemin.",
+      "pauseAfterMs": 16207,
+      "clip": "018.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Si des larmes montent, laisse-les monter. Elles savent quoi faire.",
+      "pauseAfterMs": 15049,
+      "clip": "019.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Si rien vient, c'est correct aussi. Y a pas de bonne façon de pleurer.",
+      "pauseAfterMs": 15049,
+      "clip": "020.mp3",
+      "durationMs": 4824
+    },
+    {
+      "text": "Imagine une lumière douce, basse, comme une fin de journée d'été.",
+      "pauseAfterMs": 13892,
+      "clip": "021.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Elle éclaire pas tout. Elle réchauffe juste un peu le coin où t'es assis.",
+      "pauseAfterMs": 16207,
+      "clip": "022.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Cette lumière demande rien. Elle reste, c'est tout.",
+      "pauseAfterMs": 15049,
+      "clip": "023.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Et toi aussi, tu peux rester. Sans avoir à comprendre.",
+      "pauseAfterMs": 15049,
+      "clip": "024.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Pense à ce que t'as perdu. Pas pour avoir mal davantage.",
+      "pauseAfterMs": 11576,
+      "clip": "025.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Juste pour dire en silence: tu comptes encore.",
+      "pauseAfterMs": 16207,
+      "clip": "026.mp3",
+      "durationMs": 3336
+    },
+    {
+      "text": "Laisse cette présence être là, aussi longtemps que ça dure.",
+      "pauseAfterMs": 17364,
+      "clip": "027.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Reviens tranquillement au souffle. Il t'a attendu.",
+      "pauseAfterMs": 13892,
+      "clip": "028.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Sens le poids de ton corps, porté par ce qui te tient.",
+      "pauseAfterMs": 12734,
+      "clip": "029.mp3",
+      "durationMs": 3624
+    },
+    {
+      "text": "T'as rien réparé, pis c'est très bien comme ça.",
+      "pauseAfterMs": 11576,
+      "clip": "030.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "T'as juste tenu compagnie à ta peine. C'est beaucoup.",
+      "pauseAfterMs": 12734,
+      "clip": "031.mp3",
+      "durationMs": 3696
+    },
+    {
+      "text": "Quand tu seras prêt, laisse tes yeux s'ouvrir, sans presser.",
+      "pauseAfterMs": 10419,
+      "clip": "032.mp3",
+      "durationMs": 3936
+    },
+    {
+      "text": "Garde un peu de cette douceur avec toi, pour le reste de la journée.",
+      "pauseAfterMs": 8103,
+      "clip": "033.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Tu peux y aller. Doucement. À ton rythme.",
+      "pauseAfterMs": 4631,
+      "clip": "034.mp3",
+      "durationMs": 3936
+    }
+  ],
+  "spokenMs": 137928,
+  "silenceMs": 446846,
+  "totalMs": 584774,
+  "createdAt": 1782059493625
+}

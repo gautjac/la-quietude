@@ -1,0 +1,150 @@
+{
+  "id": "fr-walking-plain-5",
+  "title": "Marche, un pas à la fois",
+  "intention": "Marcher en pleine conscience, les yeux ouverts, en accordant l'attention au pas, au contact du pied et à l'air sur la peau.",
+  "theme": "walking",
+  "register": "plain",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-6%",
+  "lines": [
+    {
+      "text": "Bienvenue. On va marcher ensemble, tranquillement.",
+      "pauseAfterMs": 4374,
+      "clip": "001.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Reste debout un moment. Les pieds bien à plat sur le sol.",
+      "pauseAfterMs": 7655,
+      "clip": "002.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "Laisse les yeux ouverts, le regard doux, posé devant toi.",
+      "pauseAfterMs": 6561,
+      "clip": "003.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "Sens ton poids dans tes deux pieds. Sens le sol qui te tient.",
+      "pauseAfterMs": 9842,
+      "clip": "004.mp3",
+      "durationMs": 5184
+    },
+    {
+      "text": "Prends une respiration tranquille. Relâche les épaules.",
+      "pauseAfterMs": 12029,
+      "clip": "005.mp3",
+      "durationMs": 5088
+    },
+    {
+      "text": "Quand tu es prêt, commence à marcher. Lentement.",
+      "pauseAfterMs": 6561,
+      "clip": "006.mp3",
+      "durationMs": 4800
+    },
+    {
+      "text": "Pas besoin d'aller nulle part. On marche juste pour marcher.",
+      "pauseAfterMs": 8748,
+      "clip": "007.mp3",
+      "durationMs": 5040
+    },
+    {
+      "text": "Porte ton attention sur tes pieds. Le talon qui se pose, puis les orteils.",
+      "pauseAfterMs": 10935,
+      "clip": "008.mp3",
+      "durationMs": 6504
+    },
+    {
+      "text": "Sens le contact à chaque pas. Le sol dur ou souple sous toi.",
+      "pauseAfterMs": 12029,
+      "clip": "009.mp3",
+      "durationMs": 5472
+    },
+    {
+      "text": "Un pied se lève, l'autre se pose. C'est tout.",
+      "pauseAfterMs": 9842,
+      "clip": "010.mp3",
+      "durationMs": 4800
+    },
+    {
+      "text": "Si l'esprit part ailleurs, reviens au pied qui touche le sol.",
+      "pauseAfterMs": 13122,
+      "clip": "011.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Remarque le mouvement dans tes jambes. Le balancement naturel.",
+      "pauseAfterMs": 9842,
+      "clip": "012.mp3",
+      "durationMs": 5520
+    },
+    {
+      "text": "Laisse tes bras suivre, sans effort.",
+      "pauseAfterMs": 7655,
+      "clip": "013.mp3",
+      "durationMs": 3288
+    },
+    {
+      "text": "Maintenant, sens l'air sur ta peau. Sur ton visage, sur tes mains.",
+      "pauseAfterMs": 12029,
+      "clip": "014.mp3",
+      "durationMs": 6144
+    },
+    {
+      "text": "Peut-être un peu de fraîcheur. Peut-être un souffle de vent.",
+      "pauseAfterMs": 10935,
+      "clip": "015.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Tu marches, tu respires, tu sens l'air. Rien de plus.",
+      "pauseAfterMs": 13122,
+      "clip": "016.mp3",
+      "durationMs": 5688
+    },
+    {
+      "text": "Reste avec ça quelques pas encore. Le pied, le souffle, la peau.",
+      "pauseAfterMs": 15309,
+      "clip": "017.mp3",
+      "durationMs": 6096
+    },
+    {
+      "text": "Tranquillement, tu peux ralentir.",
+      "pauseAfterMs": 7655,
+      "clip": "018.mp3",
+      "durationMs": 3192
+    },
+    {
+      "text": "Et t'arrêter. Reste debout, immobile.",
+      "pauseAfterMs": 8748,
+      "clip": "019.mp3",
+      "durationMs": 4680
+    },
+    {
+      "text": "Sens ton corps qui se tient là. Calme et présent.",
+      "pauseAfterMs": 9842,
+      "clip": "020.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Prends une dernière respiration tranquille.",
+      "pauseAfterMs": 7655,
+      "clip": "021.mp3",
+      "durationMs": 3336
+    },
+    {
+      "text": "Tu peux repartir quand tu veux, en gardant cette attention avec toi.",
+      "pauseAfterMs": 3281,
+      "clip": "022.mp3",
+      "durationMs": 4800
+    }
+  ],
+  "spokenMs": 108408,
+  "silenceMs": 207771,
+  "totalMs": 316179,
+  "createdAt": 1782059514168
+}

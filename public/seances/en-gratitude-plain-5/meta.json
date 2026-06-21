@@ -1,0 +1,150 @@
+{
+  "id": "en-gratitude-plain-5",
+  "title": "What's Already Here",
+  "intention": "To warm the heart by noticing the small, real things that are already present.",
+  "theme": "gratitude",
+  "register": "plain",
+  "length": 5,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-10%",
+  "lines": [
+    {
+      "text": "Welcome. Take your seat, and let yourself stop for a while.",
+      "pauseAfterMs": 7775,
+      "clip": "001.mp3",
+      "durationMs": 4536
+    },
+    {
+      "text": "Let your eyes close, or rest them low and soft.",
+      "pauseAfterMs": 6479,
+      "clip": "002.mp3",
+      "durationMs": 4320
+    },
+    {
+      "text": "Feel the weight of your body where it meets the chair or the floor.",
+      "pauseAfterMs": 10367,
+      "clip": "003.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "Take one slow breath in. And let it go.",
+      "pauseAfterMs": 11663,
+      "clip": "004.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "There is nothing to fix here. Just be where you are.",
+      "pauseAfterMs": 10367,
+      "clip": "005.mp3",
+      "durationMs": 3936
+    },
+    {
+      "text": "Notice your breath, moving on its own.",
+      "pauseAfterMs": 9071,
+      "clip": "006.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Your lungs are working. They have not stopped all day.",
+      "pauseAfterMs": 11663,
+      "clip": "007.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "Feel the simple fact of air coming in, and going out.",
+      "pauseAfterMs": 10367,
+      "clip": "008.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "This is already a gift. Easy to miss, and here all along.",
+      "pauseAfterMs": 9071,
+      "clip": "009.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Now let your attention move to your hands.",
+      "pauseAfterMs": 6479,
+      "clip": "010.mp3",
+      "durationMs": 2952
+    },
+    {
+      "text": "These hands have carried things, opened doors, held what matters.",
+      "pauseAfterMs": 10367,
+      "clip": "011.mp3",
+      "durationMs": 5016
+    },
+    {
+      "text": "Let them rest, warm and quiet, in your lap.",
+      "pauseAfterMs": 9071,
+      "clip": "012.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "Bring to mind one small thing from today that was good.",
+      "pauseAfterMs": 11663,
+      "clip": "013.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "A warm drink. A familiar voice. A moment of quiet like this one.",
+      "pauseAfterMs": 10367,
+      "clip": "014.mp3",
+      "durationMs": 5928
+    },
+    {
+      "text": "Let it be small. Small is enough.",
+      "pauseAfterMs": 9071,
+      "clip": "015.mp3",
+      "durationMs": 3240
+    },
+    {
+      "text": "Stay with it. Let the warmth of it settle in your chest.",
+      "pauseAfterMs": 12959,
+      "clip": "016.mp3",
+      "durationMs": 4128
+    },
+    {
+      "text": "Take a slow breath, and let that good thing fill the breath.",
+      "pauseAfterMs": 11663,
+      "clip": "017.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Notice the floor still holding you. The roof above you.",
+      "pauseAfterMs": 9071,
+      "clip": "018.mp3",
+      "durationMs": 4008
+    },
+    {
+      "text": "So much is quietly here, asking nothing of you.",
+      "pauseAfterMs": 10367,
+      "clip": "019.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Let a quiet thank you form, just for what is.",
+      "pauseAfterMs": 10367,
+      "clip": "020.mp3",
+      "durationMs": 3456
+    },
+    {
+      "text": "Take one more easy breath, and keep this warmth with you.",
+      "pauseAfterMs": 7775,
+      "clip": "021.mp3",
+      "durationMs": 4176
+    },
+    {
+      "text": "When you are ready, open your eyes. Carry it gently into your day.",
+      "pauseAfterMs": 5184,
+      "clip": "022.mp3",
+      "durationMs": 4944
+    }
+  ],
+  "spokenMs": 89352,
+  "silenceMs": 211227,
+  "totalMs": 300579,
+  "createdAt": 1782059713919
+}

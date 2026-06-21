@@ -87,7 +87,51 @@ export interface Favourite {
   dials: Dials;
   lines: ScriptLine[];
   lang: Lang;
+  /** Set when the favourite is a pre-rendered catalogue séance, so it replays
+   *  with its real recorded voice rather than the device voice. */
+  seanceId?: string;
   createdAt: number;
+}
+
+/** One spoken line of a pre-rendered séance: text, hold, and its voiced clip. */
+export interface ClipLine {
+  text: string;
+  pauseAfterMs: number;
+  clip: string; // filename within the séance folder, e.g. "001.mp3"
+  durationMs: number | null; // measured clip length (ffprobe); null if unknown
+}
+
+/** Full metadata for one pre-rendered séance (public/seances/<id>/meta.json). */
+export interface SeanceMeta {
+  id: string;
+  title: string;
+  intention: string;
+  theme: ThemeId;
+  register: RegisterId;
+  length: Length;
+  lang: Lang;
+  pacing: Pacing;
+  voice: string; // Edge-TTS voice id, e.g. "fr-CA-SylvieNeural"
+  rate: string; // Edge-TTS rate, e.g. "-10%"
+  lines: ClipLine[];
+  spokenMs: number;
+  silenceMs: number;
+  totalMs: number;
+  createdAt: number;
+}
+
+/** Slim catalogue row (public/seances/index.json). */
+export interface SeanceIndexEntry {
+  id: string;
+  title: string;
+  intention: string;
+  theme: ThemeId;
+  register: RegisterId;
+  length: Length;
+  lang: Lang;
+  voice: string;
+  lineCount: number;
+  totalMs: number;
 }
 
 /** Dexie cache row, keyed by a deterministic composite key. */

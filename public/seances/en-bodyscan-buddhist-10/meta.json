@@ -1,0 +1,222 @@
+{
+  "id": "en-bodyscan-buddhist-10",
+  "title": "Head to Feet, Settling",
+  "intention": "To move attention gently through the body, region by region, releasing tension and returning to the breath.",
+  "theme": "bodyscan",
+  "register": "buddhist",
+  "length": 10,
+  "lang": "en",
+  "pacing": 0,
+  "voice": "en-US-AvaMultilingualNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Welcome. Let yourself arrive here, just as you are.",
+      "pauseAfterMs": 8914,
+      "clip": "001.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Find a position that feels steady and easy, lying down or sitting.",
+      "pauseAfterMs": 10400,
+      "clip": "002.mp3",
+      "durationMs": 5352
+    },
+    {
+      "text": "Let your eyes close, or soften your gaze toward the floor.",
+      "pauseAfterMs": 11886,
+      "clip": "003.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "There is nothing to fix and nowhere to go.",
+      "pauseAfterMs": 8914,
+      "clip": "004.mp3",
+      "durationMs": 3168
+    },
+    {
+      "text": "Take a slow breath in.",
+      "pauseAfterMs": 5943,
+      "clip": "005.mp3",
+      "durationMs": 2016
+    },
+    {
+      "text": "And let it go, a little longer than the breath in.",
+      "pauseAfterMs": 13371,
+      "clip": "006.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Let the body grow heavy, held by the surface beneath you.",
+      "pauseAfterMs": 17829,
+      "clip": "007.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "We'll travel through the body, region by region, from head to feet.",
+      "pauseAfterMs": 8914,
+      "clip": "008.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "Bring your attention to the top of your head.",
+      "pauseAfterMs": 11886,
+      "clip": "009.mp3",
+      "durationMs": 2736
+    },
+    {
+      "text": "Notice whatever is here, and soften the scalp.",
+      "pauseAfterMs": 13371,
+      "clip": "010.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Let your attention move to your forehead and your eyes.",
+      "pauseAfterMs": 10400,
+      "clip": "011.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Let the brow smooth. Let the eyes rest deep in their sockets.",
+      "pauseAfterMs": 14857,
+      "clip": "012.mp3",
+      "durationMs": 4944
+    },
+    {
+      "text": "Now the jaw, the tongue, the whole of the face.",
+      "pauseAfterMs": 8914,
+      "clip": "013.mp3",
+      "durationMs": 4296
+    },
+    {
+      "text": "Let the teeth part slightly, and let the face be soft.",
+      "pauseAfterMs": 17829,
+      "clip": "014.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Move down into the neck and the throat.",
+      "pauseAfterMs": 11886,
+      "clip": "015.mp3",
+      "durationMs": 2736
+    },
+    {
+      "text": "If you find tension here, simply note it, and let it pass.",
+      "pauseAfterMs": 16343,
+      "clip": "016.mp3",
+      "durationMs": 4656
+    },
+    {
+      "text": "Let your shoulders drop away from your ears.",
+      "pauseAfterMs": 13371,
+      "clip": "017.mp3",
+      "durationMs": 2976
+    },
+    {
+      "text": "Follow the arms down, through the elbows, into the hands.",
+      "pauseAfterMs": 11886,
+      "clip": "018.mp3",
+      "durationMs": 4032
+    },
+    {
+      "text": "Let the fingers be loose and unhurried.",
+      "pauseAfterMs": 17829,
+      "clip": "019.mp3",
+      "durationMs": 3504
+    },
+    {
+      "text": "Return to the breath for a moment. Just a few easy breaths.",
+      "pauseAfterMs": 20800,
+      "clip": "020.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Bring your attention to the chest, rising and falling on its own.",
+      "pauseAfterMs": 14857,
+      "clip": "021.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "And the upper back, resting, supported.",
+      "pauseAfterMs": 13371,
+      "clip": "022.mp3",
+      "durationMs": 3360
+    },
+    {
+      "text": "Let your attention settle into the belly.",
+      "pauseAfterMs": 10400,
+      "clip": "023.mp3",
+      "durationMs": 2904
+    },
+    {
+      "text": "Let it be soft, moving with each breath.",
+      "pauseAfterMs": 17829,
+      "clip": "024.mp3",
+      "durationMs": 3552
+    },
+    {
+      "text": "Move down into the hips and the base of the spine.",
+      "pauseAfterMs": 13371,
+      "clip": "025.mp3",
+      "durationMs": 3576
+    },
+    {
+      "text": "Let any holding here gently release.",
+      "pauseAfterMs": 16343,
+      "clip": "026.mp3",
+      "durationMs": 2880
+    },
+    {
+      "text": "Follow the legs down, through the thighs and the knees.",
+      "pauseAfterMs": 13371,
+      "clip": "027.mp3",
+      "durationMs": 3672
+    },
+    {
+      "text": "Down through the calves, into the ankles.",
+      "pauseAfterMs": 13371,
+      "clip": "028.mp3",
+      "durationMs": 2808
+    },
+    {
+      "text": "And finally, the feet, all the way to the toes.",
+      "pauseAfterMs": 17829,
+      "clip": "029.mp3",
+      "durationMs": 4272
+    },
+    {
+      "text": "Now sense the whole body at once, resting as one.",
+      "pauseAfterMs": 20800,
+      "clip": "030.mp3",
+      "durationMs": 4488
+    },
+    {
+      "text": "If the mind has wandered, that's fine. Note it, and come back to the breath.",
+      "pauseAfterMs": 17829,
+      "clip": "031.mp3",
+      "durationMs": 5832
+    },
+    {
+      "text": "Rest here, soft and whole, for a few more breaths.",
+      "pauseAfterMs": 23771,
+      "clip": "032.mp3",
+      "durationMs": 4560
+    },
+    {
+      "text": "When you're ready, let your attention widen to the room around you.",
+      "pauseAfterMs": 11886,
+      "clip": "033.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Carry this quiet with you, and let it stay.",
+      "pauseAfterMs": 7429,
+      "clip": "034.mp3",
+      "durationMs": 3576
+    }
+  ],
+  "spokenMs": 132960,
+  "silenceMs": 468000,
+  "totalMs": 600960,
+  "createdAt": 1782059754163
+}

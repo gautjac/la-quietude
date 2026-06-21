@@ -1,0 +1,114 @@
+{
+  "id": "fr-performance-stoic-3",
+  "title": "Avant-scène : le trac apprivoisé",
+  "intention": "Transformer le trac d'avant-scène en présence ancrée, à la manière des stoïciens, en distinguant ce qui dépend de moi de ce qui n'en dépend pas.",
+  "theme": "performance",
+  "register": "stoic",
+  "length": 3,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-AntoineNeural",
+  "rate": "-7%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends place ici, juste avant de monter.",
+      "pauseAfterMs": 3655,
+      "clip": "001.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Laisse tes pieds sentir le sol. Tout ton poids descend tranquillement.",
+      "pauseAfterMs": 8223,
+      "clip": "002.mp3",
+      "durationMs": 5304
+    },
+    {
+      "text": "Tu sens peut-être ton cœur qui bat plus vite. C'est correct. C'est juste de l'énergie qui arrive.",
+      "pauseAfterMs": 5482,
+      "clip": "003.mp3",
+      "durationMs": 8040
+    },
+    {
+      "text": "Prends une grande respiration, par le nez. Et laisse-la repartir doucement.",
+      "pauseAfterMs": 10050,
+      "clip": "004.mp3",
+      "durationMs": 6048
+    },
+    {
+      "text": "Marc Aurèle nous le rappelle : certaines choses dépendent de toi, d'autres pas du tout.",
+      "pauseAfterMs": 3655,
+      "clip": "005.mp3",
+      "durationMs": 5736
+    },
+    {
+      "text": "Le public, son humeur, ce qu'il pensera : ça ne t'appartient pas. Tu peux le laisser aller.",
+      "pauseAfterMs": 6396,
+      "clip": "006.mp3",
+      "durationMs": 7128
+    },
+    {
+      "text": "Ce qui t'appartient, c'est ton souffle, ta préparation, ton intention. Reviens là.",
+      "pauseAfterMs": 7309,
+      "clip": "007.mp3",
+      "durationMs": 6816
+    },
+    {
+      "text": "Respire encore une fois, sans rien forcer.",
+      "pauseAfterMs": 8223,
+      "clip": "008.mp3",
+      "durationMs": 3648
+    },
+    {
+      "text": "Ce trac, ce n'est pas un ennemi. C'est ton corps qui se prépare à être pleinement présent.",
+      "pauseAfterMs": 4568,
+      "clip": "009.mp3",
+      "durationMs": 6648
+    },
+    {
+      "text": "Accueille-le comme il est. Tu n'as pas à le faire disparaître.",
+      "pauseAfterMs": 5482,
+      "clip": "010.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Sens cette vibration dans ta poitrine, dans tes mains. C'est de la vie, c'est du carburant.",
+      "pauseAfterMs": 4568,
+      "clip": "011.mp3",
+      "durationMs": 6864
+    },
+    {
+      "text": "Imagine maintenant cette énergie qui se rassemble, calme et prête.",
+      "pauseAfterMs": 6396,
+      "clip": "012.mp3",
+      "durationMs": 4728
+    },
+    {
+      "text": "Tu n'as rien à prouver. Tu as seulement à être là, vraiment là.",
+      "pauseAfterMs": 4568,
+      "clip": "013.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Fais ta part, du mieux que tu peux. Le reste suivra son cours.",
+      "pauseAfterMs": 3655,
+      "clip": "014.mp3",
+      "durationMs": 5568
+    },
+    {
+      "text": "Une dernière respiration. Tu inspires la présence, tu relâches l'inquiétude.",
+      "pauseAfterMs": 5482,
+      "clip": "015.mp3",
+      "durationMs": 6264
+    },
+    {
+      "text": "Quand tu seras prêt, ouvre les yeux. Le rideau peut se lever. Tu es là.",
+      "pauseAfterMs": 1827,
+      "clip": "016.mp3",
+      "durationMs": 7104
+    }
+  ],
+  "spokenMs": 95640,
+  "silenceMs": 89539,
+  "totalMs": 185179,
+  "createdAt": 1782058559808
+}

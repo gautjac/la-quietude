@@ -1,0 +1,222 @@
+{
+  "id": "fr-bodyscan-buddhist-10",
+  "title": "Le balayage du corps",
+  "intention": "Visiter le corps région par région et relâcher à chaque palier, en revenant doucement au souffle.",
+  "theme": "bodyscan",
+  "register": "buddhist",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-DeniseNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends le temps de t'installer là où tu es.",
+      "pauseAfterMs": 8841,
+      "clip": "001.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Laisse ton corps trouver une position confortable, assis ou couché.",
+      "pauseAfterMs": 9946,
+      "clip": "002.mp3",
+      "durationMs": 5184
+    },
+    {
+      "text": "Si ça te convient, ferme doucement les yeux.",
+      "pauseAfterMs": 6631,
+      "clip": "003.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "On n'a rien à régler ici. On vient juste se déposer.",
+      "pauseAfterMs": 11051,
+      "clip": "004.mp3",
+      "durationMs": 5424
+    },
+    {
+      "text": "Sens le poids de ton corps qui repose sur ce qui te porte.",
+      "pauseAfterMs": 13261,
+      "clip": "005.mp3",
+      "durationMs": 4632
+    },
+    {
+      "text": "Pis remarque le souffle, sans rien changer. Juste l'air qui entre, l'air qui sort.",
+      "pauseAfterMs": 15471,
+      "clip": "006.mp3",
+      "durationMs": 7368
+    },
+    {
+      "text": "Laisse quelques respirations passer, à leur propre rythme.",
+      "pauseAfterMs": 16577,
+      "clip": "007.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Quand t'es prêt, on va visiter le corps, tranquillement, du sommet de la tête jusqu'aux pieds.",
+      "pauseAfterMs": 9946,
+      "clip": "008.mp3",
+      "durationMs": 6768
+    },
+    {
+      "text": "Amène ton attention sur le dessus du crâne.",
+      "pauseAfterMs": 11051,
+      "clip": "009.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Note ce qui est là. Une chaleur, un picotement, ou rien de particulier.",
+      "pauseAfterMs": 13261,
+      "clip": "010.mp3",
+      "durationMs": 6864
+    },
+    {
+      "text": "Pis laisse le front se relâcher. Laisse l'espace entre les sourcils s'ouvrir.",
+      "pauseAfterMs": 14366,
+      "clip": "011.mp3",
+      "durationMs": 6144
+    },
+    {
+      "text": "Descends vers les yeux, les joues, la mâchoire.",
+      "pauseAfterMs": 9946,
+      "clip": "012.mp3",
+      "durationMs": 4248
+    },
+    {
+      "text": "Laisse la mâchoire se déserrer un peu. Les dents qui se décollent.",
+      "pauseAfterMs": 15471,
+      "clip": "013.mp3",
+      "durationMs": 5808
+    },
+    {
+      "text": "Glisse vers le cou pis la gorge. Sans forcer, juste en observant.",
+      "pauseAfterMs": 13261,
+      "clip": "014.mp3",
+      "durationMs": 6312
+    },
+    {
+      "text": "Si ton esprit s'en va ailleurs, c'est correct. Tu reviens au souffle, pis tu continues.",
+      "pauseAfterMs": 14366,
+      "clip": "015.mp3",
+      "durationMs": 7464
+    },
+    {
+      "text": "Amène l'attention sur les épaules.",
+      "pauseAfterMs": 8841,
+      "clip": "016.mp3",
+      "durationMs": 3024
+    },
+    {
+      "text": "Laisse-les descendre. Laisse-les se déposer loin des oreilles.",
+      "pauseAfterMs": 15471,
+      "clip": "017.mp3",
+      "durationMs": 5640
+    },
+    {
+      "text": "Suis les bras, jusqu'aux mains pis au bout des doigts.",
+      "pauseAfterMs": 14366,
+      "clip": "018.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "Note la sensation dans les paumes. Peut-être un fourmillement.",
+      "pauseAfterMs": 13261,
+      "clip": "019.mp3",
+      "durationMs": 5448
+    },
+    {
+      "text": "Reviens vers la poitrine. Sens-la qui se gonfle doucement à chaque inspiration.",
+      "pauseAfterMs": 15471,
+      "clip": "020.mp3",
+      "durationMs": 6768
+    },
+    {
+      "text": "Pis le ventre, qui monte pis qui redescend, tout seul.",
+      "pauseAfterMs": 16577,
+      "clip": "021.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Laisse le ventre devenir mou. Rien à tenir là.",
+      "pauseAfterMs": 14366,
+      "clip": "022.mp3",
+      "durationMs": 5064
+    },
+    {
+      "text": "Porte ton attention sur le dos, appuyé contre ce qui te soutient.",
+      "pauseAfterMs": 15471,
+      "clip": "023.mp3",
+      "durationMs": 5136
+    },
+    {
+      "text": "Laisse le bas du dos se relâcher dans l'expiration.",
+      "pauseAfterMs": 14366,
+      "clip": "024.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Descends vers les hanches, le bassin.",
+      "pauseAfterMs": 11051,
+      "clip": "025.mp3",
+      "durationMs": 3408
+    },
+    {
+      "text": "Laisse tout ce poids se déposer, sans le retenir.",
+      "pauseAfterMs": 15471,
+      "clip": "026.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Suis les cuisses, les genoux.",
+      "pauseAfterMs": 12156,
+      "clip": "027.mp3",
+      "durationMs": 2928
+    },
+    {
+      "text": "Pis les mollets, les chevilles.",
+      "pauseAfterMs": 13261,
+      "clip": "028.mp3",
+      "durationMs": 3000
+    },
+    {
+      "text": "Enfin, les pieds. La plante, le dessus, chaque orteil.",
+      "pauseAfterMs": 15471,
+      "clip": "029.mp3",
+      "durationMs": 6480
+    },
+    {
+      "text": "Prends un instant pour sentir le corps au complet, d'un seul morceau.",
+      "pauseAfterMs": 17682,
+      "clip": "030.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Le souffle qui passe à travers tout ça, sans effort.",
+      "pauseAfterMs": 16577,
+      "clip": "031.mp3",
+      "durationMs": 4248
+    },
+    {
+      "text": "Rien à faire de plus. Juste être là, dans ce corps qui respire.",
+      "pauseAfterMs": 15471,
+      "clip": "032.mp3",
+      "durationMs": 6312
+    },
+    {
+      "text": "Quand tu seras prêt, laisse ton attention revenir doucement à la pièce autour de toi.",
+      "pauseAfterMs": 11051,
+      "clip": "033.mp3",
+      "durationMs": 5952
+    },
+    {
+      "text": "Garde un peu de ce calme avec toi. Pis va à ton rythme.",
+      "pauseAfterMs": 6631,
+      "clip": "034.mp3",
+      "durationMs": 5328
+    }
+  ],
+  "spokenMs": 173544,
+  "silenceMs": 446458,
+  "totalMs": 620002,
+  "createdAt": 1782059587271
+}

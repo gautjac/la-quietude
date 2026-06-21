@@ -1,9 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 import { useLang } from "../i18n";
-import { GuidancePlayer, type Voice } from "../speech";
+import {
+  GuidancePlayer,
+  BrowserSpeechEngine,
+  ClipAudioEngine,
+  type Voice,
+  type PlayerLine,
+  type VoiceEngine,
+} from "../speech";
 import type { Seance, Dials, BedLevels } from "../types";
 import { BedMixer } from "../audio";
 import { themeName } from "../catalog";
+
+/** When present, the player voices each line from a pre-rendered MP3 clip
+ *  instead of the device's speech engine. */
+export interface ClipSource {
+  urls: (string | null)[];
+  durationsMs: (number | null)[];
+  voiceVolume: number; // 0..1
+}
 
 interface PlayerProps {
   seance: Seance;
@@ -14,6 +29,7 @@ interface PlayerProps {
   pitch: number;
   beds: BedLevels;
   master: number;
+  clipSource?: ClipSource;
   onClose: (completedMs: number, plannedMs: number, completed: boolean) => void;
   onToggleFavourite: () => void;
   isFavourite: boolean;
@@ -37,6 +53,7 @@ export function Player(props: PlayerProps) {
     pitch,
     beds,
     master,
+    clipSource,
     onClose,
     onToggleFavourite,
     isFavourite,
@@ -50,6 +67,7 @@ export function Player(props: PlayerProps) {
 
   const playerRef = useRef<GuidancePlayer | null>(null);
   const mixerRef = useRef<BedMixer | null>(null);
+  const clipEngineRef = useRef<ClipAudioEngine | null>(null);
   const reportedRef = useRef(false);
 
   // breathing cadence (seconds) scales a little with pacing — calmer = slower
@@ -61,10 +79,28 @@ export function Player(props: PlayerProps) {
     void mixer.ensure();
 
     const wantLang = lang === "fr" ? "fr-CA" : "en-US";
+
+    // Pre-rendered clips when available (catalogue séances); otherwise the
+    // device's speech engine (live "device voice" mode).
+    let engine: VoiceEngine;
+    if (clipSource) {
+      const clipEngine = new ClipAudioEngine(clipSource.urls, clipSource.voiceVolume);
+      clipEngineRef.current = clipEngine;
+      engine = clipEngine;
+    } else {
+      clipEngineRef.current = null;
+      engine = new BrowserSpeechEngine({ voiceURI, rate, pitch, lang: wantLang }, voices);
+    }
+
+    const lines: PlayerLine[] = seance.lines.map((l, i) => ({
+      text: l.text,
+      pauseAfterMs: l.pauseAfterMs,
+      knownMs: clipSource?.durationsMs[i] ?? undefined,
+    }));
+
     const p = new GuidancePlayer(
-      seance.lines,
-      { voiceURI, rate, pitch, lang: wantLang },
-      voices,
+      lines,
+      engine,
       {
         onLine: (_i, text) => {
           setLine(text);
@@ -80,6 +116,7 @@ export function Player(props: PlayerProps) {
           await mixer.chime();
         },
       },
+      rate,
     );
     playerRef.current = p;
     setTotal(p.totalMs);
@@ -97,6 +134,11 @@ export function Player(props: PlayerProps) {
   useEffect(() => {
     mixerRef.current?.setMaster(master);
   }, [master]);
+
+  // live voice-volume for clip playback
+  useEffect(() => {
+    if (clipSource) clipEngineRef.current?.setVolume(clipSource.voiceVolume);
+  }, [clipSource?.voiceVolume, clipSource]);
 
   const pct = Math.min(100, (elapsed / Math.max(1, total)) * 100);
 

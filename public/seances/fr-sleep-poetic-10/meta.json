@@ -1,0 +1,222 @@
+{
+  "id": "fr-sleep-poetic-10",
+  "title": "Vers le sommeil, doucement",
+  "intention": "Se laisser glisser tranquillement jusqu'au sommeil, sans rien forcer.",
+  "theme": "sleep",
+  "register": "poetic",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-VivienneMultilingualNeural",
+  "rate": "-16%",
+  "lines": [
+    {
+      "text": "Bienvenue. Tu es arrivé là où tu peux enfin déposer la journée.",
+      "pauseAfterMs": 5246,
+      "clip": "001.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Installe-toi comme tu es bien. Laisse le matelas te recevoir.",
+      "pauseAfterMs": 7869,
+      "clip": "002.mp3",
+      "durationMs": 4176
+    },
+    {
+      "text": "Y'a plus rien à faire à c't'heure-ci. Juste être là.",
+      "pauseAfterMs": 8744,
+      "clip": "003.mp3",
+      "durationMs": 3720
+    },
+    {
+      "text": "Ferme les yeux, tranquillement, si c'est pas déjà fait.",
+      "pauseAfterMs": 6995,
+      "clip": "004.mp3",
+      "durationMs": 3912
+    },
+    {
+      "text": "Prends une grande respiration. Pis laisse-la repartir toute seule.",
+      "pauseAfterMs": 10492,
+      "clip": "005.mp3",
+      "durationMs": null
+    },
+    {
+      "text": "Une autre, encore plus lente. Sens l'air qui ralentit en dedans de toi.",
+      "pauseAfterMs": 12241,
+      "clip": "006.mp3",
+      "durationMs": 5232
+    },
+    {
+      "text": "T'as pas besoin de contrôler le souffle. Laisse-le faire son chemin.",
+      "pauseAfterMs": 11367,
+      "clip": "007.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Imagine le soir qui descend dehors, comme une couverture qu'on tire doucement.",
+      "pauseAfterMs": 9618,
+      "clip": "008.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Une lumière chaude, basse, qui s'éteint sans bruit.",
+      "pauseAfterMs": 10492,
+      "clip": "009.mp3",
+      "durationMs": 3960
+    },
+    {
+      "text": "Sens le poids de ta tête sur l'oreiller. Tout ce poids-là qui s'abandonne.",
+      "pauseAfterMs": 13115,
+      "clip": "010.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Laisse tes épaules redescendre. Elles ont assez porté aujourd'hui.",
+      "pauseAfterMs": 11367,
+      "clip": "011.mp3",
+      "durationMs": 4224
+    },
+    {
+      "text": "Tes bras deviennent lourds. Lourds pis tièdes le long de toi.",
+      "pauseAfterMs": 12241,
+      "clip": "012.mp3",
+      "durationMs": 3792
+    },
+    {
+      "text": "Ton ventre se relâche à chaque expiration. Un peu plus mou, un peu plus calme.",
+      "pauseAfterMs": 13115,
+      "clip": "013.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "Sens tes jambes s'enfoncer dans le lit, comme des pierres au fond d'un lac tranquille.",
+      "pauseAfterMs": 13990,
+      "clip": "014.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "Pis tes pieds, tout au bout, qui se desserrent enfin.",
+      "pauseAfterMs": 12241,
+      "clip": "015.mp3",
+      "durationMs": 3624
+    },
+    {
+      "text": "Tout ton corps devient plus lourd, plus doux, à mesure que tu respires.",
+      "pauseAfterMs": 13990,
+      "clip": "016.mp3",
+      "durationMs": 4704
+    },
+    {
+      "text": "Si une pensée passe, laisse-la passer. Comme un nuage la nuit.",
+      "pauseAfterMs": 11367,
+      "clip": "017.mp3",
+      "durationMs": 4608
+    },
+    {
+      "text": "T'as pas à la suivre. Elle s'en va toute seule.",
+      "pauseAfterMs": 12241,
+      "clip": "018.mp3",
+      "durationMs": 3384
+    },
+    {
+      "text": "Imagine que les images de ta journée se défont, une par une.",
+      "pauseAfterMs": 11367,
+      "clip": "019.mp3",
+      "durationMs": 3984
+    },
+    {
+      "text": "Comme du sable que l'eau efface au bord de la plage.",
+      "pauseAfterMs": 13115,
+      "clip": "020.mp3",
+      "durationMs": 3240
+    },
+    {
+      "text": "Y reste rien à retenir. Tout se dissout en douceur.",
+      "pauseAfterMs": 13990,
+      "clip": "021.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "Ta respiration devient plus petite. Plus lente. Plus discrète.",
+      "pauseAfterMs": 14864,
+      "clip": "022.mp3",
+      "durationMs": 5544
+    },
+    {
+      "text": "À chaque souffle, tu descends d'un cran. Un peu plus creux. Un peu plus loin.",
+      "pauseAfterMs": 15739,
+      "clip": "023.mp3",
+      "durationMs": 5712
+    },
+    {
+      "text": "Comme un escalier doux qui mène au sommeil, marche par marche.",
+      "pauseAfterMs": 13990,
+      "clip": "024.mp3",
+      "durationMs": null
+    },
+    {
+      "text": "T'as pas besoin de compter. T'as pas besoin d'arriver nulle part.",
+      "pauseAfterMs": 13115,
+      "clip": "025.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "Le sommeil sait le chemin. Tu peux juste te laisser porter.",
+      "pauseAfterMs": 15739,
+      "clip": "026.mp3",
+      "durationMs": 4080
+    },
+    {
+      "text": "Sens la chaleur qui t'enveloppe, comme une main posée sur ton dos.",
+      "pauseAfterMs": 13990,
+      "clip": "027.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "Tout est en ordre. Tout est tranquille autour de toi.",
+      "pauseAfterMs": 14864,
+      "clip": "028.mp3",
+      "durationMs": null
+    },
+    {
+      "text": "Les pensées s'effacent. Les images s'éteignent doucement.",
+      "pauseAfterMs": 15739,
+      "clip": "029.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "Y reste juste le souffle, tout léger, qui va pis qui vient.",
+      "pauseAfterMs": 16613,
+      "clip": "030.mp3",
+      "durationMs": 4344
+    },
+    {
+      "text": "Tu peux lâcher prise complètement, maintenant.",
+      "pauseAfterMs": 15739,
+      "clip": "031.mp3",
+      "durationMs": 3072
+    },
+    {
+      "text": "Plus rien à faire. Juste te laisser couler vers le sommeil.",
+      "pauseAfterMs": 17487,
+      "clip": "032.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Bonne nuit. Repose-toi.",
+      "pauseAfterMs": 19236,
+      "clip": "033.mp3",
+      "durationMs": 2616
+    },
+    {
+      "text": "Dors.",
+      "pauseAfterMs": 21859,
+      "clip": "034.mp3",
+      "durationMs": 1200
+    }
+  ],
+  "spokenMs": 127992,
+  "silenceMs": 444177,
+  "totalMs": 572169,
+  "createdAt": 1782059351567
+}

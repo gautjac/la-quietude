@@ -1,0 +1,222 @@
+{
+  "id": "fr-stress-buddhist-10",
+  "title": "Relâcher la tension",
+  "intention": "Dénouer le souffle et laisser la tension du corps se relâcher, sans rien forcer.",
+  "theme": "stress",
+  "register": "buddhist",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-DeniseNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends le temps de t'installer ici, tranquillement.",
+      "pauseAfterMs": 6981,
+      "clip": "001.mp3",
+      "durationMs": 5736
+    },
+    {
+      "text": "Tu peux fermer les yeux, ou laisser ton regard se poser quelque part, sans rien fixer.",
+      "pauseAfterMs": 9308,
+      "clip": "002.mp3",
+      "durationMs": 6552
+    },
+    {
+      "text": "Il n'y a rien à réussir dans les prochaines minutes. Juste être là.",
+      "pauseAfterMs": 10472,
+      "clip": "003.mp3",
+      "durationMs": 5976
+    },
+    {
+      "text": "Sens le poids de ton corps qui repose. La chaise, le sol, ou le lit qui te porte.",
+      "pauseAfterMs": 11635,
+      "clip": "004.mp3",
+      "durationMs": 7536
+    },
+    {
+      "text": "Laisse ce qui te tient déjà te tenir.",
+      "pauseAfterMs": 13962,
+      "clip": "005.mp3",
+      "durationMs": 3480
+    },
+    {
+      "text": "Et maintenant, sans changer ta respiration, remarque-la simplement.",
+      "pauseAfterMs": 10472,
+      "clip": "006.mp3",
+      "durationMs": 5376
+    },
+    {
+      "text": "L'air qui entre. L'air qui sort.",
+      "pauseAfterMs": 13962,
+      "clip": "007.mp3",
+      "durationMs": 4320
+    },
+    {
+      "text": "À la prochaine expiration, laisse-toi soupirer. Un vrai soupir, par la bouche.",
+      "pauseAfterMs": 9308,
+      "clip": "008.mp3",
+      "durationMs": 7440
+    },
+    {
+      "text": "Inspire doucement par le nez... et relâche tout en soupirant.",
+      "pauseAfterMs": 11635,
+      "clip": "009.mp3",
+      "durationMs": 4512
+    },
+    {
+      "text": "Encore une fois. Tu prends l'air... et tu le laisses partir, sans le retenir.",
+      "pauseAfterMs": 12799,
+      "clip": "010.mp3",
+      "durationMs": 6744
+    },
+    {
+      "text": "Bon. Laisse ton souffle reprendre son rythme à lui.",
+      "pauseAfterMs": 15126,
+      "clip": "011.mp3",
+      "durationMs": 5112
+    },
+    {
+      "text": "Porte ton attention vers ton front. Vois s'il y a une tension là, entre les sourcils.",
+      "pauseAfterMs": 10472,
+      "clip": "012.mp3",
+      "durationMs": 6960
+    },
+    {
+      "text": "Tu n'as pas besoin de la pousser dehors. Juste de la remarquer.",
+      "pauseAfterMs": 9308,
+      "clip": "013.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Et à la prochaine expiration, laisse le front s'adoucir un peu.",
+      "pauseAfterMs": 13962,
+      "clip": "014.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Descends maintenant vers la mâchoire. Souvent, elle serre sans qu'on le sache.",
+      "pauseAfterMs": 10472,
+      "clip": "015.mp3",
+      "durationMs": 6456
+    },
+    {
+      "text": "Desserre les dents. Laisse la langue se déposer.",
+      "pauseAfterMs": 12799,
+      "clip": "016.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Va vers les épaules. Remarque où elles se tiennent en ce moment.",
+      "pauseAfterMs": 10472,
+      "clip": "017.mp3",
+      "durationMs": 5496
+    },
+    {
+      "text": "Inspire... et sur l'expiration, laisse-les descendre. Juste un peu plus bas.",
+      "pauseAfterMs": 15126,
+      "clip": "018.mp3",
+      "durationMs": 6984
+    },
+    {
+      "text": "Tu n'as rien à porter là, tout de suite.",
+      "pauseAfterMs": 13962,
+      "clip": "019.mp3",
+      "durationMs": 3600
+    },
+    {
+      "text": "Si une pensée passe, c'est correct. Note-la, et laisse-la passer.",
+      "pauseAfterMs": 11635,
+      "clip": "020.mp3",
+      "durationMs": 6648
+    },
+    {
+      "text": "Comme un nuage dans le ciel. Tu n'as pas à le suivre.",
+      "pauseAfterMs": 15126,
+      "clip": "021.mp3",
+      "durationMs": 4992
+    },
+    {
+      "text": "Et doucement, tu reviens au souffle. Sans te juger.",
+      "pauseAfterMs": 13962,
+      "clip": "022.mp3",
+      "durationMs": 5424
+    },
+    {
+      "text": "Sens maintenant ton ventre qui monte et qui descend.",
+      "pauseAfterMs": 12799,
+      "clip": "023.mp3",
+      "durationMs": 3888
+    },
+    {
+      "text": "Laisse le souffle se faire plus large, plus bas, comme s'il dénouait quelque chose.",
+      "pauseAfterMs": 16290,
+      "clip": "024.mp3",
+      "durationMs": 5976
+    },
+    {
+      "text": "À chaque expiration, un peu plus de lourdeur peut quitter ton corps.",
+      "pauseAfterMs": 17453,
+      "clip": "025.mp3",
+      "durationMs": 5040
+    },
+    {
+      "text": "Les mains. Laisse-les s'ouvrir, ou se reposer comme elles veulent.",
+      "pauseAfterMs": 13962,
+      "clip": "026.mp3",
+      "durationMs": 5760
+    },
+    {
+      "text": "Le ventre, la poitrine, le dos. Tout ça peut se déposer.",
+      "pauseAfterMs": 16290,
+      "clip": "027.mp3",
+      "durationMs": 6072
+    },
+    {
+      "text": "Et s'il reste de la tension quelque part, c'est correct aussi. Tu n'as pas à tout régler.",
+      "pauseAfterMs": 15126,
+      "clip": "028.mp3",
+      "durationMs": 7296
+    },
+    {
+      "text": "Reste encore un moment avec ce souffle tranquille.",
+      "pauseAfterMs": 20944,
+      "clip": "029.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Rien à faire. Juste respirer, et te laisser être.",
+      "pauseAfterMs": 18617,
+      "clip": "030.mp3",
+      "durationMs": 5688
+    },
+    {
+      "text": "Remarque comment ton corps se sent maintenant, comparé au début.",
+      "pauseAfterMs": 13962,
+      "clip": "031.mp3",
+      "durationMs": 4896
+    },
+    {
+      "text": "Tu peux revenir ici, à ce souffle, n'importe quand dans ta journée.",
+      "pauseAfterMs": 10472,
+      "clip": "032.mp3",
+      "durationMs": 5448
+    },
+    {
+      "text": "Quand tu seras prêt, laisse tes yeux s'ouvrir doucement, à ton rythme.",
+      "pauseAfterMs": 9308,
+      "clip": "033.mp3",
+      "durationMs": 5328
+    },
+    {
+      "text": "Garde un peu de cette douceur avec toi. Prends soin de toi.",
+      "pauseAfterMs": 5818,
+      "clip": "034.mp3",
+      "durationMs": 5424
+    }
+  ],
+  "spokenMs": 189504,
+  "silenceMs": 433997,
+  "totalMs": 623501,
+  "createdAt": 1782059452265
+}
