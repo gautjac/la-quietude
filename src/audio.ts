@@ -420,6 +420,24 @@ export class BedMixer {
     }
   }
 
+  /** Gently ramp the master to silence over `seconds`, then stop the beds.
+   *  Used to end sleep séances (and the sleep timer) without a jarring cut or
+   *  chime. Resolves once the fade has completed. */
+  async fadeOut(seconds: number): Promise<void> {
+    if (!this.ctx || !this.master) {
+      this.silence();
+      return;
+    }
+    const now = this.ctx.currentTime;
+    const g = this.master.gain;
+    g.cancelScheduledValues(now);
+    g.setValueAtTime(Math.max(0.0001, g.value), now);
+    // exponential approach for a natural perceptual fade
+    g.setTargetAtTime(0.0001, now, Math.max(0.5, seconds) / 4);
+    await new Promise((r) => setTimeout(r, seconds * 1000));
+    this.silence();
+  }
+
   /** Stop all beds but keep the context for a quick restart. */
   silence(): void {
     for (const id of [...this.channels.keys()]) this.spinDown(id);
@@ -462,5 +480,28 @@ export class BedMixer {
     };
     ring(528, 0, 3.2);
     ring(792, 0.18, 3.6);
+  }
+
+  /** A soft breath cue: a gentle gliding tone, rising on the inhale, falling on
+   *  the exhale. Routed to the output independently of the bed volume so it's
+   *  audible even with the bed off. */
+  async cue(direction: "in" | "out"): Promise<void> {
+    await this.ensure();
+    if (!this.ctx) return;
+    const now = this.ctx.currentTime;
+    const osc = this.ctx.createOscillator();
+    osc.type = "sine";
+    const f0 = direction === "in" ? 396 : 540;
+    const f1 = direction === "in" ? 540 : 396;
+    osc.frequency.setValueAtTime(f0, now);
+    osc.frequency.exponentialRampToValueAtTime(f1, now + 0.55);
+    const g = this.ctx.createGain();
+    g.gain.value = 0;
+    osc.connect(g).connect(this.ctx.destination);
+    g.gain.setValueAtTime(0, now);
+    g.gain.linearRampToValueAtTime(0.1, now + 0.06);
+    g.gain.exponentialRampToValueAtTime(0.0001, now + 0.75);
+    osc.start(now);
+    osc.stop(now + 0.85);
   }
 }

@@ -66,6 +66,9 @@ export interface Preset {
   createdAt: number;
 }
 
+/** How the sitting left you — a one-tap reflection saved with history. */
+export type Mood = "calmer" | "lighter" | "tender" | "restless" | "sleepy";
+
 /** A finished (or partly finished) sitting, for history + streak. */
 export interface HistoryEntry {
   id: string;
@@ -78,6 +81,8 @@ export interface HistoryEntry {
   completedMs: number;
   plannedMs: number;
   completed: boolean;
+  mood?: Mood; // optional end-of-session reflection
+  note?: string; // optional short note
 }
 
 export interface Favourite {

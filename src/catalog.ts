@@ -148,6 +148,91 @@ export const BEDS: BedDef[] = [
   { id: "forest", fr: "Forêt", en: "Forest", glyph: "❦" },
 ];
 
+import type { Mood } from "./types";
+
+export interface MoodDef {
+  id: Mood;
+  glyph: string;
+  fr: string;
+  en: string;
+}
+
+export const MOODS: MoodDef[] = [
+  { id: "calmer", glyph: "◡", fr: "Plus calme", en: "Calmer" },
+  { id: "lighter", glyph: "☼", fr: "Plus léger", en: "Lighter" },
+  { id: "tender", glyph: "♡", fr: "Attendri", en: "Tender" },
+  { id: "restless", glyph: "≁", fr: "Encore agité", en: "Restless" },
+  { id: "sleepy", glyph: "☾", fr: "Somnolent", en: "Sleepy" },
+];
+
+export function moodDef(id: Mood): MoodDef | undefined {
+  return MOODS.find((m) => m.id === id);
+}
+
+/** Guided-breathing patterns for the breath pacer. Phases in seconds. */
+export interface BreathPhase {
+  kind: "in" | "hold" | "out" | "rest";
+  sec: number;
+}
+export interface BreathPattern {
+  id: string;
+  fr: string;
+  en: string;
+  noteFr: string;
+  noteEn: string;
+  phases: BreathPhase[];
+}
+
+export const BREATH_PATTERNS: BreathPattern[] = [
+  {
+    id: "coherence",
+    fr: "Cohérence",
+    en: "Coherence",
+    noteFr: "Cinq secondes à l'inspir, cinq à l'expir. L'équilibre du cœur.",
+    noteEn: "Five seconds in, five out. The heart's even keel.",
+    phases: [
+      { kind: "in", sec: 5 },
+      { kind: "out", sec: 5 },
+    ],
+  },
+  {
+    id: "calm",
+    fr: "Apaisante",
+    en: "Calming",
+    noteFr: "Expiration plus longue que l'inspiration : le frein du système nerveux.",
+    noteEn: "A longer exhale than inhale: the nervous system's brake.",
+    phases: [
+      { kind: "in", sec: 4 },
+      { kind: "out", sec: 6 },
+    ],
+  },
+  {
+    id: "box",
+    fr: "Carrée",
+    en: "Box",
+    noteFr: "Quatre temps égaux : inspirez, retenez, expirez, retenez.",
+    noteEn: "Four equal counts: in, hold, out, hold.",
+    phases: [
+      { kind: "in", sec: 4 },
+      { kind: "hold", sec: 4 },
+      { kind: "out", sec: 4 },
+      { kind: "hold", sec: 4 },
+    ],
+  },
+  {
+    id: "478",
+    fr: "4-7-8",
+    en: "4-7-8",
+    noteFr: "Inspirez 4, retenez 7, expirez 8. Pour glisser vers le sommeil.",
+    noteEn: "In 4, hold 7, out 8. To slip toward sleep.",
+    phases: [
+      { kind: "in", sec: 4 },
+      { kind: "hold", sec: 7 },
+      { kind: "out", sec: 8 },
+    ],
+  },
+];
+
 export function themeName(id: ThemeId, lang: Lang): string {
   const t = THEMES.find((x) => x.id === id);
   return t ? (lang === "fr" ? t.fr : t.en) : id;

@@ -23,6 +23,8 @@ import { VoicePanel } from "./components/VoicePanel";
 import { Player, type ClipSource } from "./components/Player";
 import { Library } from "./components/Library";
 import { Catalogue } from "./components/Catalogue";
+import { BreathPacer } from "./components/BreathPacer";
+import type { Mood } from "./types";
 
 const ONBOARDED = "quietude:onboarded";
 const SETTINGS = "quietude:settings";
@@ -45,6 +47,7 @@ interface Persisted {
   rate: number;
   pitch: number;
   voiceVolume: number;
+  sleepTimerMin: number;
 }
 
 function loadSettings(): Partial<Persisted> {
@@ -56,7 +59,7 @@ function loadSettings(): Partial<Persisted> {
   }
 }
 
-type Tab = "seances" | "tune" | "library";
+type Tab = "seances" | "tune" | "breathe" | "library";
 
 export default function App() {
   const { t, lang, setLang } = useLang();
@@ -75,6 +78,7 @@ export default function App() {
   const [rate, setRate] = useState<number>(saved.rate ?? 0.92);
   const [pitch, setPitch] = useState<number>(saved.pitch ?? 1.0);
   const [voiceVolume, setVoiceVolume] = useState<number>(saved.voiceVolume ?? 0.9);
+  const [sleepTimerMin, setSleepTimerMin] = useState<number>(saved.sleepTimerMin ?? 0);
 
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -151,13 +155,13 @@ export default function App() {
 
   // ── persist settings ─────────────────────────────────────────────────────────
   useEffect(() => {
-    const p: Persisted = { dials, beds, master, voiceURI, rate, pitch, voiceVolume };
+    const p: Persisted = { dials, beds, master, voiceURI, rate, pitch, voiceVolume, sleepTimerMin };
     try {
       localStorage.setItem(SETTINGS, JSON.stringify(p));
     } catch {
       /* noop */
     }
-  }, [dials, beds, master, voiceURI, rate, pitch, voiceVolume]);
+  }, [dials, beds, master, voiceURI, rate, pitch, voiceVolume, sleepTimerMin]);
 
   // ── live bed preview while on the sound drawer ────────────────────────────────
   useEffect(() => {
@@ -311,7 +315,13 @@ export default function App() {
     setActive({ title: f.title, intention: f.intention, lines: f.lines });
   };
 
-  const closePlayer = async (completedMs: number, plannedMs: number, completed: boolean) => {
+  const closePlayer = async (
+    completedMs: number,
+    plannedMs: number,
+    completed: boolean,
+    mood?: Mood,
+    note?: string,
+  ) => {
     if (active) {
       await db.history.put({
         id: uid(),
@@ -324,6 +334,8 @@ export default function App() {
         completedMs,
         plannedMs,
         completed,
+        mood,
+        note,
       });
     }
     setActive(null);
@@ -399,6 +411,7 @@ export default function App() {
           beds={beds}
           master={master}
           clipSource={activeClip ?? undefined}
+          sleepTimerMin={sleepTimerMin}
           onClose={closePlayer}
           onToggleFavourite={toggleFavourite}
           isFavourite={!!activeFavId}
@@ -430,6 +443,9 @@ export default function App() {
           <TabBtn on={tab === "tune"} onClick={() => setTab("tune")}>
             {t("Accorder", "Tune")}
           </TabBtn>
+          <TabBtn on={tab === "breathe"} onClick={() => setTab("breathe")}>
+            {t("Respirer", "Breathe")}
+          </TabBtn>
           <TabBtn on={tab === "library"} onClick={() => setTab("library")}>
             {t("Bibliothèque", "Library")}
           </TabBtn>
@@ -456,6 +472,8 @@ export default function App() {
           </>
         )}
 
+        {tab === "breathe" && <BreathPacer beds={beds} master={master} />}
+
         {tab === "library" && (
           <Library
             presets={presets}
@@ -469,7 +487,7 @@ export default function App() {
         )}
 
         {/* shared sound + voice controls (séances + tune) */}
-        {tab !== "library" && (
+        {(tab === "seances" || tab === "tune") && (
           <>
             <div className="mt-8 grid grid-cols-2 gap-2.5">
               <OpenerBtn onClick={() => setDrawer(drawer === "sound" ? null : "sound")} on={drawer === "sound"}>
@@ -482,7 +500,14 @@ export default function App() {
 
             {drawer === "sound" && (
               <div className="mt-4 rounded-3xl border border-bark/10 bg-linen-light/60 p-5 animate-riseIn">
-                <BedPanel beds={beds} master={master} onBed={setBed} onMaster={onMaster} />
+                <BedPanel
+                  beds={beds}
+                  master={master}
+                  onBed={setBed}
+                  onMaster={onMaster}
+                  sleepTimerMin={sleepTimerMin}
+                  onSleepTimer={setSleepTimerMin}
+                />
               </div>
             )}
             {drawer === "voice" && (

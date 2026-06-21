@@ -1,5 +1,5 @@
 import { useLang } from "../i18n";
-import { themeName, registerName } from "../catalog";
+import { themeName, registerName, moodDef } from "../catalog";
 import type { Preset, HistoryEntry, Favourite } from "../types";
 import { computeStreak } from "../db";
 
@@ -137,24 +137,40 @@ export function Library({
           <Empty>{t("Vos séances passées apparaîtront ici.", "Your past sittings will appear here.")}</Empty>
         ) : (
           <div className="space-y-1.5">
-            {history.slice(0, 30).map((h) => (
-              <div
-                key={h.id}
-                className="flex items-center justify-between rounded-xl px-3.5 py-2.5 text-sm odd:bg-linen-light/50"
-              >
-                <span className="text-bark-soft">
-                  {themeName(h.theme, lang)}
-                  <span className="text-bark-faint"> · {h.length} min</span>
-                </span>
-                <span className="flex items-center gap-2 text-[12px] text-bark-faint">
-                  {h.completed && <span className="text-sage-deep">✓</span>}
-                  {new Date(h.at).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", {
-                    month: "short",
-                    day: "numeric",
-                  })}
-                </span>
-              </div>
-            ))}
+            {history.slice(0, 30).map((h) => {
+              const mood = h.mood ? moodDef(h.mood) : undefined;
+              return (
+                <div
+                  key={h.id}
+                  className="rounded-xl px-3.5 py-2.5 text-sm odd:bg-linen-light/50"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-bark-soft">
+                      {themeName(h.theme, lang)}
+                      <span className="text-bark-faint"> · {h.length} min</span>
+                    </span>
+                    <span className="flex items-center gap-2 text-[12px] text-bark-faint">
+                      {mood && (
+                        <span className="flex items-center gap-1 text-sage-deep">
+                          <span className="text-sm">{mood.glyph}</span>
+                          {lang === "fr" ? mood.fr : mood.en}
+                        </span>
+                      )}
+                      {h.completed && <span className="text-sage-deep">✓</span>}
+                      {new Date(h.at).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", {
+                        month: "short",
+                        day: "numeric",
+                      })}
+                    </span>
+                  </div>
+                  {h.note && (
+                    <p className="mt-1 text-[12px] italic leading-snug text-bark-faint">
+                      “{h.note}”
+                    </p>
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
       </Section>

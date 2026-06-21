@@ -2,16 +2,22 @@ import { useLang } from "../i18n";
 import { BEDS } from "../catalog";
 import type { BedLevels, BedId } from "../types";
 
+const SLEEP_TIMERS = [0, 5, 10, 20];
+
 export function BedPanel({
   beds,
   master,
   onBed,
   onMaster,
+  sleepTimerMin,
+  onSleepTimer,
 }: {
   beds: BedLevels;
   master: number;
   onBed: (id: BedId, v: number) => void;
   onMaster: (v: number) => void;
+  sleepTimerMin: number;
+  onSleepTimer: (v: number) => void;
 }) {
   const { t, lang } = useLang();
 
@@ -83,6 +89,35 @@ export function BedPanel({
           className="w-full"
           aria-label={t("Volume du fond", "Bed volume")}
         />
+      </div>
+
+      <div className="mt-6 border-t border-bark/10 pt-4">
+        <div className="mb-2 flex items-center justify-between">
+          <span className="text-sm font-medium text-bark">
+            {t("Minuterie de sommeil", "Sleep timer")}
+          </span>
+          <span className="text-[11px] italic text-bark-faint">
+            {t("le fond s'estompe après la voix", "the bed fades after the voice")}
+          </span>
+        </div>
+        <div className="flex gap-2">
+          {SLEEP_TIMERS.map((m) => {
+            const on = sleepTimerMin === m;
+            return (
+              <button
+                key={m}
+                onClick={() => onSleepTimer(m)}
+                className={`tap flex-1 rounded-full border py-2 text-[13px] font-medium transition active:scale-[0.97] ${
+                  on
+                    ? "border-clay bg-clay/15 text-bark"
+                    : "border-bark/10 bg-linen-light/70 text-bark-soft hover:border-bark/20"
+                }`}
+              >
+                {m === 0 ? t("Aucune", "Off") : `${m} min`}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
