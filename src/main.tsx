@@ -11,3 +11,12 @@ createRoot(document.getElementById("root")!).render(
     </LangProvider>
   </StrictMode>,
 );
+
+// Register the service worker (production only, so dev HMR is untouched).
+if (import.meta.env.PROD && "serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").catch(() => {
+      /* offline support simply won't be available */
+    });
+  });
+}

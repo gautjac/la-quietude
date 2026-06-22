@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { useLang } from "../i18n";
 import { themeName, registerName, moodDef } from "../catalog";
 import type { Preset, HistoryEntry, Favourite } from "../types";
 import { computeStreak } from "../db";
+import { downloadAllForOffline, isDownloaded } from "../offline";
 
 export function Library({
   presets,
@@ -48,6 +50,9 @@ export function Library({
               )}
         </p>
       </section>
+
+      {/* offline */}
+      <OfflineSection />
 
       {/* favourites */}
       <Section title={t("Favoris", "Favourites")}>
@@ -203,5 +208,71 @@ function Empty({ children }: { children: React.ReactNode }) {
     <p className="rounded-2xl border border-dashed border-bark/15 px-4 py-5 text-center text-[13px] leading-snug text-bark-faint">
       {children}
     </p>
+  );
+}
+
+function OfflineSection() {
+  const { t } = useLang();
+  const [done, setDone] = useState(isDownloaded());
+  const [busy, setBusy] = useState(false);
+  const [progress, setProgress] = useState({ done: 0, total: 0 });
+
+  const run = async () => {
+    if (busy) return;
+    setBusy(true);
+    setProgress({ done: 0, total: 0 });
+    try {
+      await downloadAllForOffline((d, total) => setProgress({ done: d, total }));
+      setDone(true);
+    } catch {
+      /* leave state; the user can retry */
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const pct = progress.total ? Math.round((progress.done / progress.total) * 100) : 0;
+
+  return (
+    <Section title={t("Hors-ligne", "Offline")}>
+      <div className="rounded-2xl border border-bark/10 bg-linen-light/70 p-4">
+        <p className="text-[13px] leading-snug text-bark-soft">
+          {t(
+            "Installez La Quiétude sur votre écran d'accueil et téléchargez les séances pour les écouter sans réseau — au chevet, en avion, dans un coin sans signal.",
+            "Install La Quiétude to your home screen and download the séances to listen with no network — at the bedside, on a plane, in a dead zone.",
+          )}
+        </p>
+
+        {busy ? (
+          <div className="mt-4">
+            <div className="mb-1.5 flex items-center justify-between text-[12px] tabular-nums text-bark-faint">
+              <span>{t("Téléchargement…", "Downloading…")}</span>
+              <span>
+                {progress.done}/{progress.total || "…"}
+              </span>
+            </div>
+            <div className="h-1.5 w-full overflow-hidden rounded-full bg-bark/12">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-dawn to-sage transition-[width] duration-200"
+                style={{ width: `${pct}%` }}
+              />
+            </div>
+          </div>
+        ) : (
+          <button
+            onClick={run}
+            className={`tap mt-4 w-full rounded-full py-2.5 text-sm font-medium transition active:scale-[0.99] ${
+              done
+                ? "border border-sage bg-sage/12 text-bark"
+                : "bg-bark text-linen-light shadow-soft hover:bg-bark-soft"
+            }`}
+          >
+            {done
+              ? t("✓ Disponible hors-ligne · re-télécharger", "✓ Available offline · re-download")
+              : t("Télécharger les séances (~31 Mo)", "Download the séances (~31 MB)")}
+          </button>
+        )}
+      </div>
+    </Section>
   );
 }
