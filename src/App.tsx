@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { useLang } from "./i18n";
 import { db, cacheKey, uid, localDay } from "./db";
@@ -25,6 +25,13 @@ import { Library } from "./components/Library";
 import { Catalogue } from "./components/Catalogue";
 import { BreathPacer } from "./components/BreathPacer";
 import { useTheme } from "./theme";
+import {
+  registerStopper,
+  pushActive,
+  popActive,
+  stopAllSound,
+  audioStore,
+} from "./audioBus";
 import type { Mood } from "./types";
 
 const ONBOARDED = "quietude:onboarded";
@@ -85,6 +92,7 @@ type Tab = "seances" | "tune" | "breathe" | "library";
 export default function App() {
   const { t, lang, setLang } = useLang();
   const { dark, toggle: toggleTheme } = useTheme();
+  const audioActive = useSyncExternalStore(audioStore.subscribe, audioStore.getSnapshot);
 
   const saved = useMemo(loadSettings, []);
   const [onboard, setOnboard] = useState(false);
@@ -215,6 +223,21 @@ export default function App() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [drawer, active]);
+
+  // register the live bed preview with the global kill switch while it exists
+  useEffect(() => {
+    if (!previewMixer) return;
+    pushActive();
+    const unregister = registerStopper(() => {
+      void previewMixer.dispose();
+      setPreviewMixer(null);
+      setDrawer(null);
+    });
+    return () => {
+      unregister();
+      popActive();
+    };
+  }, [previewMixer]);
 
   const setBed = (id: BedId, v: number) => {
     setBeds((b) => ({ ...b, [id]: v }));
@@ -472,6 +495,17 @@ export default function App() {
             </p>
           </div>
           <div className="flex items-center gap-2">
+            {audioActive && (
+              <button
+                onClick={() => stopAllSound()}
+                aria-label={t("Couper le son", "Stop all sound")}
+                title={t("Couper le son", "Stop all sound")}
+                className="tap flex items-center gap-1.5 rounded-full border border-clay/40 bg-clay/12 px-3 py-1.5 text-xs font-medium text-clay transition hover:bg-clay/20 active:scale-95"
+              >
+                <span aria-hidden>◼</span>
+                {t("Couper le son", "Stop sound")}
+              </button>
+            )}
             <button
               onClick={toggleTheme}
               aria-label={dark ? t("Mode clair", "Light mode") : t("Mode sombre", "Dark mode")}

@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useLang } from "../i18n";
 import { BREATH_PATTERNS, type BreathPattern, type BreathPhase } from "../catalog";
 import { BedMixer } from "../audio";
+import { registerStopper, pushActive, popActive } from "../audioBus";
 import type { BedLevels } from "../types";
 
 const DURATIONS = [1, 2, 3, 5, 10];
@@ -49,6 +50,7 @@ export function BreathPacer({ beds, master }: { beds: BedLevels; master: number 
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const tickRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const endAtRef = useRef(0);
+  const unregRef = useRef<(() => void) | null>(null);
 
   const stop = () => {
     if (timerRef.current) clearTimeout(timerRef.current);
@@ -57,6 +59,11 @@ export function BreathPacer({ beds, master }: { beds: BedLevels; master: number 
     tickRef.current = null;
     void mixerRef.current?.dispose();
     mixerRef.current = null;
+    if (unregRef.current) {
+      unregRef.current();
+      unregRef.current = null;
+      popActive();
+    }
     setRunning(false);
   };
 
@@ -66,6 +73,8 @@ export function BreathPacer({ beds, master }: { beds: BedLevels; master: number 
   const start = () => {
     const mixer = new BedMixer(withBed ? beds : ZERO_BEDS, master);
     mixerRef.current = mixer;
+    pushActive();
+    unregRef.current = registerStopper(() => stop());
     const cycleSec = pattern.phases.reduce((s, p) => s + p.sec, 0);
     void mixer.ensure().then(() => {
       if (withBed) mixer.setBreath(cycleSec);

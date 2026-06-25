@@ -19,6 +19,7 @@ import {
   clearMediaSession,
   KeepAlive,
 } from "../mediaSession";
+import { registerStopper, pushActive, popActive } from "../audioBus";
 
 /** When present, the player voices each line from a pre-rendered MP3 clip
  *  instead of the device's speech engine. */
@@ -193,7 +194,13 @@ export function Player(props: PlayerProps) {
 
     p.start();
 
+    // global kill switch: this session is now making sound
+    pushActive();
+    const unregister = registerStopper(() => actionsRef.current.stop());
+
     return () => {
+      unregister();
+      popActive();
       p.stop();
       keepAlive.stop();
       clearMediaSession();
