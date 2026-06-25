@@ -33,11 +33,30 @@ const SETTINGS = "quietude:settings";
 const DEFAULT_DIALS: Dials = { length: 5, theme: "stress", register: "plain", pacing: 0 };
 const DEFAULT_BEDS: BedLevels = {
   rain: 0,
-  drone: 0.4,
-  piano: 0,
   ocean: 0,
-  room: 0,
   forest: 0,
+  wind: 0,
+  night: 0,
+  fire: 0,
+  drone: 0.3,
+  hum: 0.12,
+  bowls: 0,
+  piano: 0,
+  room: 0,
+};
+
+const ZERO_BEDS: BedLevels = {
+  rain: 0,
+  ocean: 0,
+  forest: 0,
+  wind: 0,
+  night: 0,
+  fire: 0,
+  drone: 0,
+  hum: 0,
+  bowls: 0,
+  piano: 0,
+  room: 0,
 };
 
 interface Persisted {
@@ -49,6 +68,7 @@ interface Persisted {
   pitch: number;
   voiceVolume: number;
   sleepTimerMin: number;
+  breathSync: boolean;
 }
 
 function loadSettings(): Partial<Persisted> {
@@ -72,7 +92,11 @@ export default function App() {
   const [drawer, setDrawer] = useState<"sound" | "voice" | null>(null);
 
   const [dials, setDials] = useState<Dials>(saved.dials ?? DEFAULT_DIALS);
-  const [beds, setBeds] = useState<BedLevels>(saved.beds ?? DEFAULT_BEDS);
+  // existing mixes keep their exact levels (new beds start at 0); brand-new
+  // users get the curated default mix.
+  const [beds, setBeds] = useState<BedLevels>(() =>
+    saved.beds ? { ...ZERO_BEDS, ...saved.beds } : DEFAULT_BEDS,
+  );
   const [master, setMaster] = useState<number>(saved.master ?? 0.6);
 
   const [voices, setVoices] = useState<Voice[]>([]);
@@ -81,6 +105,7 @@ export default function App() {
   const [pitch, setPitch] = useState<number>(saved.pitch ?? 1.0);
   const [voiceVolume, setVoiceVolume] = useState<number>(saved.voiceVolume ?? 0.9);
   const [sleepTimerMin, setSleepTimerMin] = useState<number>(saved.sleepTimerMin ?? 0);
+  const [breathSync, setBreathSync] = useState<boolean>(saved.breathSync ?? false);
 
   const [generating, setGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -157,13 +182,23 @@ export default function App() {
 
   // ── persist settings ─────────────────────────────────────────────────────────
   useEffect(() => {
-    const p: Persisted = { dials, beds, master, voiceURI, rate, pitch, voiceVolume, sleepTimerMin };
+    const p: Persisted = {
+      dials,
+      beds,
+      master,
+      voiceURI,
+      rate,
+      pitch,
+      voiceVolume,
+      sleepTimerMin,
+      breathSync,
+    };
     try {
       localStorage.setItem(SETTINGS, JSON.stringify(p));
     } catch {
       /* noop */
     }
-  }, [dials, beds, master, voiceURI, rate, pitch, voiceVolume, sleepTimerMin]);
+  }, [dials, beds, master, voiceURI, rate, pitch, voiceVolume, sleepTimerMin, breathSync]);
 
   // ── live bed preview while on the sound drawer ────────────────────────────────
   useEffect(() => {
@@ -184,6 +219,12 @@ export default function App() {
   const setBed = (id: BedId, v: number) => {
     setBeds((b) => ({ ...b, [id]: v }));
     void previewMixer?.setBed(id, v);
+  };
+  const applyScene = (next: BedLevels) => {
+    setBeds(next);
+    if (previewMixer) {
+      for (const id of Object.keys(next) as BedId[]) void previewMixer.setBed(id, next[id]);
+    }
   };
   const onMaster = (v: number) => {
     setMaster(v);
@@ -414,6 +455,7 @@ export default function App() {
           master={master}
           clipSource={activeClip ?? undefined}
           sleepTimerMin={sleepTimerMin}
+          breathSync={breathSync}
           onClose={closePlayer}
           onToggleFavourite={toggleFavourite}
           isFavourite={!!activeFavId}
@@ -519,6 +561,9 @@ export default function App() {
                   onMaster={onMaster}
                   sleepTimerMin={sleepTimerMin}
                   onSleepTimer={setSleepTimerMin}
+                  breathSync={breathSync}
+                  onBreathSync={setBreathSync}
+                  onScene={(b) => applyScene({ ...ZERO_BEDS, ...b })}
                 />
               </div>
             )}

@@ -22,16 +22,20 @@ export type Length = 3 | 5 | 10 | 20;
 /** -2 = much more silence … +2 = much more words. */
 export type Pacing = -2 | -1 | 0 | 1 | 2;
 
-export type BedId = "rain" | "drone" | "piano" | "ocean" | "room" | "forest";
+export type BedId =
+  | "rain"
+  | "ocean"
+  | "forest"
+  | "wind"
+  | "night"
+  | "fire"
+  | "drone"
+  | "hum"
+  | "bowls"
+  | "piano"
+  | "room";
 
-export interface BedLevels {
-  rain: number;
-  drone: number;
-  piano: number;
-  ocean: number;
-  room: number;
-  forest: number;
-}
+export type BedLevels = Record<BedId, number>;
 
 /** The dials the user sets before a session. */
 export interface Dials {

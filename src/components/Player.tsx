@@ -40,6 +40,8 @@ interface PlayerProps {
   clipSource?: ClipSource;
   /** Minutes to keep the bed going and fade after the voice ends (0 = off). */
   sleepTimerMin: number;
+  /** Make the bed gently swell with the breath cadence. */
+  breathSync: boolean;
   onClose: (
     completedMs: number,
     plannedMs: number,
@@ -71,6 +73,7 @@ export function Player(props: PlayerProps) {
     master,
     clipSource,
     sleepTimerMin,
+    breathSync,
     onClose,
     onToggleFavourite,
     isFavourite,
@@ -106,7 +109,9 @@ export function Player(props: PlayerProps) {
   useEffect(() => {
     const mixer = new BedMixer(beds, master);
     mixerRef.current = mixer;
-    void mixer.ensure();
+    void mixer.ensure().then(() => {
+      if (breathSync) mixer.setBreath(breathSec);
+    });
 
     const keepAlive = new KeepAlive();
     keepAliveRef.current = keepAlive;

@@ -66,7 +66,10 @@ export function BreathPacer({ beds, master }: { beds: BedLevels; master: number 
   const start = () => {
     const mixer = new BedMixer(withBed ? beds : ZERO_BEDS, master);
     mixerRef.current = mixer;
-    void mixer.ensure();
+    const cycleSec = pattern.phases.reduce((s, p) => s + p.sec, 0);
+    void mixer.ensure().then(() => {
+      if (withBed) mixer.setBreath(cycleSec);
+    });
 
     endAtRef.current = Date.now() + durationMin * 60 * 1000;
     setRunning(true);
@@ -225,11 +228,16 @@ export function BreathPacer({ beds, master }: { beds: BedLevels; master: number 
 
 const ZERO_BEDS: BedLevels = {
   rain: 0,
-  drone: 0,
-  piano: 0,
   ocean: 0,
-  room: 0,
   forest: 0,
+  wind: 0,
+  night: 0,
+  fire: 0,
+  drone: 0,
+  hum: 0,
+  bowls: 0,
+  piano: 0,
+  room: 0,
 };
 
 function Label({ children }: { children: React.ReactNode }) {

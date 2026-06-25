@@ -141,11 +141,33 @@ export interface BedDef {
 
 export const BEDS: BedDef[] = [
   { id: "rain", fr: "Pluie", en: "Rain", glyph: "☂" },
-  { id: "drone", fr: "Bourdon", en: "Drone", glyph: "∿" },
-  { id: "piano", fr: "Piano clairsemé", en: "Sparse piano", glyph: "♪" },
   { id: "ocean", fr: "Océan", en: "Ocean", glyph: "≋" },
-  { id: "room", fr: "Air de pièce", en: "Room-tone", glyph: "▢" },
   { id: "forest", fr: "Forêt", en: "Forest", glyph: "❦" },
+  { id: "wind", fr: "Vent", en: "Wind", glyph: "≈" },
+  { id: "night", fr: "Nuit", en: "Night", glyph: "☾" },
+  { id: "fire", fr: "Feu", en: "Fire", glyph: "✷" },
+  { id: "drone", fr: "Bourdon", en: "Drone", glyph: "∿" },
+  { id: "hum", fr: "Om", en: "Om", glyph: "◍" },
+  { id: "bowls", fr: "Bols chantants", en: "Singing bowls", glyph: "◉" },
+  { id: "piano", fr: "Piano clairsemé", en: "Sparse piano", glyph: "♪" },
+  { id: "room", fr: "Air de pièce", en: "Room-tone", glyph: "▢" },
+];
+
+export interface BedScene {
+  id: string;
+  fr: string;
+  en: string;
+  beds: Partial<Record<BedId, number>>;
+}
+
+/** Curated one-tap bed mixes. */
+export const SCENES: BedScene[] = [
+  { id: "nightrain", fr: "Pluie de nuit", en: "Night rain", beds: { rain: 0.6, night: 0.22, hum: 0.18 } },
+  { id: "shore", fr: "Rivage", en: "Shore", beds: { ocean: 0.6, wind: 0.16, drone: 0.14 } },
+  { id: "temple", fr: "Temple", en: "Temple", beds: { bowls: 0.5, hum: 0.3, drone: 0.18 } },
+  { id: "dawnforest", fr: "Forêt à l'aube", en: "Forest at dawn", beds: { forest: 0.5, wind: 0.18, piano: 0.14 } },
+  { id: "hearth", fr: "Foyer", en: "Hearth", beds: { fire: 0.5, room: 0.2, hum: 0.18 } },
+  { id: "stillroom", fr: "Pièce calme", en: "Still room", beds: { room: 0.4, drone: 0.16, piano: 0.12 } },
 ];
 
 import type { Mood } from "./types";

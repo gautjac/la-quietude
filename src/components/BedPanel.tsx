@@ -1,5 +1,5 @@
 import { useLang } from "../i18n";
-import { BEDS } from "../catalog";
+import { BEDS, SCENES } from "../catalog";
 import type { BedLevels, BedId } from "../types";
 
 const SLEEP_TIMERS = [0, 5, 10, 20];
@@ -11,6 +11,9 @@ export function BedPanel({
   onMaster,
   sleepTimerMin,
   onSleepTimer,
+  breathSync,
+  onBreathSync,
+  onScene,
 }: {
   beds: BedLevels;
   master: number;
@@ -18,6 +21,9 @@ export function BedPanel({
   onMaster: (v: number) => void;
   sleepTimerMin: number;
   onSleepTimer: (v: number) => void;
+  breathSync: boolean;
+  onBreathSync: (v: boolean) => void;
+  onScene: (beds: Partial<Record<BedId, number>>) => void;
 }) {
   const { t, lang } = useLang();
 
@@ -28,8 +34,21 @@ export function BedPanel({
           {t("Fond sonore", "Background bed")}
         </h3>
         <span className="text-[11px] italic text-bark-faint">
-          {t("entièrement génératif", "fully generative")}
+          {t("génératif, en réverbération", "generative, with reverb")}
         </span>
+      </div>
+
+      {/* scenes — one-tap mixes */}
+      <div className="-mx-1 mb-5 flex gap-2 overflow-x-auto px-1 pb-1 no-scrollbar">
+        {SCENES.map((s) => (
+          <button
+            key={s.id}
+            onClick={() => onScene(s.beds)}
+            className="tap shrink-0 rounded-full border border-bark/12 bg-linen-light/70 px-3.5 py-1.5 text-[13px] font-medium text-bark-soft transition hover:border-bark/25 active:scale-[0.97]"
+          >
+            {lang === "fr" ? s.fr : s.en}
+          </button>
+        ))}
       </div>
 
       <div className="space-y-3.5">
@@ -91,7 +110,32 @@ export function BedPanel({
         />
       </div>
 
-      <div className="mt-6 border-t border-bark/10 pt-4">
+      <div className="mt-5 flex items-center justify-between border-t border-bark/10 pt-4">
+        <div>
+          <span className="text-sm font-medium text-bark">
+            {t("Respiration du fond", "Bed breathes with you")}
+          </span>
+          <p className="text-[12px] leading-snug text-bark-faint">
+            {t("le fond enfle et reflue au rythme du souffle", "the bed swells and ebbs with the breath")}
+          </p>
+        </div>
+        <button
+          role="switch"
+          aria-checked={breathSync}
+          onClick={() => onBreathSync(!breathSync)}
+          className={`tap relative h-6 w-11 shrink-0 rounded-full transition ${
+            breathSync ? "bg-sage" : "bg-bark/20"
+          }`}
+        >
+          <span
+            className={`absolute top-0.5 h-5 w-5 rounded-full bg-linen-light shadow-soft transition ${
+              breathSync ? "left-[1.4rem]" : "left-0.5"
+            }`}
+          />
+        </button>
+      </div>
+
+      <div className="mt-5 border-t border-bark/10 pt-4">
         <div className="mb-2 flex items-center justify-between">
           <span className="text-sm font-medium text-bark">
             {t("Minuterie de sommeil", "Sleep timer")}
