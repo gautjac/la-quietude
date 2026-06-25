@@ -1,0 +1,114 @@
+{
+  "id": "fr-stress-plain-3",
+  "title": "Relâcher la tension",
+  "intention": "Relâcher la tension du corps et dénouer le souffle pour calmer le stress.",
+  "theme": "stress",
+  "register": "plain",
+  "length": 3,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-SylvieNeural",
+  "rate": "-12%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends ta place, tu peux t'installer comme tu es.",
+      "pauseAfterMs": 5213,
+      "clip": "001.mp3",
+      "durationMs": 5664
+    },
+    {
+      "text": "Pose les deux pieds à plat sur le sol. Sens le poids du corps qui descend dans la chaise.",
+      "pauseAfterMs": 7820,
+      "clip": "002.mp3",
+      "durationMs": 6984
+    },
+    {
+      "text": "Ferme les yeux, ou laisse ton regard se poser, sans rien fixer.",
+      "pauseAfterMs": 6082,
+      "clip": "003.mp3",
+      "durationMs": 5280
+    },
+    {
+      "text": "Prends une grande inspiration par le nez.",
+      "pauseAfterMs": 2607,
+      "clip": "004.mp3",
+      "durationMs": 3288
+    },
+    {
+      "text": "Et relâche tout par la bouche, dans un long soupir.",
+      "pauseAfterMs": 7820,
+      "clip": "005.mp3",
+      "durationMs": 4296
+    },
+    {
+      "text": "Encore une fois. Inspire.",
+      "pauseAfterMs": 2607,
+      "clip": "006.mp3",
+      "durationMs": 4056
+    },
+    {
+      "text": "Et soupire, laisse aller le bruit, laisse aller la journée.",
+      "pauseAfterMs": 8689,
+      "clip": "007.mp3",
+      "durationMs": 4776
+    },
+    {
+      "text": "Maintenant, amène ton attention à tes épaules.",
+      "pauseAfterMs": 3475,
+      "clip": "008.mp3",
+      "durationMs": 4200
+    },
+    {
+      "text": "Monte-les vers les oreilles, serre un peu, puis laisse-les retomber d'un coup.",
+      "pauseAfterMs": 6951,
+      "clip": "009.mp3",
+      "durationMs": 5424
+    },
+    {
+      "text": "Sens-les plus basses, plus larges. Tu n'as plus besoin de les tenir.",
+      "pauseAfterMs": 7820,
+      "clip": "010.mp3",
+      "durationMs": 6288
+    },
+    {
+      "text": "Desserre la mâchoire. Laisse les dents se décoller, la langue se reposer.",
+      "pauseAfterMs": 6951,
+      "clip": "011.mp3",
+      "durationMs": 6600
+    },
+    {
+      "text": "Détends le front, le tour des yeux. Lisse tout ça.",
+      "pauseAfterMs": 6951,
+      "clip": "012.mp3",
+      "durationMs": 5160
+    },
+    {
+      "text": "Reviens au souffle. Il n'a rien à faire, laisse-le aller à son rythme.",
+      "pauseAfterMs": 10426,
+      "clip": "013.mp3",
+      "durationMs": 6240
+    },
+    {
+      "text": "À chaque expiration, quelque chose se relâche un peu plus.",
+      "pauseAfterMs": 10426,
+      "clip": "014.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "Le corps est plus lourd, plus calme. Le souffle est dénoué.",
+      "pauseAfterMs": 7820,
+      "clip": "015.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Reste avec cette détente. Quand tu seras prêt, ouvre doucement les yeux.",
+      "pauseAfterMs": 4344,
+      "clip": "016.mp3",
+      "durationMs": 6336
+    }
+  ],
+  "spokenMs": 85128,
+  "silenceMs": 106002,
+  "totalMs": 191130,
+  "createdAt": 1782397450326
+}

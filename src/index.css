@@ -4,6 +4,55 @@
 
 :root {
   color-scheme: light;
+  /* light — dawn over linen */
+  --c-linen: 239 231 218;
+  --c-linen-light: 247 241 231;
+  --c-linen-dim: 228 218 201;
+  --c-linen-shade: 214 201 178;
+  --c-bark: 58 52 43;
+  --c-bark-soft: 94 86 74;
+  --c-bark-faint: 138 128 113;
+  --c-sage: 138 154 126;
+  --c-sage-deep: 93 107 84;
+  --c-sage-dim: 111 125 100;
+  --c-sage-mist: 183 194 171;
+  --c-dawn: 217 169 140;
+  --c-dawn-warm: 226 183 154;
+  --c-dawn-rose: 202 160 160;
+  --c-dawn-gold: 230 199 154;
+  --c-clay: 176 127 99;
+  --c-slate-night: 42 48 41;
+  --c-slate-deep: 34 38 33;
+  --haze-top: rgba(226, 183, 154, 0.35);
+  --haze-foot: rgba(138, 154, 126, 0.28);
+  --grain-opacity: 0.025;
+}
+
+.dark {
+  color-scheme: dark;
+  /* dark — embers under a warm night. Backgrounds become deep warm ink,
+     foregrounds become warm off-white, accents lift a touch to glow. */
+  --c-linen: 26 24 21;
+  --c-linen-light: 39 35 31;
+  --c-linen-dim: 33 30 27;
+  --c-linen-shade: 52 47 41;
+  --c-bark: 236 228 214;
+  --c-bark-soft: 192 181 163;
+  --c-bark-faint: 143 132 116;
+  --c-sage: 154 170 141;
+  --c-sage-deep: 168 184 154;
+  --c-sage-dim: 138 154 126;
+  --c-sage-mist: 147 163 134;
+  --c-dawn: 224 176 148;
+  --c-dawn-warm: 230 190 160;
+  --c-dawn-rose: 210 170 170;
+  --c-dawn-gold: 230 200 158;
+  --c-clay: 209 156 126;
+  --c-slate-night: 36 41 35;
+  --c-slate-deep: 28 31 27;
+  --haze-top: rgba(120, 95, 78, 0.3);
+  --haze-foot: rgba(70, 84, 64, 0.26);
+  --grain-opacity: 0.04;
 }
 
 html,
@@ -14,15 +63,15 @@ body,
 
 body {
   margin: 0;
-  background-color: #efe7da;
-  color: #3a342b;
+  background-color: rgb(var(--c-linen));
+  color: rgb(var(--c-bark));
   font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   /* dawn over linen: a soft vertical light + a faint sage haze at the foot */
   background-image:
-    radial-gradient(120% 80% at 50% -10%, rgba(226, 183, 154, 0.35) 0%, rgba(226, 183, 154, 0) 55%),
-    radial-gradient(140% 90% at 50% 115%, rgba(138, 154, 126, 0.28) 0%, rgba(138, 154, 126, 0) 55%);
+    radial-gradient(120% 80% at 50% -10%, var(--haze-top) 0%, rgba(0, 0, 0, 0) 55%),
+    radial-gradient(140% 90% at 50% 115%, var(--haze-foot) 0%, rgba(0, 0, 0, 0) 55%);
   background-attachment: fixed;
 }
 
@@ -52,7 +101,7 @@ body {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    opacity: 0.025;
+    opacity: var(--grain-opacity, 0.025);
     z-index: 1;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
@@ -107,7 +156,7 @@ input[type="range"] {
   appearance: none;
   height: 4px;
   border-radius: 9999px;
-  background: rgba(58, 52, 43, 0.16);
+  background: rgb(var(--c-bark) / 0.16);
   outline: none;
 }
 input[type="range"]::-webkit-slider-thumb {
@@ -116,25 +165,25 @@ input[type="range"]::-webkit-slider-thumb {
   width: 18px;
   height: 18px;
   border-radius: 9999px;
-  background: #d9a98c;
-  border: 2px solid #f7f1e7;
-  box-shadow: 0 1px 4px rgba(58, 52, 43, 0.3);
+  background: rgb(var(--c-dawn));
+  border: 2px solid rgb(var(--c-linen-light));
+  box-shadow: 0 1px 4px rgb(var(--c-bark) / 0.3);
   cursor: pointer;
 }
 input[type="range"]::-moz-range-thumb {
   width: 18px;
   height: 18px;
   border-radius: 9999px;
-  background: #d9a98c;
-  border: 2px solid #f7f1e7;
-  box-shadow: 0 1px 4px rgba(58, 52, 43, 0.3);
+  background: rgb(var(--c-dawn));
+  border: 2px solid rgb(var(--c-linen-light));
+  box-shadow: 0 1px 4px rgb(var(--c-bark) / 0.3);
   cursor: pointer;
 }
 input[type="range"].sage::-webkit-slider-thumb {
-  background: #8a9a7e;
+  background: rgb(var(--c-sage));
 }
 input[type="range"].sage::-moz-range-thumb {
-  background: #8a9a7e;
+  background: rgb(var(--c-sage));
 }
 
 /* hide scrollbars on the horizontal pickers but keep scroll */

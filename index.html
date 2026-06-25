@@ -19,6 +19,20 @@
       content="La Quiétude — un instrument de méditation guidée que vous accordez : la voix vous parle, le fond se règle à part."
     />
     <title>La Quiétude — méditation guidée, accordée à vous</title>
+    <script>
+      // Apply the theme before paint to avoid a flash. 'auto' follows the system.
+      (function () {
+        try {
+          var t = localStorage.getItem("quietude:theme") || "auto";
+          var dark =
+            t === "dark" ||
+            (t === "auto" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+          if (dark) document.documentElement.classList.add("dark");
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute("content", dark ? "#1a1815" : "#efe7da");
+        } catch (e) {}
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link

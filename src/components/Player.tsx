@@ -254,7 +254,7 @@ export function Player(props: PlayerProps) {
   const done = state === "done";
 
   return (
-    <div className="grain fixed inset-0 z-40 flex flex-col bg-gradient-to-b from-linen-light via-linen to-sage/25">
+    <div className="grain fixed inset-0 z-40 flex flex-col bg-linen bg-gradient-to-b from-linen-light via-linen to-sage/25">
       {/* top bar */}
       <div className="flex items-center justify-between px-5 pt-[calc(env(safe-area-inset-top)+1rem)]">
         <button

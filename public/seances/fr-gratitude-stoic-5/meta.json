@@ -1,0 +1,150 @@
+{
+  "id": "fr-gratitude-stoic-5",
+  "title": "Ce qui est déjà là",
+  "intention": "Réchauffer le cœur sur le réel déjà présent, et accueillir avec gratitude ce qui ne dépend pas de nous.",
+  "theme": "gratitude",
+  "register": "stoic",
+  "length": 5,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-CA-AntoineNeural",
+  "rate": "-10%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends place, tranquillement.",
+      "pauseAfterMs": 5838,
+      "clip": "001.mp3",
+      "durationMs": 4296
+    },
+    {
+      "text": "Tu n'as rien à réussir ici. Juste à être là où tu es.",
+      "pauseAfterMs": 7784,
+      "clip": "002.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Laisse tes épaules redescendre. Laisse ton poids se déposer sur ce qui te porte.",
+      "pauseAfterMs": 9731,
+      "clip": "003.mp3",
+      "durationMs": 6240
+    },
+    {
+      "text": "Prends une respiration, sans la forcer. Juste la sentir entrer, puis ressortir.",
+      "pauseAfterMs": 11677,
+      "clip": "004.mp3",
+      "durationMs": 7080
+    },
+    {
+      "text": "Cet air-là, tu ne l'as pas fabriqué. Il était déjà là, à t'attendre.",
+      "pauseAfterMs": 8758,
+      "clip": "005.mp3",
+      "durationMs": 6240
+    },
+    {
+      "text": "Il y a des choses qui dépendent de toi, et beaucoup qui n'en dépendent pas.",
+      "pauseAfterMs": 6811,
+      "clip": "006.mp3",
+      "durationMs": 4800
+    },
+    {
+      "text": "Ton souffle qui revient tout seul. Ton cœur qui bat sans que tu y penses.",
+      "pauseAfterMs": 10704,
+      "clip": "007.mp3",
+      "durationMs": 6096
+    },
+    {
+      "text": "Tout ça t'est donné. Ce n'est pas un dû, c'est un prêt.",
+      "pauseAfterMs": 8758,
+      "clip": "008.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Reste un moment avec ce simple fait : tu es vivant, maintenant.",
+      "pauseAfterMs": 12650,
+      "clip": "009.mp3",
+      "durationMs": 4848
+    },
+    {
+      "text": "Pense à une petite chose bien concrète de ta journée.",
+      "pauseAfterMs": 6811,
+      "clip": "010.mp3",
+      "durationMs": 3888
+    },
+    {
+      "text": "Une gorgée d'eau chaude. La lumière dans une fenêtre. Un visage que tu connais.",
+      "pauseAfterMs": 10704,
+      "clip": "011.mp3",
+      "durationMs": 7272
+    },
+    {
+      "text": "Rien de grandiose. Juste ce qui était vraiment là.",
+      "pauseAfterMs": 7784,
+      "clip": "012.mp3",
+      "durationMs": 5280
+    },
+    {
+      "text": "Marc Aurèle se le rappelait au réveil : aujourd'hui encore, j'ai la chance de vivre.",
+      "pauseAfterMs": 7784,
+      "clip": "013.mp3",
+      "durationMs": 6144
+    },
+    {
+      "text": "Sens cette chaleur s'installer, quelque part dans la poitrine.",
+      "pauseAfterMs": 9731,
+      "clip": "014.mp3",
+      "durationMs": 4392
+    },
+    {
+      "text": "Tu ne choisis pas tout ce qui t'arrive. Mais tu peux choisir de l'accueillir.",
+      "pauseAfterMs": 8758,
+      "clip": "015.mp3",
+      "durationMs": 5832
+    },
+    {
+      "text": "Accueillir le réel tel qu'il est, sans le tordre.",
+      "pauseAfterMs": 7784,
+      "clip": "016.mp3",
+      "durationMs": 4128
+    },
+    {
+      "text": "Une autre respiration. Laisse-la te traverser, calmement.",
+      "pauseAfterMs": 11677,
+      "clip": "017.mp3",
+      "durationMs": 5520
+    },
+    {
+      "text": "Ce que tu as suffit pour cet instant. C'est déjà beaucoup.",
+      "pauseAfterMs": 8758,
+      "clip": "018.mp3",
+      "durationMs": 4968
+    },
+    {
+      "text": "Dis-le doucement, en dedans : merci pour ce qui est là.",
+      "pauseAfterMs": 9731,
+      "clip": "019.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Rien à retenir, rien à garder de force. Juste reconnaître.",
+      "pauseAfterMs": 8758,
+      "clip": "020.mp3",
+      "durationMs": 6240
+    },
+    {
+      "text": "Le cœur est un peu plus chaud qu'au début. Garde cette chaleur avec toi.",
+      "pauseAfterMs": 6811,
+      "clip": "021.mp3",
+      "durationMs": 5760
+    },
+    {
+      "text": "Quand tu seras prêt, reviens tout doucement. Ce qui est là t'attend.",
+      "pauseAfterMs": 3892,
+      "clip": "022.mp3",
+      "durationMs": 5592
+    }
+  ],
+  "spokenMs": 119808,
+  "silenceMs": 191694,
+  "totalMs": 311502,
+  "createdAt": 1782397433548
+}

@@ -36,16 +36,16 @@
     "totalMs": 572169
   },
   {
-    "id": "fr-sleep-acadian-20",
-    "title": "Vers le sommeil, tout doux",
-    "intention": "Te conduire doucement, sans hâte, jusqu'à ce que le sommeil te prenne.",
+    "id": "fr-sleep-poetic-20",
+    "title": "Vers le sommeil, doucement",
+    "intention": "Se laisser glisser tranquillement vers le sommeil, sans rien forcer.",
     "theme": "sleep",
-    "register": "acadian",
+    "register": "poetic",
     "length": 20,
     "lang": "fr",
-    "voice": "fr-CA-SylvieNeural",
-    "lineCount": 54,
-    "totalMs": 1246988
+    "voice": "fr-FR-VivienneMultilingualNeural",
+    "lineCount": 55,
+    "totalMs": 1183018
   },
   {
     "id": "fr-stress-plain-5",
@@ -108,16 +108,16 @@
     "totalMs": 185179
   },
   {
-    "id": "fr-gratitude-acadian-5",
-    "title": "Le cœur au chaud",
-    "intention": "Réchauffer le cœur sur les petites choses bien réelles qui sont déjà là.",
+    "id": "fr-gratitude-stoic-5",
+    "title": "Ce qui est déjà là",
+    "intention": "Réchauffer le cœur sur le réel déjà présent, et accueillir avec gratitude ce qui ne dépend pas de nous.",
     "theme": "gratitude",
-    "register": "acadian",
+    "register": "stoic",
     "length": 5,
     "lang": "fr",
-    "voice": "fr-CA-SylvieNeural",
+    "voice": "fr-CA-AntoineNeural",
     "lineCount": 22,
-    "totalMs": 309721
+    "totalMs": 311502
   },
   {
     "id": "fr-gratitude-poetic-3",
@@ -204,28 +204,28 @@
     "totalMs": 286350
   },
   {
-    "id": "fr-stress-acadian-3",
-    "title": "Relâcher au creux du souffle",
-    "intention": "Relâcher la tension du corps et dénouer le souffle, tout doucement, comme de chez nous.",
+    "id": "fr-stress-plain-3",
+    "title": "Relâcher la tension",
+    "intention": "Relâcher la tension du corps et dénouer le souffle pour calmer le stress.",
     "theme": "stress",
-    "register": "acadian",
+    "register": "plain",
     "length": 3,
     "lang": "fr",
     "voice": "fr-CA-SylvieNeural",
     "lineCount": 16,
-    "totalMs": 189434
+    "totalMs": 191130
   },
   {
-    "id": "fr-grief-acadian-10",
+    "id": "fr-grief-buddhist-10",
     "title": "Tenir compagnie à la peine",
-    "intention": "Faire de la place à la peine du deuil, la tenir avec tendresse, sans chercher à la corriger.",
+    "intention": "Faire de la place à la peine du deuil, avec tendresse, sans chercher à la corriger.",
     "theme": "grief",
-    "register": "acadian",
+    "register": "buddhist",
     "length": 10,
     "lang": "fr",
-    "voice": "fr-CA-SylvieNeural",
+    "voice": "fr-FR-DeniseNeural",
     "lineCount": 34,
-    "totalMs": 628806
+    "totalMs": 627212
   },
   {
     "id": "fr-grief-stoic-5",
@@ -252,16 +252,16 @@
     "totalMs": 282610
   },
   {
-    "id": "fr-walking-acadian-10",
-    "title": "Marche tranquille",
-    "intention": "Marcher les yeux ouverts en accordant doucement notre attention au pas, au pied qui touche la terre, et à l'air sur la peau.",
+    "id": "fr-walking-buddhist-10",
+    "title": "Marche en pleine conscience",
+    "intention": "Marcher lentement, les yeux ouverts, en gardant l'attention sur le pas, le contact du pied et l'air sur la peau.",
     "theme": "walking",
-    "register": "acadian",
+    "register": "buddhist",
     "length": 10,
     "lang": "fr",
-    "voice": "fr-CA-SylvieNeural",
+    "voice": "fr-FR-DeniseNeural",
     "lineCount": 34,
-    "totalMs": 613168
+    "totalMs": 621002
   },
   {
     "id": "fr-performance-plain-5",

@@ -1,37 +1,40 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        // La Quiétude — dawn over linen. Warm flax paper, sage, dusty-rose first light.
+        // La Quiétude — dawn over linen. Tokens resolve to CSS variables
+        // (R G B channels) so the whole palette swaps in dark mode while
+        // keeping Tailwind's opacity modifiers (e.g. bg-linen-light/60).
         linen: {
-          DEFAULT: "#efe7da",
-          light: "#f7f1e7",
-          dim: "#e4dac9",
-          shade: "#d6c9b2",
+          DEFAULT: "rgb(var(--c-linen) / <alpha-value>)",
+          light: "rgb(var(--c-linen-light) / <alpha-value>)",
+          dim: "rgb(var(--c-linen-dim) / <alpha-value>)",
+          shade: "rgb(var(--c-linen-shade) / <alpha-value>)",
         },
         bark: {
-          DEFAULT: "#3a342b",
-          soft: "#5e564a",
-          faint: "#8a8071",
+          DEFAULT: "rgb(var(--c-bark) / <alpha-value>)",
+          soft: "rgb(var(--c-bark-soft) / <alpha-value>)",
+          faint: "rgb(var(--c-bark-faint) / <alpha-value>)",
         },
         sage: {
-          DEFAULT: "#8a9a7e",
-          deep: "#5d6b54",
-          dim: "#6f7d64",
-          mist: "#b7c2ab",
+          DEFAULT: "rgb(var(--c-sage) / <alpha-value>)",
+          deep: "rgb(var(--c-sage-deep) / <alpha-value>)",
+          dim: "rgb(var(--c-sage-dim) / <alpha-value>)",
+          mist: "rgb(var(--c-sage-mist) / <alpha-value>)",
         },
         dawn: {
-          DEFAULT: "#d9a98c",
-          warm: "#e2b79a",
-          rose: "#caa0a0",
-          gold: "#e6c79a",
+          DEFAULT: "rgb(var(--c-dawn) / <alpha-value>)",
+          warm: "rgb(var(--c-dawn-warm) / <alpha-value>)",
+          rose: "rgb(var(--c-dawn-rose) / <alpha-value>)",
+          gold: "rgb(var(--c-dawn-gold) / <alpha-value>)",
         },
-        clay: "#b07f63",
+        clay: "rgb(var(--c-clay) / <alpha-value>)",
         slate: {
-          night: "#2a3029",
-          deep: "#222621",
+          night: "rgb(var(--c-slate-night) / <alpha-value>)",
+          deep: "rgb(var(--c-slate-deep) / <alpha-value>)",
         },
       },
       fontFamily: {

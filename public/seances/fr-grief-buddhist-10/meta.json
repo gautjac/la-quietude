@@ -1,0 +1,222 @@
+{
+  "id": "fr-grief-buddhist-10",
+  "title": "Tenir compagnie à la peine",
+  "intention": "Faire de la place à la peine du deuil, avec tendresse, sans chercher à la corriger.",
+  "theme": "grief",
+  "register": "buddhist",
+  "length": 10,
+  "lang": "fr",
+  "pacing": 0,
+  "voice": "fr-FR-DeniseNeural",
+  "rate": "-14%",
+  "lines": [
+    {
+      "text": "Bienvenue. Prends le temps de t'installer, comme tu es, sans rien arranger.",
+      "pauseAfterMs": 7431,
+      "clip": "001.mp3",
+      "durationMs": 6720
+    },
+    {
+      "text": "Tu peux fermer les yeux, ou laisser ton regard se poser doucement, sans le fixer.",
+      "pauseAfterMs": 9908,
+      "clip": "002.mp3",
+      "durationMs": 6168
+    },
+    {
+      "text": "Il n'y a rien à réussir ici. Juste être là.",
+      "pauseAfterMs": 8670,
+      "clip": "003.mp3",
+      "durationMs": 5184
+    },
+    {
+      "text": "Sens le poids de ton corps qui repose sur ce qui te porte.",
+      "pauseAfterMs": 11147,
+      "clip": "004.mp3",
+      "durationMs": 4752
+    },
+    {
+      "text": "Laisse les épaules redescendre un peu, à leur rythme.",
+      "pauseAfterMs": 9908,
+      "clip": "005.mp3",
+      "durationMs": 4440
+    },
+    {
+      "text": "Et viens écouter ton souffle, sans le changer.",
+      "pauseAfterMs": 12385,
+      "clip": "006.mp3",
+      "durationMs": 3936
+    },
+    {
+      "text": "L'air qui entre. L'air qui sort.",
+      "pauseAfterMs": 14863,
+      "clip": "007.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "Tu n'as pas besoin de respirer mieux. Juste de remarquer que ça respire.",
+      "pauseAfterMs": 13624,
+      "clip": "008.mp3",
+      "durationMs": 6408
+    },
+    {
+      "text": "Quelques souffles, à ton rythme à toi.",
+      "pauseAfterMs": 17340,
+      "clip": "009.mp3",
+      "durationMs": 3528
+    },
+    {
+      "text": "Et maintenant, doucement, fais un peu de place à ce qui est là aujourd'hui.",
+      "pauseAfterMs": 11147,
+      "clip": "010.mp3",
+      "durationMs": 5544
+    },
+    {
+      "text": "Peut-être une peine. Peut-être un manque, un nom, un visage.",
+      "pauseAfterMs": 14863,
+      "clip": "011.mp3",
+      "durationMs": 6120
+    },
+    {
+      "text": "Tu n'as rien à corriger. Ce qui est là a le droit d'être là.",
+      "pauseAfterMs": 13624,
+      "clip": "012.mp3",
+      "durationMs": 5568
+    },
+    {
+      "text": "Vois si cette peine se loge quelque part dans le corps.",
+      "pauseAfterMs": 12385,
+      "clip": "013.mp3",
+      "durationMs": 4104
+    },
+    {
+      "text": "La poitrine, la gorge, le ventre. Ou ailleurs.",
+      "pauseAfterMs": 12385,
+      "clip": "014.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Pose ton attention là, tout doucement, comme on pose une main.",
+      "pauseAfterMs": 16101,
+      "clip": "015.mp3",
+      "durationMs": 4872
+    },
+    {
+      "text": "Tu n'as pas à faire partir cette sensation. Juste à lui tenir compagnie.",
+      "pauseAfterMs": 14863,
+      "clip": "016.mp3",
+      "durationMs": 6432
+    },
+    {
+      "text": "Respire tout autour d'elle. Laisse-lui de l'espace.",
+      "pauseAfterMs": 17340,
+      "clip": "017.mp3",
+      "durationMs": 5256
+    },
+    {
+      "text": "Si des larmes montent, elles sont les bienvenues.",
+      "pauseAfterMs": 13624,
+      "clip": "018.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Si rien ne monte, c'est correct aussi.",
+      "pauseAfterMs": 12385,
+      "clip": "019.mp3",
+      "durationMs": 3816
+    },
+    {
+      "text": "Personne ici ne te demande d'aller mieux.",
+      "pauseAfterMs": 14863,
+      "clip": "020.mp3",
+      "durationMs": 3384
+    },
+    {
+      "text": "Tu as le droit de ressentir exactement ce que tu ressens.",
+      "pauseAfterMs": 16101,
+      "clip": "021.mp3",
+      "durationMs": 4368
+    },
+    {
+      "text": "Les pensées vont arriver. Des souvenirs, des regrets, des si seulement.",
+      "pauseAfterMs": 12385,
+      "clip": "022.mp3",
+      "durationMs": 6768
+    },
+    {
+      "text": "Tu peux les noter, doucement. Et les laisser passer, comme des nuages.",
+      "pauseAfterMs": 14863,
+      "clip": "023.mp3",
+      "durationMs": 6576
+    },
+    {
+      "text": "Puis revenir au souffle. Toujours là, patient.",
+      "pauseAfterMs": 16101,
+      "clip": "024.mp3",
+      "durationMs": 5184
+    },
+    {
+      "text": "L'air qui entre. L'air qui sort.",
+      "pauseAfterMs": 17340,
+      "clip": "025.mp3",
+      "durationMs": 4416
+    },
+    {
+      "text": "La peine et le souffle peuvent cohabiter. L'un n'efface pas l'autre.",
+      "pauseAfterMs": 14863,
+      "clip": "026.mp3",
+      "durationMs": 5784
+    },
+    {
+      "text": "Tu portes cet amour, et c'est pour ça que ça fait mal.",
+      "pauseAfterMs": 16101,
+      "clip": "027.mp3",
+      "durationMs": 4584
+    },
+    {
+      "text": "Laisse-toi être tenu, par le sol, par ton souffle, par cet instant.",
+      "pauseAfterMs": 17340,
+      "clip": "028.mp3",
+      "durationMs": 5928
+    },
+    {
+      "text": "Tu n'as pas à porter tout ça d'un coup. Juste ce souffle-ci.",
+      "pauseAfterMs": 16101,
+      "clip": "029.mp3",
+      "durationMs": 5712
+    },
+    {
+      "text": "Reste encore un moment, sans rien attendre.",
+      "pauseAfterMs": 18578,
+      "clip": "030.mp3",
+      "durationMs": 3864
+    },
+    {
+      "text": "Quand tu seras prêt, ramène doucement ton attention vers la pièce.",
+      "pauseAfterMs": 11147,
+      "clip": "031.mp3",
+      "durationMs": 5136
+    },
+    {
+      "text": "Sens à nouveau ton corps, le contact, les sons autour de toi.",
+      "pauseAfterMs": 9908,
+      "clip": "032.mp3",
+      "durationMs": 5568
+    },
+    {
+      "text": "Tu peux garder cette douceur avec toi, et avec ta peine.",
+      "pauseAfterMs": 8670,
+      "clip": "033.mp3",
+      "durationMs": 4776
+    },
+    {
+      "text": "Prends soin de toi. Tu n'es pas seul à porter ça.",
+      "pauseAfterMs": 4954,
+      "clip": "034.mp3",
+      "durationMs": 4944
+    }
+  ],
+  "spokenMs": 173904,
+  "silenceMs": 453308,
+  "totalMs": 627212,
+  "createdAt": 1782397487222
+}

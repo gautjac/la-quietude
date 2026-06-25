@@ -24,6 +24,7 @@ import { Player, type ClipSource } from "./components/Player";
 import { Library } from "./components/Library";
 import { Catalogue } from "./components/Catalogue";
 import { BreathPacer } from "./components/BreathPacer";
+import { useTheme } from "./theme";
 import type { Mood } from "./types";
 
 const ONBOARDED = "quietude:onboarded";
@@ -63,6 +64,7 @@ type Tab = "seances" | "tune" | "breathe" | "library";
 
 export default function App() {
   const { t, lang, setLang } = useLang();
+  const { dark, toggle: toggleTheme } = useTheme();
 
   const saved = useMemo(loadSettings, []);
   const [onboard, setOnboard] = useState(false);
@@ -427,12 +429,22 @@ export default function App() {
               {t("méditation guidée, à voix réelle", "guided meditation, in a real voice")}
             </p>
           </div>
-          <button
-            onClick={() => setLang(lang === "fr" ? "en" : "fr")}
-            className="tap rounded-full border border-bark/15 px-3 py-1.5 text-xs font-medium text-bark-soft transition hover:bg-linen-dim"
-          >
-            {lang === "fr" ? "EN" : "FR"}
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={toggleTheme}
+              aria-label={dark ? t("Mode clair", "Light mode") : t("Mode sombre", "Dark mode")}
+              title={dark ? t("Mode clair", "Light mode") : t("Mode sombre", "Dark mode")}
+              className="tap flex h-8 w-8 items-center justify-center rounded-full border border-bark/15 text-bark-soft transition hover:bg-linen-dim"
+            >
+              {dark ? "☀" : "☾"}
+            </button>
+            <button
+              onClick={() => setLang(lang === "fr" ? "en" : "fr")}
+              className="tap rounded-full border border-bark/15 px-3 py-1.5 text-xs font-medium text-bark-soft transition hover:bg-linen-dim"
+            >
+              {lang === "fr" ? "EN" : "FR"}
+            </button>
+          </div>
         </header>
 
         {/* tabs */}
