@@ -163,6 +163,19 @@ export function BedPanel({
           })}
         </div>
       </div>
+
+      <p className="mt-5 border-t border-bark/10 pt-3 text-[11px] leading-snug text-bark-faint">
+        {t("Piano échantillonné", "Sampled piano")} : FluidR3 GM (Frank Wen),{" "}
+        <a
+          href="https://creativecommons.org/licenses/by/3.0/"
+          target="_blank"
+          rel="noreferrer"
+          className="underline decoration-bark/20 underline-offset-2 hover:text-bark-soft"
+        >
+          CC-BY 3.0
+        </a>
+        .
+      </p>
     </div>
   );
 }

@@ -62,6 +62,9 @@ Output per séance: `public/seances/<id>/{meta.json, 001.mp3, …}` plus a slim
 `public/seances/index.json`. `meta.json` carries each line's text, `pauseAfterMs`, clip
 name, and ffprobe-measured `durationMs` (for an accurate progress bar).
 
+## Credits
+- Sampled piano bed: **FluidR3 GM** by Frank Wen ([CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/)) — eight notes bundled under `public/sounds/piano/`, played through the bed's reverb. Everything else in the sound bed is generated live with Web Audio (no sample files).
+
 ## Notes on honesty
 The Séances voices are real Microsoft Edge neural voices, pre-rendered — no live TTS API
 at runtime. The free-mode voice is the browser engine; if no voices load, the session

@@ -48,6 +48,11 @@ export async function downloadAllForOffline(
     }
   }
 
+  // also warm the sampled-piano notes (FluidR3 GM)
+  for (const n of ["G3", "A3", "C4", "D4", "E4", "G4", "A4", "C5"]) {
+    urls.push(`/sounds/piano/${n}.mp3`);
+  }
+
   const total = urls.length;
   let done = 0;
   onProgress(0, total);

@@ -636,12 +636,42 @@ function buildBowls(ctx: AudioContext, out: AudioNode): Stoppable[] {
   ];
 }
 
-function buildPiano(ctx: AudioContext, out: AudioNode): Stoppable[] {
+// the eight pentatonic notes the piano plays, each backed by a sampled note
+const PIANO_SCALE = [196, 220, 261.63, 293.66, 329.63, 392, 440, 523.25];
+const PIANO_NOTE_NAMES: Record<number, string> = {
+  196: "G3",
+  220: "A3",
+  261.63: "C4",
+  293.66: "D4",
+  329.63: "E4",
+  392: "G4",
+  440: "A4",
+  523.25: "C5",
+};
+
+function buildPiano(ctx: AudioContext, out: AudioNode, samples: Map<string, AudioBuffer>): Stoppable[] {
   let alive = true;
   let timer: ReturnType<typeof setTimeout> | null = null;
-  const scale = [196, 220, 261.63, 293.66, 329.63, 392, 440, 523.25];
+  const scale = PIANO_SCALE;
 
-  function note(freq: number) {
+  function playSample(buffer: AudioBuffer, velocity: number) {
+    const now = ctx.currentTime;
+    const panner = ctx.createStereoPanner();
+    panner.pan.value = Math.random() * 1.0 - 0.5;
+    const src = ctx.createBufferSource();
+    src.buffer = buffer;
+    // a mellow low-pass for the soft "felt" character
+    const lp = ctx.createBiquadFilter();
+    lp.type = "lowpass";
+    lp.frequency.value = 2600;
+    const g = ctx.createGain();
+    g.gain.value = velocity;
+    src.connect(lp).connect(g).connect(panner).connect(out);
+    src.start(now);
+    src.stop(now + buffer.duration + 0.1);
+  }
+
+  function playSynth(freq: number, velocity: number) {
     const now = ctx.currentTime;
     const panner = ctx.createStereoPanner();
     panner.pan.value = Math.random() * 1.0 - 0.5;
@@ -665,7 +695,7 @@ function buildPiano(ctx: AudioContext, out: AudioNode): Stoppable[] {
     osc2.connect(g2).connect(lp);
     lp.connect(panner);
 
-    const peak = 0.5;
+    const peak = velocity;
     g.gain.setValueAtTime(0, now);
     g.gain.linearRampToValueAtTime(peak, now + 0.02);
     g.gain.exponentialRampToValueAtTime(0.0001, now + 4.2);
@@ -677,6 +707,14 @@ function buildPiano(ctx: AudioContext, out: AudioNode): Stoppable[] {
     osc2.start(now);
     osc.stop(now + 4.4);
     osc2.stop(now + 4.4);
+  }
+
+  function note(freq: number) {
+    const velocity = 0.42 + Math.random() * 0.26;
+    const name = PIANO_NOTE_NAMES[freq];
+    const buffer = name ? samples.get(name) : undefined;
+    if (buffer) playSample(buffer, velocity);
+    else playSynth(freq, velocity);
   }
 
   function next() {
@@ -718,6 +756,10 @@ export class BedMixer {
   private levels: BedLevels;
   private _master: number;
   private started = false;
+
+  // sampled piano (FluidR3 GM, CC-BY 3.0) — loaded on demand, synth until ready
+  private pianoSamples = new Map<string, AudioBuffer>();
+  private pianoLoading = false;
 
   // breath-sync
   private breathLfo: OscillatorNode | null = null;
@@ -832,7 +874,8 @@ export class BedMixer {
         nodes = buildBowls(ctx, level);
         break;
       case "piano":
-        nodes = buildPiano(ctx, level);
+        void this.loadPianoSamples();
+        nodes = buildPiano(ctx, level, this.pianoSamples);
         break;
       case "room":
         nodes = buildNoiseBed(ctx, this.brown, level, {
@@ -884,6 +927,30 @@ export class BedMixer {
       this.master.gain.setTargetAtTime(v, this.ctx.currentTime, 0.05);
       if (this.breathDepth) this.breathDepth.gain.setTargetAtTime(v * 0.18, this.ctx.currentTime, 0.05);
     }
+  }
+
+  /** Fetch + decode the felt-piano note samples once. The piano bed plays a
+   *  synth note until these are ready, then real sampled notes. Same-origin, so
+   *  the service worker caches them for offline use. */
+  private async loadPianoSamples(): Promise<void> {
+    if (this.pianoLoading || this.pianoSamples.size > 0 || !this.ctx) return;
+    this.pianoLoading = true;
+    const ctx = this.ctx;
+    const notes = ["G3", "A3", "C4", "D4", "E4", "G4", "A4", "C5"];
+    await Promise.all(
+      notes.map(async (n) => {
+        try {
+          const res = await fetch(`/sounds/piano/${n}.mp3`);
+          if (!res.ok) return;
+          const arr = await res.arrayBuffer();
+          const buf = await ctx.decodeAudioData(arr);
+          this.pianoSamples.set(n, buf);
+        } catch {
+          /* this note will fall back to the synth voice */
+        }
+      }),
+    );
+    this.pianoLoading = false;
   }
 
   /** Make the whole bed swell with the breath. period = one in+out cycle (s);
