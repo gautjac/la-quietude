@@ -4,6 +4,7 @@ import { themeName, registerName, moodDef } from "../catalog";
 import type { Preset, HistoryEntry, Favourite } from "../types";
 import { computeStreak } from "../db";
 import { downloadAllForOffline, isDownloaded } from "../offline";
+import { reflections, buildRecueilMarkdown, exportRecueil } from "../recueil";
 
 export function Library({
   presets,
@@ -50,6 +51,9 @@ export function Library({
               )}
         </p>
       </section>
+
+      {/* recueil — reflections */}
+      <RecueilSection history={history} />
 
       {/* offline */}
       <OfflineSection />
@@ -208,6 +212,71 @@ function Empty({ children }: { children: React.ReactNode }) {
     <p className="rounded-2xl border border-dashed border-bark/15 px-4 py-5 text-center text-[13px] leading-snug text-bark-faint">
       {children}
     </p>
+  );
+}
+
+function RecueilSection({ history }: { history: HistoryEntry[] }) {
+  const { t, lang } = useLang();
+  const items = reflections(history);
+
+  const doExport = () => {
+    void exportRecueil(buildRecueilMarkdown(history, lang));
+  };
+
+  return (
+    <Section title={t("Recueil", "Recueil")}>
+      {items.length === 0 ? (
+        <Empty>
+          {t(
+            "Après une séance, notez comment vous vous sentez — vos réflexions se rassembleront ici.",
+            "After a sitting, note how you feel — your reflections gather here.",
+          )}
+        </Empty>
+      ) : (
+        <>
+          <div className="space-y-2.5">
+            {items.slice(0, 40).map((h) => {
+              const mood = h.mood ? moodDef(h.mood) : undefined;
+              return (
+                <div
+                  key={h.id}
+                  className="rounded-2xl border border-bark/10 bg-linen-light/70 p-4"
+                >
+                  <div className="mb-1 flex items-center justify-between text-[12px] text-bark-faint">
+                    <span>
+                      {themeName(h.theme, lang)} · {h.length} min
+                    </span>
+                    <span className="flex items-center gap-2">
+                      {mood && (
+                        <span className="flex items-center gap-1 text-sage-deep">
+                          <span className="text-sm">{mood.glyph}</span>
+                          {lang === "fr" ? mood.fr : mood.en}
+                        </span>
+                      )}
+                      {new Date(h.at).toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", {
+                        month: "short",
+                        day: "numeric",
+                      })}
+                    </span>
+                  </div>
+                  {h.note && h.note.trim() && (
+                    <p className="font-display text-lg leading-snug text-bark">
+                      « {h.note.trim()} »
+                    </p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          <button
+            onClick={doExport}
+            className="tap mt-4 w-full rounded-full border border-bark/12 py-2.5 text-sm font-medium text-bark-soft transition hover:bg-linen-dim active:scale-[0.99]"
+          >
+            ↧ {t("Exporter le recueil (Markdown)", "Export the recueil (Markdown)")}
+          </button>
+        </>
+      )}
+    </Section>
   );
 }
 

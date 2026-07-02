@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import { useLang } from "../i18n";
 import { THEMES, registerName } from "../catalog";
-import type { SeanceIndexEntry, ThemeId } from "../types";
+import { StartHere } from "./StartHere";
+import { Parcours } from "./Parcours";
+import type { SeanceIndexEntry, ThemeId, JourneyProgress } from "../types";
 
 function fmtMin(ms: number): string {
   return String(Math.max(1, Math.round(ms / 60000)));
@@ -20,11 +22,15 @@ export function Catalogue({
   loading,
   busyId,
   onPlay,
+  journeyProgress,
+  onPlayDay,
 }: {
   entries: SeanceIndexEntry[];
   loading: boolean;
   busyId: string | null;
   onPlay: (id: string) => void;
+  journeyProgress: Record<string, JourneyProgress>;
+  onPlayDay: (journeyId: string, dayIndex: number, seanceId: string) => void;
 }) {
   const { t, lang } = useLang();
   const [onlyLang, setOnlyLang] = useState(true);
@@ -65,6 +71,15 @@ export function Catalogue({
 
   return (
     <div>
+      <StartHere entries={entries} busyId={busyId} onPlay={onPlay} />
+
+      <Parcours
+        entries={entries}
+        progress={journeyProgress}
+        busyId={busyId}
+        onPlayDay={onPlayDay}
+      />
+
       <div className="mb-5 flex items-center justify-between">
         <p className="text-[13px] leading-snug text-bark-soft">
           {t(

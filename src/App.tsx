@@ -1,7 +1,7 @@
-import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { useLiveQuery } from "dexie-react-hooks";
 import { useLang } from "./i18n";
-import { db, cacheKey, uid, localDay } from "./db";
+import { db, cacheKey, uid, localDay, markJourneyDay } from "./db";
 import { generateSeance } from "./api";
 import { loadCatalogue, loadSeanceMeta, clipUrl } from "./seances";
 import { loadVoices, pickDefaultVoice, hasSpeech, type Voice } from "./speech";
@@ -23,7 +23,7 @@ import { VoicePanel } from "./components/VoicePanel";
 import { Player, type ClipSource } from "./components/Player";
 import { Library } from "./components/Library";
 import { Catalogue } from "./components/Catalogue";
-import { BreathPacer } from "./components/BreathPacer";
+import { Practice } from "./components/Practice";
 import { useTheme } from "./theme";
 import {
   registerStopper,
@@ -281,6 +281,13 @@ export default function App() {
   const history = useLiveQuery(() => db.history.orderBy("at").reverse().toArray(), []) ?? [];
   const favourites =
     useLiveQuery(() => db.favourites.orderBy("createdAt").reverse().toArray(), []) ?? [];
+  const journeyRows = useLiveQuery(() => db.journeys.toArray(), []) ?? [];
+  const journeyProgress = useMemo(
+    () => Object.fromEntries(journeyRows.map((j) => [j.id, j])),
+    [journeyRows],
+  );
+  // which journey day the active séance belongs to (for completion tracking)
+  const activeJourneyRef = useRef<{ journeyId: string; dayIndex: number } | null>(null);
 
   const stopPreview = async () => {
     if (previewMixer) {
@@ -290,9 +297,13 @@ export default function App() {
   };
 
   // ── play a pre-rendered catalogue séance (real recorded voice) ────────────────
-  const playFromCatalogue = async (id: string) => {
+  const playFromCatalogue = async (
+    id: string,
+    journeyCtx?: { journeyId: string; dayIndex: number },
+  ) => {
     setError(null);
     setBusyId(id);
+    activeJourneyRef.current = journeyCtx ?? null;
     await stopPreview();
     try {
       const meta = await loadSeanceMeta(id);
@@ -325,10 +336,15 @@ export default function App() {
     }
   };
 
+  const playJourneyDay = (journeyId: string, dayIndex: number, seanceId: string) => {
+    void playFromCatalogue(seanceId, { journeyId, dayIndex });
+  };
+
   // ── generate + play a live séance (device voice) ──────────────────────────────
   const begin = async (regenerate = false) => {
     setError(null);
     setGenerating(true);
+    activeJourneyRef.current = null;
     await stopPreview();
     try {
       const key = cacheKey(dials, lang, 0);
@@ -373,6 +389,7 @@ export default function App() {
       void playFromCatalogue(f.seanceId);
       return;
     }
+    activeJourneyRef.current = null;
     setActiveClip(null);
     setActiveSeanceId(null);
     setActiveLang(f.lang);
@@ -404,6 +421,12 @@ export default function App() {
         note,
       });
     }
+    // mark the journey day done when the sitting was completed
+    const jc = activeJourneyRef.current;
+    if (jc && completed) {
+      await markJourneyDay(jc.journeyId, jc.dayIndex);
+    }
+    activeJourneyRef.current = null;
     setActive(null);
     setActiveClip(null);
     setActiveSeanceId(null);
@@ -532,7 +555,7 @@ export default function App() {
             {t("Accorder", "Tune")}
           </TabBtn>
           <TabBtn on={tab === "breathe"} onClick={() => setTab("breathe")}>
-            {t("Respirer", "Breathe")}
+            {t("Pratique", "Practice")}
           </TabBtn>
           <TabBtn on={tab === "library"} onClick={() => setTab("library")}>
             {t("Bibliothèque", "Library")}
@@ -545,6 +568,8 @@ export default function App() {
             loading={catLoading}
             busyId={busyId}
             onPlay={playFromCatalogue}
+            journeyProgress={journeyProgress}
+            onPlayDay={playJourneyDay}
           />
         )}
 
@@ -560,7 +585,7 @@ export default function App() {
           </>
         )}
 
-        {tab === "breathe" && <BreathPacer beds={beds} master={master} />}
+        {tab === "breathe" && <Practice beds={beds} master={master} />}
 
         {tab === "library" && (
           <Library

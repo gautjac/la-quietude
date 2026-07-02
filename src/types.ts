@@ -129,6 +129,14 @@ export interface SeanceMeta {
   createdAt: number;
 }
 
+/** Progress through a multi-day journey (Parcours). */
+export interface JourneyProgress {
+  id: string; // journey id
+  completed: number[]; // day indices completed
+  startedAt: number;
+  updatedAt: number;
+}
+
 /** Slim catalogue row (public/seances/index.json). */
 export interface SeanceIndexEntry {
   id: string;

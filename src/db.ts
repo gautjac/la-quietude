@@ -4,6 +4,7 @@ import type {
   HistoryEntry,
   Favourite,
   CachedSeance,
+  JourneyProgress,
   Dials,
   Lang,
 } from "./types";
@@ -13,6 +14,7 @@ class QuietudeDB extends Dexie {
   history!: Table<HistoryEntry, string>;
   favourites!: Table<Favourite, string>;
   cache!: Table<CachedSeance, string>;
+  journeys!: Table<JourneyProgress, string>;
 
   constructor() {
     super("la-quietude");
@@ -22,10 +24,29 @@ class QuietudeDB extends Dexie {
       favourites: "id, createdAt",
       cache: "key, createdAt",
     });
+    // v2 adds journey (Parcours) progress. Additive — existing data is kept.
+    this.version(2).stores({
+      journeys: "id, updatedAt",
+    });
   }
 }
 
 export const db = new QuietudeDB();
+
+/** Mark one day of a journey complete (idempotent). */
+export async function markJourneyDay(id: string, dayIndex: number): Promise<void> {
+  const now = Date.now();
+  const existing = await db.journeys.get(id);
+  if (existing) {
+    if (!existing.completed.includes(dayIndex)) {
+      existing.completed = [...existing.completed, dayIndex].sort((a, b) => a - b);
+      existing.updatedAt = now;
+      await db.journeys.put(existing);
+    }
+  } else {
+    await db.journeys.put({ id, completed: [dayIndex], startedAt: now, updatedAt: now });
+  }
+}
 
 export function cacheKey(dials: Dials, lang: Lang, variant = 0): string {
   return `${dials.theme}|${dials.length}|${dials.register}|${dials.pacing}|${lang}|${variant}`;
